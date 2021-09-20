@@ -1,0 +1,12 @@
+#header {
+    background-color: aliceblue;
+}
+
+#header ul {
+    display: inline-block;
+  }
+
+#header ul > li {
+    display: inline-block;
+    /* margin: 0.5em; */
+} 
