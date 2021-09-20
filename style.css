@@ -1,7 +1,5 @@
 *{
-    background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
+
 }
 
 #header {
@@ -29,5 +27,7 @@
     
 }
 body{
-
+    background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
