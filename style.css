@@ -31,6 +31,8 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
 }
-h1,h2,h3,h4{
-    background-color: rgb(255, 254, 253, 0.7);
+#test1{
+
+    background-color: rgba(214, 212, 208, 0.7);
+
 }
