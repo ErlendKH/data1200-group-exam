@@ -34,9 +34,9 @@
 body{
     /* font-family: HN_roman; */
 
-    background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
+/*     background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:cover; */
 
 }
 
@@ -47,7 +47,8 @@ body{
     padding: 0 0;
 
     background: whitesmoke;
-    position: relative;
+    /* position: relative; */
+    position: fixed;
     
 }
 
@@ -105,10 +106,54 @@ nav{
 
 
 .content{
-    
+     /* Can I refer to the height of the header? */
 }
 
+/* Is there a better way? ... */
+.under-header{
+    padding-top: 64px;
+}
 
+.space{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+h1, h2{
+    /* padding: 8px; */
+}
+
+.textbox {
+
+/*     display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    /* width: 1024px; */
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+}
+
+.textbox > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image{
+    background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    text-align: center;
+}
 
 /* #test1{
     background-color: rgba(214, 212, 208, 0.7);
