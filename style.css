@@ -3,8 +3,6 @@ html {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
     
 
 }
@@ -18,11 +16,11 @@ html {
 
 body{
 
-    background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
+    background-image: url(/images/pizza-20-920x518.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     font-family:Baskerville, sans-serif;
-    text-align: center;
+    text-align: left;
     font-size: 1rem;
     color:snow
     
@@ -30,38 +28,48 @@ body{
 
 }
 
-h1, h2, h3 {
+h1{
+    font-family: papyrus, serif;
+}
+
+h2, h3 {
     font-family: Baskerville, serif;
 }
 
 h1{
     font-size: 3.6rem;
+    text-align:center
     }
   
 h2{
     font-size: 2.0rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     text-align: left;
-    border-top: 1px solid red;
+    border-bottom: 1px solid red;
     background-color: rgba(12, 11, 11, 0.664);
-    width: 1000px;
-    margin: 100px;
   padding: 15px;
 }
 
 h3{
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
     text-align: left;
 }
+ p{
+     margin-top: 0%;
+     margin-bottom: 30px;
+ }
 
-#test1{
+
+
+#Meny{
     background-color: rgba(12, 11, 11, 0.664);
     width: 1000px;
     margin: 100px;
-  padding: 15px;
-  background-clip: padding-box;
-   
+  padding: 20px;
+  text-align: left;
 }
 
 
