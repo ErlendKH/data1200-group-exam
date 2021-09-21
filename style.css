@@ -1,5 +1,8 @@
 
 body{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
     background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
     background-repeat: no-repeat;
     background-size:cover;
@@ -12,7 +15,6 @@ body{
 }
 
 .overskriftMeny{
-    font-family: Arial, Helvetica, sans-serif;
     width: 70%;
     margin: auto;
     border: 3px solid black;
@@ -76,4 +78,26 @@ h2::after{
     display: block;
     padding-top: 15px;
     width: 50%;
+}
+
+.footer{
+    margin: 0;
+    width: 100%;
+}
+
+.kontaktInformasjon{
+    padding: 0 1%;
+    box-sizing: border-box;
+    border: 2px solid red;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    margin: 100px  0 0 0;
+}
+
+a{
+    color:inherit;
+}
+
+a:hover{
+    font-weight: bold;
 }
