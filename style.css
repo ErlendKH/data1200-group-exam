@@ -1,7 +1,11 @@
-*{
-
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
 }
 
+/* 
 #header {
     background-color: aliceblue;
 }
@@ -12,7 +16,6 @@
 
 #header ul > li {
     display: inline-block;
-    /* margin: 0.5em; */
 } 
 
 #top-bar-container {
@@ -25,14 +28,101 @@
 
 #menu-button {
     
-}
+} 
+*/
+
 body{
+    /* font-family: HN_roman; */
+
     background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-}
-#test1{
 
+}
+
+.header{
+    height: 64px;
+    width: 100%;
+
+    padding: 0 0;
+
+    background: whitesmoke;
+    position: relative;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo, .title{
+    width: 256px;
+    padding: 16px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.nav-links{
+    padding: 16px 0;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    /* color: #fff; */
+    padding: 8px 0;
+    position: relative;
+}
+
+.nav-links li a::after{
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    background: #ff3d00;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.content{
+    
+}
+
+
+
+/* #test1{
     background-color: rgba(214, 212, 208, 0.7);
+} */
 
-}
+/* body.background-image {
+    /* background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    background-size: cover!important;
+    background-position: top!important;
+    background-repeat: no-repeat!important;
+    background-attachment: fixed;
+
+} 
+*/
