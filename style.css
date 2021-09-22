@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -164,32 +165,10 @@ h2{
 
     width: 400px;
 
-    /* float: left; */
-
-    /* max-width: 45%; */
-
-/*     box-sizing: border-box;
-    padding: 10px;
-    width: 100%; */
-
-    /* width: 400px; */
-
-    /* Temporary border: */
-/*     border: 3px;
-    border-color: red;
-    border-style: dashed; */
     padding: 8px;
-
-    /* display: inline-block; */
 
 }
 
-/* .card > div {
-
-    vertical-align: middle;
-    display: inline-block;
-
-} */
 
 .food-name{
     font-weight: 700;
@@ -229,11 +208,3 @@ h2{
     font-style: oblique;
     color: crimson;
 }
-
-.left{
-
-}
-
-/* .right{
-    min-width: 45%;
-} */
