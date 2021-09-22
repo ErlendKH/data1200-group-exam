@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     /* font-family: HN_roman; */
 
@@ -98,6 +100,8 @@ h1{
     /* padding: 8px; */
     font-size: 64px;
     padding: 4px;
+
+    font-family: "Great Vibes", sans-serif;
 }
 
 h2{
