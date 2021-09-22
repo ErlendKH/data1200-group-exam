@@ -18,7 +18,8 @@ body{
 
     background-image: url(/images/pizza-20-920x518.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    image-rendering: -webkit-optimize-contrast;
+    background-size: cover;
     font-family:Baskerville, sans-serif;
     text-align: left;
     font-size: 1rem;
