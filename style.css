@@ -73,4 +73,18 @@ h3{
   text-align: left;
 }
 
+.kontaktInformasjon{
+    padding: 0 1%;
+    display: table-cell;
+    vertical-align: middle;
+    width: 45%;
+}
+
+.åpningsTider{
+    display: table-cell;
+    vertical-align: middle;
+    width: 45%;
+    
+}
+
 
