@@ -5,32 +5,6 @@
     box-sizing: border-box;
 }
 
-/* 
-#header {
-    background-color: aliceblue;
-}
-
-#header ul {
-    display: inline-block;
-  }
-
-#header ul > li {
-    display: inline-block;
-} 
-
-#top-bar-container {
-
-}
-
-#quick-menu {
-
-}
-
-#menu-button {
-    
-} 
-*/
-
 body{
     /* font-family: HN_roman; */
 
@@ -119,8 +93,20 @@ nav{
     padding-bottom: 16px;
 }
 
-h1, h2{
+h1{
     /* padding: 8px; */
+    font-size: 64px;
+    padding: 4px;
+}
+
+h2{
+    font-size: 42px;
+    padding: 4px;
+}
+
+.intro-text{
+    font-size: 28px;
+    padding: 4px;
 }
 
 .textbox {
@@ -136,15 +122,15 @@ h1, h2{
     margin-left: 10%;
     margin-right: 10%;
 
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
 }
 
 .textbox > * {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 .background-image{
@@ -155,19 +141,95 @@ h1, h2{
     text-align: center;
 }
 
-/* #test1{
-    background-color: rgba(214, 212, 208, 0.7);
+.item-container{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+.item-container > * {
+
+    /* vertical-align: middle; */
+    display: inline-block;
+
+}
+
+.food-card{
+
+    vertical-align: middle;
+
+    width: 400px;
+
+    /* float: left; */
+
+    /* max-width: 45%; */
+
+/*     box-sizing: border-box;
+    padding: 10px;
+    width: 100%; */
+
+    /* width: 400px; */
+
+    /* Temporary border: */
+/*     border: 3px;
+    border-color: red;
+    border-style: dashed; */
+    padding: 8px;
+
+    /* display: inline-block; */
+
+}
+
+/* .card > div {
+
+    vertical-align: middle;
+    display: inline-block;
+
 } */
 
-/* body.background-image {
-    /* background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
+.food-name{
+    font-weight: 700;
+    display: inline-block;
+    /* text-align: left; */
+    float: left;
 
-    background-size: cover!important;
-    background-position: top!important;
-    background-repeat: no-repeat!important;
-    background-attachment: fixed;
+    padding-bottom: 4px;
+}
 
-} 
-*/
+.food-price{
+    font-weight: 700;
+    display: inline-block;
+    /* text-align: right; */
+    float: right;
+}
+
+.food-description{
+    display: inline-block;
+
+    text-align: left;
+    float: left;
+
+    width: 90%;
+
+    padding-bottom: 4px;
+}
+
+.food-allergens{
+    display: inline-block;
+
+    text-align: left;
+    float: left;
+
+    width: 90%;
+
+    font-style: oblique;
+    color: crimson;
+}
+
+.left{
+
+}
+
+/* .right{
+    min-width: 45%;
+} */
