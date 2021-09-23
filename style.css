@@ -2,13 +2,14 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "poppins", sans-serif;
+    /* font-family: "poppins", sans-serif; */
+    font-family: "Arial", sans-serif;
     box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'Calinastiya';
-    src: url(fonts/Darling.ttf);
+    font-family: 'Romanica';
+    src: url(fonts/Romanica.ttf);
 }
 
 body{
@@ -44,7 +45,7 @@ nav{
     font-size: 20px;
     font-style: oblique;
 
-    /* font-family: "Calinastiya", sans-serif; */
+    font-family: "Romanica", sans-serif;
 }
 
 .footer-name{
@@ -53,6 +54,8 @@ nav{
     font-size: 20px;
     font-style: oblique;
     float:right;
+
+    font-family: "Romanica", sans-serif;
 }
 
 .nav-links{
@@ -87,7 +90,8 @@ nav{
 }
 
 .links{
-    color:darkslateblue;
+    /* color:darkslateblue; */
+    color:darkred;
 }
 
 .btn{
@@ -115,13 +119,19 @@ nav{
 
 h1{
     /* padding: 8px; */
-    font-size: 64px;
+    font-size: 72px;
     padding: 4px;
+    color:darkred;
+
+    font-family: "Romanica", sans-serif;
 }
 
 h2{
     font-size: 42px;
     padding: 4px;
+    color:darkred;
+
+    font-family: "Romanica", sans-serif;
 }
 
 .intro-text{
