@@ -242,17 +242,22 @@ footer{
     /* justify-items: space-between; */
 
     text-align: center;
+
 }
 
 .footer-card > * {
     display: inline-block;
+
+    /* text-align: left; */
 }
 
 .footer-box{
     display: inline-block;
-    padding: 32px;
+    padding: 16px;
 
-    /* width: 200px; */
+    width: 256px;
+
+    /* border: 3px red dashed; */
 
 }
 
@@ -261,11 +266,15 @@ footer{
     font-weight: 700;
     padding-bottom: 8px;
 
+    text-align: left;
+
     /* color: greenyellow; */
 }
 
 .footer-info{
     /* padding-left: 16px; */
     padding-bottom: 8px;
+
+    text-align: left;
 }
 
