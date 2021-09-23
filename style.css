@@ -1,38 +1,45 @@
-*{
 
-}
 
-#header {
-    background-color: aliceblue;
-}
-
-#header ul {
-    display: inline-block;
-  }
-
-#header ul > li {
-    display: inline-block;
-    /* margin: 0.5em; */
-} 
-
-#top-bar-container {
-
-}
-
-#quick-menu {
-
-}
-
-#menu-button {
+ul {
+    list-style-type: none;
+    padding-left: 5vw;
     
 }
+li{
+    float: left;
+    margin:3vw;
+    display: inline;
+    padding:0vw;
+    font-size:1.5rem;
+    background-color: greenyellow;
+}
+li a{
+    display:block;
+    padding: 15px 50px;
+}
+li a:hover{
+    background-color: gold;
+    text-decoration: underline;
+}
 body{
-    background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
+    background-color: gainsboro;
+    overflow: hidden;
 }
-#test1{
+.vertical-menu{
+    width:300px;
+    height: 500px;
+    overflow-y: auto;
+    margin-top: 150px;
+    position:absolute;
 
-    background-color: rgba(214, 212, 208, 0.7);
-
+    
 }
+.vertical-menu a{
+color: black;
+display: block;
+padding:5px;
+border: 1px solid red;
+}
+.vertical-menu a:hover{
+color:red;
+    }
