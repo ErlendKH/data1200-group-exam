@@ -102,6 +102,26 @@ nav{
     cursor: pointer;
 }
 
+.footer-link a{
+    text-decoration: none;
+    padding: 8px 0;
+    position: relative;
+}
+
+.footer-link a::after{
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.footer-link a:hover::after{
+    width: 100%;
+}
 
 .content{
      /* Can I refer to the height of the header? */
@@ -262,6 +282,8 @@ footer{
 .footer-card > * {
     display: inline-block;
 
+    vertical-align: top;
+
     /* text-align: left; */
 }
 
@@ -273,6 +295,10 @@ footer{
 
     /* border: 3px red dashed; */
 
+}
+
+.footer-box > * {
+    
 }
 
 .footer-title{
