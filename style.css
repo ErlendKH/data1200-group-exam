@@ -86,6 +86,10 @@ nav{
     width: 100%;
 }
 
+.links{
+    color:darkslateblue;
+}
+
 .btn{
     background: #ff3d00;
     color: #fff;

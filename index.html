@@ -24,10 +24,11 @@
             <p class="title">ITALIA CAFÉ</p>
 
             <ul class="nav-links">
-                <li><a href="">HOME</a></li>
-                <li><a href="">ANTIPASTA</a></li>
-                <li><a href="">MAIN COURSE</a></li>
-                <li><a href="">DOLCI</a></li>
+                <!-- <li><a href="">HOME</a></li> -->
+                <li class="nav-antipasti links"><a>ANTIPASTI</a></li>
+                <li class="nav-main-course links"><a>MAIN COURSE</a></li>
+                <li class="nav-insalata links"><a>INSALATA</a></li>
+                <li class="nav-dolci links"><a>DOLCI</a></li>
                 <li class="btn">ORDER</li>
             </ul>
 
@@ -62,7 +63,7 @@
 
         <div class="space"></div>
 
-        <div class="textbox">
+        <div class="textbox antipasti">
 
             <div class="box-space"></div>
 
@@ -99,7 +100,7 @@
 
         <hr>
 
-        <div class="textbox">
+        <div class="textbox main-course">
 
             <div class="box-space"></div>
 
@@ -175,7 +176,7 @@
 
         <hr>
 
-        <div class="textbox">
+        <div class="textbox insalata">
 
             <div class="box-space"></div>
 
@@ -206,7 +207,7 @@
 
         <hr>
 
-        <div class="textbox">
+        <div class="textbox dolci">
 
             <div class="box-space"></div>
 
@@ -298,6 +299,21 @@
     <div class="box-space"></div>
 
  </footer>
+
+ <!-- Hm, where to put javascript/jquery? -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script src="/code.js"></script>
+
+<!-- <script>
+    $(".nav-antipasti").click(function () {
+        $('html,body').animate({
+            scrollTop: $(".dolci").offset().top
+        },
+            'slow');
+    });
+</script> -->
 
 </body>
 
