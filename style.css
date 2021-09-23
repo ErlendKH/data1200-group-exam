@@ -24,6 +24,7 @@ li a:hover{
 }
 body{
     background-color: gainsboro;
+    overflow-x: hidden;
 }
 .vertical-menu{
     width:300px;
@@ -58,12 +59,42 @@ background-color: aquamarine;
 
 .bilder{
 
-    width:400px;
-    height:300px;
-    margin-left: 50px;
+    width:25vw;
+    height:33vh;
+    margin-top:  100px;
+    position: static;
 
 }
 .menudiv{
     margin-left: 400px;
     margin-top: -600px;
 }
+figure{
+    display: inline-block;
+}
+.img-text{
+    position:   relative;
+    top: 8px;
+    right: 16px;
+}
+.figcaption-t{
+   max-width: 20vw;
+   position: absolute;
+}
+.figcaption-food-description{
+    max-width: 20vw;
+    position: absolute;
+    padding-top: 50px;
+ }
+.price {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding:5px;
+    background-color: rgb(211, 36, 36);
+    color: white;
+   
+  }
+  .img{
+      position:relative;
+  }
