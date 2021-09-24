@@ -1,74 +1,67 @@
 
 
-ul {
-    list-style-type: none;
-    padding-left: 5vw;
-    padding-bottom: 100px;
-    
-}
-li{
-    float: left;
-    margin:3vw;
-    display: inline;
-    padding:0vw;
-    font-size:1.5rem;
-    background-color: greenyellow;
-}
-li a{
-    display:block;
-    padding: 15px 50px;
-}
-li a:hover{
-    background-color: gold;
-    text-decoration: underline;
-}
 body{
-    background-color: gainsboro;
+
     overflow-x: hidden;
-}
-.vertical-menu{
-    width:300px;
-    height: 500px;
-    overflow-y: auto;
-    margin-top: 150px;
-    position:sticky;
-    text-align: left;
-    left:20px;
 
-    
+   
 }
-.vertical-menu a{
-color: black;
-display: block;
-padding:5px;
-border: 1px solid red;
-}
-.vertical-menu a:hover{
-color:red;
-background-color: aquamarine;
-}
-#menu{
-    font-size: 2.5rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    top:20%;
-    width:100%;
-    border-bottom: solid red;
-    margin-left:50px;
+#backgroundimg{
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    opacity: 0.9;
+    z-index: -2;
+    margin:-8px;
 
+}
+#backgroundimg-dim{
+    background: rgba(211, 211, 211, 0.85);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+#heading{
+    text-align: center;
+    margin-top: 20vh;
+    background-color: rgb(238, 238, 238);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 2vh;
+}
+#heading-top{
+    color: rgb(177, 76, 76);
+    font-size: 5rem;
+    font-family: Snell Roundhand, cursive;
+}
+#heading-bottom{
+font-size: 3rem;
+font-family: Snell Roundhand, cursive;
 }
 
 .bilder{
 
-    width:25vw;
-    height:33vh;
-    margin-top:  100px;
-    position: static;
+    width:33vw;
+    height:40vh;
+    position: relative;
+    margin-top: 50px;
 
 }
 .menudiv{
-    margin-left: 400px;
-    margin-top: -600px;
+    margin-left: 10vw;
+    margin-top:  0px;
+    margin-right: 10vw;
 }
+#menu{
+    font-size: 4.5rem;
+    font-family: Snell Roundhand, cursive;
+    width:100%;
+    border-bottom: solid red;
+    margin-top: 20vh;
+}
+
 figure{
     display: inline-block;
 }
@@ -80,21 +73,70 @@ figure{
 .figcaption-t{
    max-width: 20vw;
    position: absolute;
+   font-size: 2.5em;
+   font-family: Snell Roundhand, cursive;
 }
 .figcaption-food-description{
-    max-width: 20vw;
+    max-width: 25vw;
     position: absolute;
-    padding-top: 50px;
+    padding-top: 80px;
+    font-size: 1.5rem;
+
+ }
+ .figcaption-food-allergens{
+     color: red;
+     margin-top: 15rem;
+     font-size: 1.5rem;
  }
 .price {
     position: absolute;
-    bottom: 0px;
+    bottom: -20px;
     right: 0px;
-    padding:5px;
+    padding:10px;
     background-color: rgb(211, 36, 36);
     color: white;
+    font-size: 1.5rem;
    
   }
   .img{
       position:relative;
+  }
+  .courses{
+      text-align: center;
+      background-color: rgb(238, 238, 238);
+      padding: 50px;
+      font-size: 4rem;
+      color: rgb(177, 76, 76);
+      margin-top: 0px;
+      font-family: Snell Roundhand, cursive;
+  }
+
+  #about-us{
+      background-color: rgb(238, 238, 238);
+      padding-bottom:300px;
+      padding-top:100px;
+  }
+  #opening-hours{
+      padding-left: 20vw;
+      font-size: 2rem;
+      position: absolute;
+  }
+  #location{
+padding-left: 40vw;
+position: absolute;
+font-size: 2rem;
+  }
+  #contact{
+padding-left: 60vw;
+position: absolute;
+font-size: 2rem;
+margin-top: 0px;
+  }
+  #logo{
+position: absolute;
+padding-top: 200px;
+padding-left: 85vw;
+font-size: 2rem;
+font-family: Chalkduster, fantasy;
+font-style: italic;
   }
