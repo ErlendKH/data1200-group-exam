@@ -72,6 +72,8 @@ nav{
     /* color: #fff; */
     padding: 8px 0;
     position: relative;
+
+    cursor: pointer;
 }
 
 .nav-links li a::after{
@@ -106,6 +108,8 @@ nav{
     text-decoration: none;
     padding: 8px 0;
     position: relative;
+
+    cursor: pointer;
 }
 
 .footer-link a::after{
