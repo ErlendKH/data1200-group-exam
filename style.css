@@ -322,3 +322,6 @@ footer{
     text-align: left;
 }
 
+.reflection{
+    min-height: 600px; /*  */
+}
