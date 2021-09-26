@@ -92,7 +92,6 @@ nav{
 }
 
 .links{
-    /* color:darkslateblue; */
     color:darkred;
 }
 
@@ -110,6 +109,8 @@ nav{
     position: relative;
 
     cursor: pointer;
+
+    color: darkred;
 }
 
 .footer-link a::after{
