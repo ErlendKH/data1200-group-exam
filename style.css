@@ -159,6 +159,21 @@ h2{
     font-family: "Romanica", sans-serif;
 }
 
+.headline-container{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.headline-block{
+    display: inline-block;
+    padding: 0 4px 0 4px;
+}
+
+.headline-span{
+    font-size: 42px;
+    font-family: "Romanica", sans-serif;
+}
+
 .intro-text{
     font-size: 28px;
     padding: 4px;
