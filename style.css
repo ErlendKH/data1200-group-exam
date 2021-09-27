@@ -203,6 +203,11 @@ h2{
 
 }
 
+hr{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .textbox > * {
     /* display: flex; */
     /* justify-content: center; */
@@ -213,12 +218,17 @@ h2{
     padding-top: 32px;
 }
 
+.small-box-space{
+    padding-top: 16px;
+}
+
 .background-image{
     background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
     text-align: center;
+    /* margin-left: 32px; */
 }
 
 .item-container{
@@ -243,6 +253,12 @@ h2{
 
     padding: 8px;
 
+}
+
+.food-card img{
+    /* width: 100%; */
+    max-height: 200px;
+    /* padding: 32px; */
 }
 
 
