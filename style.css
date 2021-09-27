@@ -213,6 +213,10 @@ h2{
     padding-top: 32px;
 }
 
+.small-box-space{
+    padding-top: 16px;
+}
+
 .background-image{
     background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
     background-repeat: no-repeat;
