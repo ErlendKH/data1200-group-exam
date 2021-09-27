@@ -203,6 +203,11 @@ h2{
 
 }
 
+hr{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .textbox > * {
     /* display: flex; */
     /* justify-content: center; */
@@ -223,6 +228,7 @@ h2{
     background-size:cover;
     background-attachment: fixed;
     text-align: center;
+    /* margin-left: 32px; */
 }
 
 .item-container{
@@ -353,8 +359,4 @@ footer{
 
 .reflection{
     min-height: 600px; /*  */
-}
-hr{
-    margin-left: 10%;
-    margin-right: 10%;
 }
