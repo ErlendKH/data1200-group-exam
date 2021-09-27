@@ -365,13 +365,33 @@ footer{
     text-align: left;
 }
 
+.reflection-textbox{
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    /* width: 1024px; */
+
+/*     margin-left: 30%;
+    margin-right: 30%; */
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+
 .reflection{
     /* min-height: 600px; */ /*  */
-    text-align: left;
+    /* text-align: left; */
 /*     padding-left: 32px;
     padding-right: 32px; */
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 70ch; /* Between 55-75 characters. */
+
+}
+
+.reflection > * {
+    text-align: left;
 }
 
 .reflection p{
