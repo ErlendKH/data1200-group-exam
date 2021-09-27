@@ -354,3 +354,7 @@ footer{
 .reflection{
     min-height: 600px; /*  */
 }
+hr{
+    margin-left: 10%;
+    margin-right: 10%;
+}
