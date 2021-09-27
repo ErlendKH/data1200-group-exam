@@ -31,3 +31,18 @@ $(document).ready(function(){
     });
 
 });
+
+function toggle(it) {
+    if (it.height == 200)
+      {
+        it.style.width = "400px" ;
+         it.style.height = "400px";
+         it.style.cursor = "zoom-out";
+        }
+    else
+      {
+        it.style.width = "200px"; 
+        it.style.height = "200px";
+        it.style.cursor = "zoom-in";
+    }
+  }
