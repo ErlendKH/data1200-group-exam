@@ -365,6 +365,15 @@ footer{
     text-align: left;
 }
 
+.footer-list{
+    text-align: left;
+}
+
+.footer-list li{
+    display: inline-block;
+    width: 100%;
+}
+
 .reflection-container{
     /* display: inline-block; */
 }
