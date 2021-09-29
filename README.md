@@ -10,7 +10,7 @@
 ---
 ## Structure of project
 
-We have two `index` files. One before accessibility check and one after. The `style.css`file 
+We have two `index` and stylesheets files - versions for before and after doing an accessibility check with AChecker.
 
 
 
