@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Italia Café</title>
+    <title>Italianou</title>
 
-    <link rel="stylesheet" href="styleBeforeAccessibilityCheck.css" type="text/css">
+    <link rel="stylesheet" href="/version_2_after/style.css" type="text/css">
 
 </head>
 
@@ -21,14 +21,16 @@
         <nav>
             <!-- <img src="images/logo.png" alt="logo" class="logo"> -->
 
-            <p class="title">ITALIANOU</p>
+            <p class="title">Italianou</p>
+
+            <!-- Note: Didn't work to add <span lang="fr" dir="ltr">, WCAG still unhappy. -->
 
             <ul class="nav-links">
                 <!-- <li><a href="">HOME</a></li> -->
-                <li class="nav-antipasti links"><a>ANTIPASTI</a></li>
+                <li class="nav-antipasti links"><a><span lang="fr" dir="ltr">ANTIPASTI</span></a></li>
+                <li class="nav-insalata links"><a><span lang="fr" dir="ltr">INSALATA</span></a></li>
                 <li class="nav-main-course links"><a>MAIN COURSE</a></li>
-                <li class="nav-insalata links"><a>INSALATA</a></li>
-                <li class="nav-dolci links"><a>DOLCI</a></li>
+                <li class="nav-dolci links"><a><span lang="fr" dir="ltr">DOLCI</span></a></li>
                 <li class="btn">ORDER</li>
             </ul>
 
@@ -51,11 +53,14 @@
         
             <div class="textbox">
         
-                <div class="box-space"></div><!-- Inner padding -->
+                <div class="small-box-space"></div><!-- Inner padding -->
         
                 <h1>Italianou</h1>
+
+                <!-- <hr class="short-hr"> -->
+
                 <p class="intro-text">
-                    The place to experience Italy in Oslo.
+                    The place to experience Italian dining in Oslo.
                 </p>
         
                 <div class="box-space"></div><!-- Inner padding -->
@@ -68,8 +73,11 @@
             <div class="textbox antipasti">
         
                 <div class="box-space"></div><!-- Inner padding -->
-        
-                <h2>ANTIPASTI</h2>
+                
+                <div class="header-container">
+                    <h2 class="headline-block"><span class="special-font" lang="fr" dir="ltr">ANTIPASTI</span></h2>
+                    <span class="headline-block headline-span">APPETIZER</span>                    
+                </div>
         
                 <div class="item-container">
         
@@ -78,22 +86,26 @@
                             Bruschetta
                         </p>
                         <p class="food-price">
-                            39
+                            39,-
                         </p>
-        
-                        <br>
         
                         <p class="food-description">
                             Bruschetta is an antipasto from Italy consisting of grilled bread rubbed with garlic and
                             topped with
-                            olive oil and salt.
+                            olive oil, cherry tomatoes, basil, mozzarella and salt.
                         </p>
-        
-                        <br>
         
                         <p class="food-allergens">
                             Contains: Dairy, Gluten/Wheat
                         </p>
+                    </div>
+
+                    <div class="food-card">
+                        <img
+                            src="/media/antipasti-bruschetta-4-389px.jpg"
+                            alt="Antipasti Appetizer Burschetta Bread"
+                            onclick="toggle(this)"
+                        >
                     </div>
         
                 </div>
@@ -102,7 +114,55 @@
         
             </div>
         
-            <hr>
+            <!-- <hr> -->
+        
+            <!-- Insalata -->
+            <div class="textbox insalata">
+        
+                <div class="box-space"></div><!-- Inner padding -->
+        
+                <div class="header-container">
+                    <h2 class="headline-block"><span class="special-font" lang="fr" dir="ltr">INSALATA</span></h2>
+                    <span class="headline-block headline-span">SALAD</span>                    
+                </div>
+
+                <!-- <h2>INSALATA</h2> -->
+        
+                <div class="item-container">
+        
+                    <div class="food-card">
+                        <p class="food-name">
+                            Caesar
+                        </p>
+                        <p class="food-price">
+                            109,-
+                        </p>
+                        <p class="food-description">
+                            A Caesar salad is a green salad of romaine lettuce and croutons dressed with lemon juice,
+                            olive oil,
+                            egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black
+                            pepper.
+                        </p>
+                        <p class="food-allergens">
+                            Contains: Eggs, Dairy
+                        </p>
+                    </div>
+
+                    <div class="food-card">
+                        <img
+                            src="/media/insalata-caesar-2.jpg"
+                            alt="Insalata Caesar Salad"
+                            onclick="toggle(this)"
+                        >
+                    </div>
+        
+                </div>
+        
+                <div class="box-space"></div><!-- Inner padding -->
+        
+            </div>
+
+            <!-- <hr> -->
         
             <!-- Main course -->
             <div class="textbox main-course">
@@ -118,7 +178,7 @@
                             Carbonara
                         </p>
                         <p class="food-price">
-                            129
+                            129,-
                         </p>
                         <p class="food-description">
                             Carbonara is an Italian pasta dish from Rome made with eggs, hard cheese, cured pork, and
@@ -135,7 +195,7 @@
                             Bolognese
                         </p>
                         <p class="food-price">
-                            129
+                            129,-
                         </p>
                         <p class="food-description">
                             Spaghetti bolognese consists of spaghetti (long strings of pasta) with an Italian ragù (meat
@@ -152,7 +212,7 @@
                             Lasagne
                         </p>
                         <p class="food-price">
-                            149
+                            149,-
                         </p>
                         <p class="food-description">
                             an Italian dish made of stacked layers of lasagne alternating with fillings such as ragù,
@@ -168,7 +228,7 @@
                             Capricciosa
                         </p>
                         <p class="food-price">
-                            109
+                            109,-
                         </p>
                         <p class="food-description">
                             Pizza capricciosa is a style of pizza in Italian cuisine prepared with mozzarella cheese,
@@ -186,49 +246,19 @@
         
             </div>
         
-            <hr>
-        
-            <!-- Insalata -->
-            <div class="textbox insalata">
-        
-                <div class="box-space"></div><!-- Inner padding -->
-        
-                <h2>INSALATA</h2>
-        
-                <div class="item-container">
-        
-                    <div class="food-card">
-                        <p class="food-name">
-                            Caesar
-                        </p>
-                        <p class="food-price">
-                            109
-                        </p>
-                        <p class="food-description">
-                            A Caesar salad is a green salad of romaine lettuce and croutons dressed with lemon juice,
-                            olive oil,
-                            egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black
-                            pepper.
-                        </p>
-                        <p class="food-allergens">
-                            Contains: Eggs
-                        </p>
-                    </div>
-        
-                </div>
-        
-                <div class="box-space"></div><!-- Inner padding -->
-        
-            </div>
-        
-            <hr>
+            <!-- <hr> -->
         
             <!-- Dolci -->
             <div class="textbox dolci">
         
                 <div class="box-space"></div><!-- Inner padding -->
         
-                <h2>DOLCI</h2>
+                <div class="header-container">
+                    <h2 class="headline-block"><span class="special-font" lang="fr" dir="ltr">DOLCI</span></h2>
+                    <span class="headline-block headline-span">DESSERT</span>                    
+                </div>
+
+                <!-- <h2>DOLCI</h2> -->
         
                 <div class="item-container">
         
@@ -237,7 +267,7 @@
                             Tiramisu
                         </p>
                         <p class="food-price">
-                            39
+                            39,-
                         </p>
                         <p class="food-description">
                             Alternating layers of Mascarpone and Biscuit Cuilliere brushed with Coffee Syrup, topped
@@ -247,6 +277,14 @@
                         <p class="food-allergens">
                             Contains: Dairy, Wheat/Gluten, Eggs
                         </p>
+                    </div>
+
+                    <div class="food-card">
+                        <img
+                            src="/media/dolci-tiramisu-3.jpg"
+                            alt="Dolci Dessert Tiramisu Cake"
+                            onclick="toggle(this)"
+                        >
                     </div>
         
                 </div>
@@ -265,7 +303,7 @@
 <footer>
 
     <div class="box-space"></div>
-    
+
     <div class="footer-card">
 
         <div class="footer-box">
@@ -273,7 +311,40 @@
             <p class="footer-title">
                 Restaurant
             </p>
+            
+            <address>
+            <ul class="footer-list">
 
+                <li>
+                    <p class="footer-info">
+                        11:00 - 19:00 Daily
+                    </p>
+                </li>
+                <li>
+                    <p class="footer-info">
+                        Romaveien 1
+                    </p>
+                </li>
+                <li>
+                    <p class="footer-info">
+                        0105 Oslo
+                    </p>
+                </li>
+                <li>
+                    <p class="footer-info">
+                        +47 100 604 800
+                    </p>
+                </li>
+                <li>
+                    <p class="footer-info footer-link">
+                        <a href="mailto:info@italianou.com">info@italianou.com</a>
+                    </p>
+                </li>
+
+            </ul>
+        </address>
+
+<!-- 
             <p class="footer-info">
                 11:00 - 19:00 Daily
             </p>
@@ -292,7 +363,8 @@
 
             <p class="footer-info">
                 info@italianou.com
-            </p> 
+            </p>
+ -->
 
         </div>
 
@@ -302,23 +374,45 @@
                 Work at Italianou
             </p>
 
-            <p class="footer-info footer-link">
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-info">
+                            Open Positions
+                    </p>
+                </li>
+                <li>
+                    <p class="footer-info">
+                            Career
+                    </p>
+                </li>
+                <li>
+                    <p class="footer-info">
+                            Student Opportunities
+                    </p>
+                </li>
+
+            </ul>
+
+            <!--             
+            <p class="footer-info">
                 <a>
                     Open Positions
                 </a>
             </p>
 
-            <p class="footer-info footer-link">
+            <p class="footer-info">
                 <a>
                     Career
                 </a>
             </p>
 
-            <p class="footer-info footer-link">
+            <p class="footer-info">
                 <a>
                     Student Opportunities
                 </a>
             </p>
+            -->
 
         </div>
 
@@ -328,95 +422,65 @@
                 More Information
             </p>
 
-            <p class="footer-info footer-link">
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-info">
+                            FAQ
+                    </p>
+                </li>
+                <li>
+                    <p class="footer-info">
+                            About Cookies
+                    </p>
+                </li>
+                <li>
+                    <p class="footer-info">
+                            Policies
+                    </p>
+                </li>
+
+            </ul>
+
+            <!-- 
+            <p class="footer-info">
                 <a>
                     FAQ
                 </a>
             </p>
 
-            <p class="footer-info footer-link">
+            <p class="footer-info">
                 <a>
                     About Cookies
                 </a>
             </p>
 
-            <p class="footer-info footer-link">
+            <p class="footer-info">
                 <a>
                     Policies
+                </a>
+            </p>
+             -->
+
+        </div>
+
+        <div class="footer-box">
+
+            <p class="footer-title">
+                For Carlos
+            </p>
+
+            <p class="footer-info footer-link">
+                <a href="reflection.html">
+                    Reflection Note
                 </a>
             </p>
 
         </div>
 
-<!--         <div class="footer-box">
+    </div>
 
-            <p class="footer-title">
-                Contact
-            </p>
-
-            <p class="footer-info">
-                Romaveien 1, Oslo, Norway
-            </p>
-
-            <p class="footer-info">
-                +47 100 604 800
-            </p>
-
-            <p class="footer-info">
-                italianou@contact.com
-            </p> 
-
-        </div> -->
-    
-        <!-- 
-        <div class="footer-box">
-    
-            <p class="footer-title">
-                Opening hours
-            </p>
-    
-            <p class="footer-info">
-                11:00 - 19:00 Daily
-            </p>
-    
-        </div>
-
-        <div class="footer-box">
-            <p class="footer-title">
-                Location
-            </p>
-    
-            <p class="footer-info">
-                Romaveien 1, Oslo, Norway
-            </p>
-        </div>
-        
-        <div class="footer-box">
-        
-            <p class="footer-title">
-                Booking and ordering
-            </p>
-        
-            <p class="footer-info">
-                +47 100 604 800
-            </p>
-        
-        </div>
-
-        <div class="footer-box">
-            <p class="footer-title">
-                General enquiries
-            </p>
-        
-            <p class="footer-info">
-                italianou-info@contact.com
-            </p>            
-        </div>
-         -->
-        
-        </div>
-
-    <p class="footer-name">ITALIANOU</p>
+    <p class="footer-name">Italianou</p>
 
     <div class="box-space"></div>
 
@@ -424,7 +488,9 @@
 
  <!-- Script -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<noscript></noscript>
 <script src="/code.js"></script>
+<noscript></noscript>
 
 </body>
 
