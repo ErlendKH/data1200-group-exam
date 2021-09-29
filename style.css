@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: "poppins", sans-serif; */
     font-family: "Arial", sans-serif;
     box-sizing: border-box;
 }
@@ -13,11 +12,6 @@
 }
 
 body{
-    /* font-family: HN_roman; */
-
-/*     background-image: url("https://www.prior.no/assets/images/_1000x1000_crop_center-center_none/Pizza-med-kylling-tomat-ruccola.jpg");
-    background-repeat: no-repeat;
-    background-size:cover; */
 
 }
 
@@ -28,9 +22,7 @@ body{
     padding: 0 0;
 
     background: whitesmoke;
-    /* position: relative; */
     position: fixed;
-    
 }
 
 nav{
@@ -69,7 +61,7 @@ nav{
 
 .nav-links li a{
     text-decoration: none;
-    /* color: #fff; */
+
     padding: 8px 0;
     position: relative;
 
@@ -129,10 +121,9 @@ nav{
 }
 
 .content{
-     /* Can I refer to the height of the header? */
+     
 }
 
-/* Is there a better way? ... */
 .under-header{
     padding-top: 64px;
 }
@@ -143,9 +134,7 @@ nav{
 }
 
 h1{
-    /* padding: 8px; */
     font-size: 72px;
-    /* padding: 4px; */
     color:darkred;
 
     font-family: "Romanica", sans-serif;
@@ -153,7 +142,6 @@ h1{
 
 h2{
     font-size: 42px;
-    /* padding: 4px; */
     color:darkred;
 
     font-family: "Romanica", sans-serif;
@@ -171,7 +159,6 @@ h2{
 .headline-block{
     display: inline-block;
     padding: 0 4px 0 4px;
-    /* text-decoration: underline; */
 }
 
 .headline-span{
@@ -187,13 +174,7 @@ h2{
 
 .textbox {
 
-/*     display: flex;
-    justify-content: center;
-    align-items: center; */
-
     background-color: rgba(255, 255, 255, 0.9);
-
-    /* width: 1024px; */
 
     margin-left: 10%;
     margin-right: 10%;
@@ -210,9 +191,7 @@ hr{
 }
 
 .textbox > * {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    
 }
 
 .box-space{
@@ -229,7 +208,6 @@ hr{
     background-size:cover;
     background-attachment: fixed;
     text-align: center;
-    /* margin-left: 32px; */
 }
 
 .item-container{
@@ -240,10 +218,7 @@ hr{
 }
 
 .item-container > * {
-
-    /* vertical-align: middle; */
     display: inline-block;
-
 }
 
 .food-card{
@@ -260,25 +235,20 @@ hr{
 }
 
 .food-card img{
-    /* width: 100%; */
     height: 200px;
-    /* padding: 32px; */
     cursor: zoom-in;
 }
 
 .food-name{
     font-weight: 700;
     display: inline-block;
-    /* text-align: left; */
     float: left;
-
     padding-bottom: 4px;
 }
 
 .food-price{
     font-weight: 700;
     display: inline-block;
-    /* text-align: right; */
     float: right;
 }
 
@@ -308,31 +278,18 @@ hr{
 }
 
 footer{
-    /* background-color: rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 1.0); */
-    /* color: whitesmoke; */
     padding-left: 16px;
     padding-right: 16px;
 }
 
 .footer-card{
-    /* float: left; */
-    /* display: flex; */
-    /* width: 100%; */
-
-    /* box-sizing: border-box; */
-
-    /* justify-items: space-between; */
-
     text-align: center;
-
 }
 
 .footer-card > * {
     display: inline-block;
 
     vertical-align: top;
-
-    /* text-align: left; */
 }
 
 .footer-box{
@@ -340,9 +297,6 @@ footer{
     padding: 16px;
 
     width: 256px;
-
-    /* border: 3px red dashed; */
-
 }
 
 .footer-box > * {
@@ -350,17 +304,12 @@ footer{
 }
 
 .footer-title{
-    /* text-transform: uppercase; */
     font-weight: 700;
     padding-bottom: 8px;
-
     text-align: left;
-
-    /* color: greenyellow; */
 }
 
 .footer-info{
-    /* padding-left: 16px; */
     padding-bottom: 8px;
 
     text-align: left;
@@ -376,7 +325,7 @@ footer{
 }
 
 .reflection-container{
-    /* display: inline-block; */
+    
 }
 
 .reflection-box{
@@ -384,8 +333,6 @@ footer{
     display: inline-block;
 
     background-color: rgba(255, 255, 255, 0.9);
-
-    /* width: 1024px; */
 
     padding-top: 32px;
     padding-bottom: 32px;
