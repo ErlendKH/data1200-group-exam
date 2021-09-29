@@ -5,7 +5,7 @@
 - Gulluzar Acet s322991
 - Majureka Yoganathan s362126
 - Patrick Tufte Strand s364577
-- Erleng Kyrkjerud Hårtveit s349571
+- Erlend Kyrkjerud Hårtveit s349571
 
 ---
 
