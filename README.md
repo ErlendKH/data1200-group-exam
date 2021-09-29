@@ -1,4 +1,4 @@
-# ErlendKH.github.io
+
 ## DATA1200 - Oblig 1
 
 - Marcin Soja s366436
