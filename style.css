@@ -173,7 +173,6 @@ h2{
 }
 
 .textbox {
-
     background-color: rgba(255, 255, 255, 0.9);
 
     margin-left: 10%;
@@ -182,7 +181,6 @@ h2{
 
     padding-top: 32px;
     padding-bottom: 32px;
-
 }
 
 hr{
@@ -222,7 +220,6 @@ hr{
 }
 
 .food-card{
-
     vertical-align: middle;
 
     width: 400px;
@@ -231,7 +228,6 @@ hr{
     padding-bottom: 8px;
     padding-right: 24px;
     padding-left: 24px;
-
 }
 
 .food-card img{
@@ -329,7 +325,6 @@ footer{
 }
 
 .reflection-box{
-
     display: inline-block;
 
     background-color: rgba(255, 255, 255, 0.9);
@@ -339,12 +334,10 @@ footer{
 
     padding-left: 5%;
     padding-right: 5%;
-
 }
 
 .reflection-box > * {
     text-align: left;
-   
 }
 
 .reflection-box p{
