@@ -403,3 +403,7 @@ footer{
 .reflection-box p{
     padding-top: 16px;
 }
+
+.reflection-notes{
+    font-size: 32px;
+}
