@@ -8,7 +8,9 @@
 - Erlend Kyrkjerud Hårtveit s349571
 
 ---
+## Structure of project
 
+We have two index files. One before accessibility check and one after.  
 
 
 
