@@ -13,7 +13,7 @@ Here is a link to the [live website](https://erlendkh.github.io/).
 
 ## Structure of project
 
-We have two `index` and stylesheets files. The versions for before doing the accessibility check with AChecker are within the folder 'version_1_before'. 'fonts' contains the font faces we use for our titles. 'img' contains photos for the food items.
+We have two `index` and stylesheets files. The versions for before doing the accessibility check with AChecker are within the folder `version_1_before`. `fonts` contains the font faces we use for our titles. `img` contains photos for the food items.
 
 
 
