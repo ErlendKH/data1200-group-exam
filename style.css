@@ -392,16 +392,17 @@ footer{
 
     padding-left: 5%;
     padding-right: 5%;
-    max-width: 70ch; /* Between 55-75 characters. */
 
 }
 
 .reflection-box > * {
     text-align: left;
+   
 }
 
 .reflection-box p{
     padding-top: 16px;
+     max-width: 70ch; /* Between 55-75 characters. */
 }
 
 .reflection-notes{
