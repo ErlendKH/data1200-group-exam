@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+p {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+a {
+    color: darkblue;
+}
+
+article {
+    /* margin-top: 4rem; */
+    /* padding: 4rem; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    /* background-color: green; */
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+
+    padding: 4rem;
+}
+
+h2 {
+    color: white;
+    font-size: 1.5rem;
+
+    /* margin-top: 30rem; */
+    /* padding-top: 2rem; */
+    padding-top: 3rem;
+    
+    /* padding-left: 0rem; */
+
+    /* background-color:green; */
+}
+
+figcaption {
+    color: white;
+    font-size: 0.8rem;
+}
+
+figure {
+/*     margin: 0;
+    padding: 0; */
+}
+
+img {
+/*     margin: 0;
+    padding: 0; */
+}
+
+aside {
+    margin-top: 1rem;
+
+    /* background-color: green; */
+}
+
+.content {
+
+    background-image: url("/media/priscilla-du-preez-XkKCui44iM0-unsplash-1920.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed; 
+
+    height: 100%;
+
+/*     width: 100vw;
+    height: 100vh; */
+
+/*     position: relative;
+    z-index: 1; */
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.alpha{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 24px;
+
+    font-weight: bold;
+}
+
+nav > p {
+    /* margin: 0; */
+    /* padding-left: 24px; */
+    color: black;
+}
+
+.nav-links li {
+    display: inline-block;
+    /* margin: 0 16px; */
+    /* margin-left: 24px; */
+
+    color: darkblue;
+}
+
+.nav-only li {
+    margin-left: 24px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    padding: 8px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-links li a::after{
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+article p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+article button {
+    padding: 1.5rem;
+    color: darkblue;
+    font-weight: bold;
+}
+
+article:first-child h2 {
+    padding-top: 0.5rem;
+}
+
+
+article figcaption {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.textbox {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem 2rem 1rem 2rem;
+    max-width: 70ch;
+
+    /* margin: 0 25%; */
+
+    align-self: center; /* Worked... */
+}
+
+.white-background {
+
+}
+
+.white-background li {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1rem;
+    /* margin: 1rem; */
+    margin-right: 16px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+
+    /* background-color: green; */
+
+}
+
+.images {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+/* Extra small phones  */
+@media only screen and (max-width : 400px) {
+
+}
+
+/* Phones */ 
+@media only screen and (min-width: 400px)
+and (max-width : 600px) {
+
+}
+
+/* Tablets */
+@media only screen and (min-width : 600px) 
+and (max-width: 960px) {
+
+}
+
+/* Desktop */
+@media only screen and (min-width : 1420px) {
+
+    body {
+
+/*         background-size: contain;
+        background-position: center;
+
+        display: flex;
+        justify-content: center; */
+
+        /* background-color: blue; */
+
+/*         display: flex;
+        justify-content: center; */
+
+    }
+
+    .content {
+
+        margin: 0 15vh;
+
+        /* min-width: 100vh; */
+
+        /* min-width: 1920px; */
+
+        /* width: 100%; */
+
+        /* background-color: red; */
+
+        /* max-width: 920px; */
+   
+    }
+
+}
