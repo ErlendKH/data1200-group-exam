@@ -14,6 +14,10 @@ p {
     color: white;
 }
 
+p a {
+    color: aqua;
+}
+
 li {
     color: white;
 }
@@ -53,14 +57,32 @@ h2 {
     /* background-color:green; */
 }
 
+h3 {
+    color: white;
+    font-size: 1.2rem;
+    font-style:italic;
+    padding: 1.5rem 0 0 0;
+}
+
 figcaption {
     color: white;
+    font-size: 0.8rem;
+}
+
+figcaption a {
+    color: aqua;
     font-size: 0.8rem;
 }
 
 figure {
 /*     margin: 0;
     padding: 0; */
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0 0.5rem 0;
 }
 
 img {
@@ -165,13 +187,13 @@ article button {
     font-weight: bold;
 }
 
-article:first-child h2 {
+article h2:first-child {
     padding-top: 0.5rem;
 }
 
 
 article figcaption {
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     padding-bottom: 2rem;
 }
 
@@ -201,11 +223,11 @@ article figcaption {
 
 }
 
-.images {
+/* .images {
     width: 100%;
     height: auto;
-    padding: 1rem;
-}
+    padding: 1rem 0 0.5rem 0;
+} */
 
 /* Extra small phones  */
 @media only screen and (max-width : 400px) {
