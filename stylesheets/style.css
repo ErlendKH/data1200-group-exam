@@ -18,6 +18,10 @@ p a {
     color: aqua;
 }
 
+p span {
+    color:lightpink;
+}
+
 li {
     color: white;
 }
@@ -187,7 +191,7 @@ article button {
     font-weight: bold;
 }
 
-article h2:first-child {
+article:first-child h2:first-child {
     padding-top: 0.5rem;
 }
 
