@@ -300,6 +300,15 @@ video {
     color: black;
 }
 
+#mobile-menuicon {
+    display: none;
+}
+
+#mobile-header {
+    display: none;
+}
+
+
 /* ONLY FOR THE FUN PAGE: END */
 
 /* Extra small phones  */
@@ -339,7 +348,7 @@ and (max-width : 600px) {
     
     }
     
-    .mobile-nav{
+    #mobile-header{
         display: block;
         height: 50px;
         width: 100%;
@@ -367,7 +376,7 @@ and (max-width : 600px) {
         display: block;
     }
     
-    #mobil{
+    #mobile-menuicon{
         position: absolute;
         width: 70px;
         height: auto;
