@@ -19,12 +19,12 @@
         
                 <header>
 
-                    <a class="skip-link" href='#main'>Skip to content</a>
+                    <img src="media/menu.png" alt="es" id="mobil" onclick="showMenu()">
+                    <a class="mobile-nav" ></a>
+
         
                     <nav>
-        
-                        <p>Student Group 20</p>
-        
+                
                         <ul class="nav-links nav-only">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="/pages/reflection.html">Reflection</a></li>
@@ -36,7 +36,7 @@
                     </nav>
         
                 </header>
-        <main id="main">
+        <main>
         
             <h1>Being A First-Year Student At OsloMet</h1>
         
@@ -44,7 +44,7 @@
                 
                     <article>
 
-                        <h2>Beginning Of Studies</h2>
+                        <h2>Beginning Of Studiess</h2>
 
                         <p>It is the first year of new studies. A lot of new courses, curriculums, and a surprisingly high degree of
                             freedom. Still, it is important not to become complacent and to keep up with the lectures to be able to
@@ -55,11 +55,11 @@
                             difficult varies based on the student. Some find programming difficult, while some find discrete
                             mathematics the most hard. </p>
                 
+                        <p>Continue to the other pages to learn more about our experience.</p>
+                
                     </article>
                 
                     <aside>
-
-                        <p>Continue to the other pages to learn more about our experience.</p>
                 
                         <ul class="nav-links white-background">
                             <li><a href="/pages/reflection.html">Reflection</a></li>
@@ -76,13 +76,20 @@
         
         <footer>
         
-            <!-- <p>Footer</p> -->
+            <p>Footer</p>
         
         </footer>
 
             </div>
         
         </div>
+<script>
 
+function showMenu() {
+    var navBar = document.getElementsByClassName("nav-only");
+    navBar[0].classList.toggle("mobile-nav-on")
+
+}
+</script>
 </body>
 </html>

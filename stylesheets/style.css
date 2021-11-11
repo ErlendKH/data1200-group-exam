@@ -332,22 +332,55 @@ video {
 @media only screen and (min-width: 400px)
 and (max-width : 600px) {
     
-    * {
-        font-size: 1rem;
-    }
+    nav{
 
-    nav {
-        padding: 1rem 0.5rem;
+        display: block;
+        padding: 0;
+    
     }
-
-    nav p {
+    
+    .mobile-nav{
+        display: block;
+        height: 50px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .nav-only{
         display: none;
+        position: absolute;
+        width: 100%;
     }
-
-    h1 {
-        font-size: 3rem;
-        padding-left: 2rem;
+    .nav-links li{
+        display: block;
+        padding: 10px;
+        width: 100%;
+        background-color: rgb(168, 168, 168);
+        
     }
+    
+    .nav-only li {
+        margin-left: 0;
+        border-bottom: 1px solid black;
+    }
+    
+    .mobile-nav-on {
+        display: block;
+    }
+    
+    #mobil{
+        position: absolute;
+        width: 70px;
+        height: auto;
+        right: 5px;
+        top: 10px;
+        cursor: pointer;
+        
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+    
 
 }
 
