@@ -95,7 +95,7 @@ img {
 }
 
 aside {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
 
     /* background-color: green; */
 }
@@ -107,6 +107,15 @@ aside p {
 footer {
     padding-top: 2rem;
 }
+
+section {
+    padding-top: 2rem;
+}
+
+section:nth-of-type(1) {
+    padding-top: 0rem;
+}
+
 
 .content {
 
@@ -206,7 +215,7 @@ article:first-child h2:first-child {
 
 article figcaption {
     /* padding-left: 1rem; */
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .textbox {
@@ -279,32 +288,12 @@ and (max-width: 960px) {
 
     body {
 
-/*         background-size: contain;
-        background-position: center;
-
-        display: flex;
-        justify-content: center; */
-
-        /* background-color: blue; */
-
-/*         display: flex;
-        justify-content: center; */
 
     }
 
     .content {
 
         margin: 0 15vh;
-
-        /* min-width: 100vh; */
-
-        /* min-width: 1920px; */
-
-        /* width: 100%; */
-
-        /* background-color: red; */
-
-        /* max-width: 920px; */
    
     }
 

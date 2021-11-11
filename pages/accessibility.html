@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,20 +10,21 @@
     <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
     <!-- <link rel="stylesheet" href="/stylesheets/accessibility.css" type="text/css"> -->
 </head>
+
 <body>
 
     <div class="content">
-        
+
         <div class="alpha">
-    
+
             <header>
 
                 <a class="skip-link" href='#main'>Skip to content</a>
-    
+
                 <nav>
-    
+
                     <p>Student Group 20</p>
-    
+
                     <ul class="nav-links nav-only">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="reflection.html">Reflection</a></li>
@@ -30,128 +32,165 @@
                         <li><a href="information.html">Information</a></li>
                         <li><a href="fun.html">Fun</a></li>
                     </ul>
-    
+
                 </nav>
-    </header>
-    <main id="main">
-    
-        <h1>Accessibility</h1>
-    
-        <div class="textbox">
-    
-            <article>
-                <h2>Definitions</h2>
-    
-                <p>Accessibility has the goal of removing all barriers (technical, physical or cognitive) to serving the
-                    product
-                    or service to someone. Web accessibility is the the inclusive practice of removing barriers that prevent
-                    interaction with, or access to, websites by people with disabilities. It also includes the degree of
-                    ease
-                    and effectiveness a web system can be accessed and used.</p>
-    
-                <h2>WCAG</h2>
-    
-                <p>In Norway, web accessibility is required by law in which websites need to comply with the recommendations
-                    set
-                    by WCAG 2.1 (Web Content Accessibility Guidelines). WCAG follows four key principles with the acronym
-                    “POUR”: (P) Perceivable, (O) Operable, (U) Understandable, and (R) Robust.</p>
-    
-                <h2>Disabilities Affected By Accessibility</h2>
-    
-                <p>Disabilities are grouped into five main categories: (1) <span>visual impairments</span>, (2) <span>auditory impairments</span>, (3)
-                    <span>motor impairments</span>, (4) <span>cognitive impairments</span>, and (5) <span>vestibular disorders and seizures</span>.</p>
-    
-                <h3>Examples Of Best Practices</h3>
-    
-                <p>In regards to <span>visual impairments</span>, the text on the website needs to be clearly visible, and the website
-                    need
-                    to take color blindness into consideration. In the case where the user is blind, the website need to be
-                    suit
-                    screen reading software and navigation through keyboard exclusively. Furthermore, images in context
-                    require
-                    alternative text. In addition, it is useful to have a basic navigation design to further enhance their
-                    web
-                    experience.</p>
-    
-                <p><span>Auditory impairments</span> are important to facilitate for when including audio and videos on the website.</p>
-    
-                <p>Examples of good practices for dealing with <span>motor impairments</span> is full keyboard support, simple
-                    navigation,
-                    and links and buttons of sufficiently large sizes.</p>
-    
-                <p>Examples of good practices for dealing with <span>cognitive impairments</span> are using simple navigation, avoiding
-                    complex sentences, avoiding blinking and moving content, and the ability to pause/stop audio, video, and
-                    animation content.</p>
-    
-                <p>For <span>vestibular disorders and seizures</span>, it is important to avoid flickering or flashing lights, and either
-                    minimize the use of animations and automatic scrolling or give the user accessible control over it (turn
-                    on/off).</p>
-    
-                <h2>Our Use of Automated Tests</h2>
-    
-                <h3>Visual impairments</h3>
-    
-                <figure>
-                    <img src="/media/color-blindness-greyscale-small.jpg"
-                        alt="Normal and color filtered comparison of this front page using the Colorblind Web Page Filter by Toptal">
-                    <figcaption>Normal and greyscale color filtered comparison of the front page. Used the <a
-                        title="Toptal Color Blind Filter - To check a webpage's accessibility for colorblinded individuals"
-                        target="_blank" href="https://www.toptal.com/designers/colorfilter">Colorblind Web
-                        Page Filter by Toptal</a>.</ficaption>
-                </figure>
-    
-                <p>We tested the website’s facilitation for color blindness with <a
-                        title="Toptal Color Blind Filter - To check a webpage's accessibility for colorblinded individuals"
-                        target="_blank" href="https://www.toptal.com/designers/colorfilter">Toptal’s Color Blind Filter</a>.
-                    The greyscale test
-                    shows that most of the text has sufficient contrast. However, the title on the pages could potentially
-                    fail
-                    WCAG’s AAA contrast ratio requirement. This in turn is difficult for us to test with the <a
-                        title="WebAIM Contrast Checker - Finds the contrast ratio between a foreground and background color."
-                        href="https://webaim.org/resources/contrastchecker/" target="_blank">WebAIM Contrast Checker</a>,
-                    because we do not use a
-                    hardcoded color value for the background, but rather alpha filters on top of a fairly bright image to
-                    darken it. Then again,
-                    <a title="WAVE Web Accessibility Evaluation Tool - A tool that automatically scans a particular webpage for accessibility issues."
-                        href="https://wave.webaim.org/" target="_blank">WAVE’s web accessibility evaluation tool</a> did not
-                    identify a contrast error.
-                </p>
+            </header>
+            <main id="main">
 
-                <figure>
-                    <img alt="Screenshot of the front page with focus on Skip to content button showing in the top-left corner" src="/media/header-skip-to-content.jpg">
-                    <figcaption>Screenshot of the front page with focus on "Skip to content" button showing in the top-left corner.</figcaption>
-                </figure>
+                <h1>Accessibility</h1>
 
-                <p>To further enhance the accessibility for visually impaired individuals, we have added full keyboard support. By pressing the TAB button, the user will first see a “Skip to content” button. Next, the navigation links will be highlighted one by one with a black border. The user can activate any of the focused links with ENTER, and otherwise move vertically with the up and down arrow keys. </p>
-    
-            </article>
-    
-            <aside>
-    
-                <p>Continue to the other pages to learn more about our experience.</p>
-                
-                <ul class="nav-links white-background">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="reflection.html">Reflection</a></li>
-                    <li><a href="information.html">Information</a></li>
-                    <li><a href="fun.html">Fun</a></li>
-                </ul>
-    
-            </aside>
-    
+                <div class="textbox">
+
+                    <article>
+                        <h2>Definitions</h2>
+
+                        <p>Accessibility has the goal of removing all barriers (technical, physical or cognitive) to
+                            serving the
+                            product
+                            or service to someone. Web accessibility is the the inclusive practice of removing barriers
+                            that prevent
+                            interaction with, or access to, websites by people with disabilities. It also includes the
+                            degree of
+                            ease
+                            and effectiveness a web system can be accessed and used.</p>
+
+                        <h2>WCAG</h2>
+
+                        <p>In Norway, web accessibility is required by law in which websites need to comply with the
+                            recommendations
+                            set
+                            by WCAG 2.1 (Web Content Accessibility Guidelines). WCAG follows four key principles with
+                            the acronym
+                            “POUR”: (P) Perceivable, (O) Operable, (U) Understandable, and (R) Robust.</p>
+
+                        <h2>Disabilities Affected By Accessibility</h2>
+
+                        <p>Disabilities are grouped into five main categories: (1) <span>visual impairments</span>, (2)
+                            <span>auditory impairments</span>, (3)
+                            <span>motor impairments</span>, (4) <span>cognitive impairments</span>, and (5)
+                            <span>vestibular disorders and seizures</span>.
+                        </p>
+
+                        <h3>Examples Of Best Practices</h3>
+
+                        <p>In regards to <span>visual impairments</span>, the text on the website needs to be clearly
+                            visible, and the website
+                            need
+                            to take color blindness into consideration. In the case where the user is blind, the website
+                            need to be
+                            suit
+                            screen reading software and navigation through keyboard exclusively. Furthermore, images in
+                            context
+                            require
+                            alternative text. In addition, it is useful to have a basic navigation design to further
+                            enhance their
+                            web
+                            experience.</p>
+
+                        <p><span>Auditory impairments</span> are important to facilitate for when including audio and
+                            videos on the website.</p>
+
+                        <p>Examples of good practices for dealing with <span>motor impairments</span> is full keyboard
+                            support, simple
+                            navigation,
+                            and links and buttons of sufficiently large sizes.</p>
+
+                        <p>Examples of good practices for dealing with <span>cognitive impairments</span> are using
+                            simple navigation, avoiding
+                            complex sentences, avoiding blinking and moving content, and the ability to pause/stop
+                            audio, video, and
+                            animation content.</p>
+
+                        <p>For <span>vestibular disorders and seizures</span>, it is important to avoid flickering or
+                            flashing lights, and either
+                            minimize the use of animations and automatic scrolling or give the user accessible control
+                            over it (turn
+                            on/off).</p>
+
+                        <h2>Use of Automated Tests</h2>
+
+                        <!-- <h3>Visual impairments</h3> -->
+
+                        <section>
+                            <figure>
+                                <img src="/media/color-blindness-greyscale-small.jpg"
+                                    alt="Normal and color filtered comparison of this front page using the Colorblind Web Page Filter by Toptal">
+                                <figcaption>Normal and greyscale color filtered comparison of the front page. Used the
+                                    <a title="Toptal Color Blind Filter - To check a webpage's accessibility for colorblinded individuals"
+                                        target="_blank" href="https://www.toptal.com/designers/colorfilter">Colorblind
+                                        Web
+                                        Page Filter by Toptal</a>.</ficaption>
+                            </figure>
+
+                            <p>We tested the website’s facilitation for color blindness with <a
+                                    title="Toptal Color Blind Filter - To check a webpage's accessibility for colorblinded individuals"
+                                    target="_blank" href="https://www.toptal.com/designers/colorfilter">Toptal’s Color
+                                    Blind Filter</a>.
+                                The greyscale test
+                                shows that most of the text has sufficient contrast. However, the title on the pages
+                                could potentially
+                                fail
+                                WCAG’s AAA contrast ratio requirement. This in turn is difficult for us to test with the
+                                <a title="WebAIM Contrast Checker - Finds the contrast ratio between a foreground and background color."
+                                    href="https://webaim.org/resources/contrastchecker/" target="_blank">WebAIM Contrast
+                                    Checker</a>,
+                                because we do not use a
+                                hardcoded color value for the background, but rather alpha filters on top of a fairly
+                                bright image to
+                                darken it. Then again,
+                                <a title="WAVE Web Accessibility Evaluation Tool - A tool that automatically scans a particular webpage for accessibility issues."
+                                    href="https://wave.webaim.org/" target="_blank">WAVE’s web accessibility evaluation
+                                    tool</a> did not
+                                identify a contrast error.
+                            </p>
+                        </section>
+
+                        <section>
+
+                            <figure>
+                                <img alt="Screenshot of the front page with focus on Skip to content button showing in the top-left corner"
+                                    src="/media/header-skip-to-content.jpg">
+                                <figcaption>Screenshot of the front page with focus on "Skip to content" button showing
+                                    in the top-left corner.</figcaption>
+                            </figure>
+
+                            <p>To further enhance the accessibility for visually impaired individuals, we have added
+                                full keyboard support. By pressing the TAB button, the user will first see a “Skip to
+                                content” button. Next, the navigation links will be highlighted one by one with a black
+                                border. The user can activate any of the focused links with ENTER, and otherwise move
+                                vertically with the up and down arrow keys. </p>
+
+                        </section>
+
+                    </article>
+
+                    <aside>
+
+                        <p>Continue to the other pages to learn more about our experience.</p>
+
+                        <ul class="nav-links white-background">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="reflection.html">Reflection</a></li>
+                            <li><a href="information.html">Information</a></li>
+                            <li><a href="fun.html">Fun</a></li>
+                        </ul>
+
+                    </aside>
+
+                </div>
+
+            </main>
+
+            <footer>
+
+                <!-- <p>Footer</p> -->
+
+            </footer>
+
         </div>
-    
-    </main>
-    
-    <footer>
-    
-        <!-- <p>Footer</p> -->
-    
-    </footer>
 
-        </div>
-    
     </div>
-    
+
 </body>
+
 </html>
