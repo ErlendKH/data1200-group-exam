@@ -95,9 +95,13 @@ img {
 }
 
 aside {
-    margin-top: 1rem;
+    margin-top: 3rem;
 
     /* background-color: green; */
+}
+
+aside p {
+    padding-bottom: 1.75rem;
 }
 
 .content {
