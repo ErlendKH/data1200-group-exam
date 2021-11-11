@@ -245,6 +245,10 @@ article figcaption {
         font-size: 1rem;
     }
 
+    nav {
+        padding: 1rem 0.5rem;
+    }
+
     nav p {
         display: none;
     }
