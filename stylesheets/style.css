@@ -377,6 +377,7 @@ and (max-width : 600px) {
     }
     
     #mobile-menuicon{
+        display: block;
         position: absolute;
         width: 70px;
         height: auto;
@@ -384,6 +385,10 @@ and (max-width : 600px) {
         top: 10px;
         cursor: pointer;
         
+    }
+
+    #mobile-header {
+        display: block;
     }
     
     h1{
