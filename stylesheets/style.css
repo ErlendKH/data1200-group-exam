@@ -296,6 +296,10 @@ video {
     z-index: 0;
 }
 
+.overlay-title h1 {
+    color: black;
+}
+
 /* ONLY FOR THE FUN PAGE: END */
 
 /* Extra small phones  */
