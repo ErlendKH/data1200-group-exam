@@ -123,6 +123,13 @@ section:nth-of-type(1) {
 
 }
 
+/* .fun {
+    background-clip: url("/media/Laptop-1920.mp4");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed; 
+} */
+
 main {
     display: flex;
     flex-direction: column;
@@ -239,10 +246,57 @@ article figcaption {
     z-index: 100;
   }
   
-  .skip-link:focus {
+.skip-link:focus {
     transform: translateY(0%);
     transition: transform 0.3s;
   }
+
+/* ONLY FOR THE FUN PAGE: START */
+
+/* video { 
+    display: block;
+    margin: 0 auto; 
+} */
+
+video {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+.fun {
+    background-color: black;
+}
+
+/* .video-container video {
+    display: flex;
+    align-content:center;
+    justify-content: center;
+} */
+
+.video-container:hover {
+
+}
+
+.fun-return {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.overlay-title {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+
+    z-index: 0;
+}
+
+/* ONLY FOR THE FUN PAGE: END */
 
 /* Extra small phones  */
 @media only screen and (max-width : 400px) {

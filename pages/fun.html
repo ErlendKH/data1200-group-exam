@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,37 +9,51 @@
 
     <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
     <!-- <link rel="stylesheet" href="/stylesheets/fun.css" type="text/css"> -->
-</head>
-<body>
-    
-    <div class="content">
-        
-        <div class="alpha">
-    
-            <header>
 
-                <a class="skip-link" href='#main'>Skip to content</a>
-    
-                <nav>
-    
-                    <p>Student Group 20</p>
-    
-                    <ul class="nav-links nav-only">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="reflection.html">Reflection</a></li>
-                        <li><a href="accessibility.html">Accessibility</a></li>
-                        <li><a href="information.html">Information</a></li>
-                        <li><a href="fun.html">Fun</a></li>
-                    </ul>
-    
-                </nav>
-    
-            </header>
+    <!-- <script src="/scripts/code.js"></script> -->
+
+</head>
+
+<body class="fun">
+
+    <header>
+
+        <!-- <a class="skip-link" href='#main'>Skip to content</a> -->
+
+<!--         <nav>
+
+          <p>Student Group 20</p>
+
+            <ul class="nav-links nav-only">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="fun.html">Fun</a></li>
+            </ul>
+
+        </nav> -->
+
+        <a id="return-home" class="skip-link" href="/index.html">Return Home</a>
+
+    </header>
     <main id="main">
+
+        <div class="overlay-title">
+            <h1>Fun</h1>
+        </div>
+
+        <div id="video-container" class="video-container">
+
+            <video id="fun-video" onmouseover="mouseOver()" onclick="mouseExit()" autoplay muted loop controls width="100%">
+                <source src="/media/Laptop-1920.mp4" type="video/mp4">
     
-        <h1>Fun</h1>
-    
-            <div class="textbox">
+                <p>Sorry, your browser doesn't support embedded videos.</p>
+            </video>
+
+        </div>
+
+        <!--             <div class="textbox">
             
                 <article>
 
@@ -64,24 +79,30 @@
                         <li><a href="reflection.html">Reflection</a></li>
                         <li><a href="accessibility.html">Accessibility</a></li>
                         <li><a href="information.html">Information</a></li>
-                        <!-- <li><a href="/pages/fun.html">Fun</a></li> -->
                     </ul>
     
                 </aside>
     
-            </div>
-    
+            </div> -->
+
     </main>
-    
+
     <footer>
-    
+
         <!-- <p>Footer</p> -->
-    
+
     </footer>
 
-        </div>
-    
-    </div>
-    
+    <script>
+        function mouseOver() {
+            document.getElementById("return-home").focus();
+        }
+
+        function mouseExit() {
+            document.getElementById("return-home").blur();
+        }
+    </script>
+
 </body>
+
 </html>
