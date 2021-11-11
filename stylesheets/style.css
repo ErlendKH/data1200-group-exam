@@ -104,6 +104,10 @@ aside p {
     padding-bottom: 1.75rem;
 }
 
+footer {
+    padding-top: 2rem;
+}
+
 .content {
 
     background-image: url("/media/priscilla-du-preez-XkKCui44iM0-unsplash-1920.jpg");
