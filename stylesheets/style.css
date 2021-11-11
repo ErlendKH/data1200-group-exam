@@ -233,6 +233,22 @@ article figcaption {
     padding: 1rem 0 0.5rem 0;
 } */
 
+.skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    /* left: 50%; */
+    padding: 1rem;
+    position: absolute;
+    transform: translateY(-100%);
+    z-index: 100;
+  }
+  
+  .skip-link:focus {
+    transform: translateY(0%);
+    transition: transform 0.3s;
+  }
+
 /* Extra small phones  */
 @media only screen and (max-width : 400px) {
 
