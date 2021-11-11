@@ -20,3 +20,9 @@ funVideo.onmouseover = function(){
     returnHome.focus();
 }); */
 
+
+function showMenu() {
+    var navBar = document.getElementsByClassName("nav-only");
+    navBar[0].classList.toggle("mobile-nav-on")
+
+}

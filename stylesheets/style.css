@@ -311,35 +311,18 @@ video {
 
 /* ONLY FOR THE FUN PAGE: END */
 
-/* Extra small phones  */
-@media only screen and (max-width : 400px) {
 
-    * {
-        font-size: 1rem;
-    }
-
-    nav {
-        padding: 1rem 0.5rem;
-    }
-
-    nav p {
-        display: none;
-    }
-
-    h1 {
-        font-size: 3rem;
-        padding-left: 1rem;
-    }
-
-}
 
 /* .content-separator-image {
     padding-top: 2rem;
 } */
 
 /* Phones */ 
-@media only screen and (min-width: 400px)
-and (max-width : 600px) {
+@media only screen and (max-width : 600px) {
+
+    *{
+        font-size: 1rem;
+    }
     
     nav{
 
@@ -394,22 +377,82 @@ and (max-width : 600px) {
     h1{
         font-size: 2rem;
     }
+    h2{
+        font-size: 1.5rem;
+    }
     
 
 }
 
 /* Tablets */
-@media only screen and (min-width : 600px) 
-and (max-width: 960px) {
+@media only screen and (min-width : 601px) 
+and (max-width: 1280px) {
 
-    nav p {
+    *{
+        font-size: 1.2rem;
+    }
+    
+    nav{
+
+        display: block;
+        padding: 0;
+    
+    }
+    
+    #mobile-header{
+        display: block;
+        height: 50px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .nav-only{
         display: none;
+        position: absolute;
+        width: 100%;
+    }
+    .nav-links li{
+        display: block;
+        padding: 10px;
+        width: 100%;
+        background-color: rgb(168, 168, 168);
+        
+    }
+    
+    .nav-only li {
+        margin-left: 0;
+        border-bottom: 1px solid black;
+    }
+    
+    .mobile-nav-on {
+        display: block;
+    }
+    
+    #mobile-menuicon{
+        display: block;
+        position: absolute;
+        width: 70px;
+        height: auto;
+        right: 5px;
+        top: 10px;
+        cursor: pointer;
+        
+    }
+
+    #mobile-header {
+        display: block;
+    }
+    
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
     }
 
 }
 
 /* Desktop */
-@media only screen and (min-width : 1420px) {
+@media only screen and (min-width : 1281px) {
 
     body {
 
