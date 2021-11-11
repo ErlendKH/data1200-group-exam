@@ -59,6 +59,12 @@ h3 {
     padding: 1.5rem 0 0 0;
 }
 
+h4 {
+    color: white;
+    font-size: 1.1rem;
+    padding: 1.5rem 0 0 0;
+}
+
 figcaption {
     color: white;
     font-size: 0.8rem;
@@ -259,6 +265,10 @@ article figcaption {
     }
 
 }
+
+/* .content-separator-image {
+    padding-top: 2rem;
+} */
 
 /* Phones */ 
 @media only screen and (min-width: 400px)
