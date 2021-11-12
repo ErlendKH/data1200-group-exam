@@ -300,7 +300,7 @@ video {
     color: black;
 }
 
-#mobile-menuicon {
+#mobile-menubutton {
     display: none;
 }
 
@@ -380,15 +380,18 @@ video {
         100% {opacity: 0;}
     }
     
-    #mobile-menuicon{
+    #mobile-menubutton{
         display: block;
         position: absolute;
-        width: 70px;
-        height: auto;
+        width: 80px;
+        height: 30px;
         right: 5px;
         top: 10px;
         cursor: pointer;
-        
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        background: transparent;
+        color: white;
     }
 
     #mobile-header {
@@ -470,15 +473,18 @@ and (max-width: 1280px) {
     }
     
     
-    #mobile-menuicon{
+    #mobile-menubutton{
         display: block;
         position: absolute;
-        width: 70px;
-        height: auto;
+        width: 80px;
+        height: 30px;
         right: 5px;
         top: 10px;
         cursor: pointer;
-        
+        border: 2px solid white;
+        border-radius: 10px;
+        background: transparent;
+        color: whitesmoke;
     }
 
     #mobile-header {
