@@ -357,6 +357,27 @@ video {
     
     .mobile-nav-on {
         display: block;
+        position: absolute;
+        width: 100%;
+        animation: fadeIn 1s;
+
+    }
+    .mobile-nav-off {
+        display: block;
+        position: absolute;
+        width: 100%;
+        animation: fadeOut 1s forwards;
+
+    }
+
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @keyframes fadeOut {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
     }
     
     #mobile-menuicon{
@@ -425,7 +446,29 @@ and (max-width: 1280px) {
     
     .mobile-nav-on {
         display: block;
+        position: absolute;
+        width: 100%;
+        animation: fadeIn 1s;
+
     }
+    .mobile-nav-off {
+        display: block;
+        position: absolute;
+        width: 100%;
+        animation: fadeOut 1s forwards;
+
+    }
+
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @keyframes fadeOut {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+    
     
     #mobile-menuicon{
         display: block;
