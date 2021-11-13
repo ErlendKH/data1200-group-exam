@@ -8,9 +8,6 @@
     <title>Fun</title>
 
     <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
-
-    <!-- <script src="/scripts/code.js"></script> -->
-
 </head>
 
 <body class="fun">
@@ -27,19 +24,18 @@
             <h1>Fun</h1>
         </div>
 
-        <div id="video-container" class="video-container">
+        <div id="div-16-9">
 
-<!--             
-            <div id="aspect-div-width">
-            </div>
+            <div id="book"></div>
+            <div id="pen"></div>
+            <div id="smartphone"></div>
+            <div id="laptop"></div>
+            <div id="coffee"></div>
+            <div id="paper"></div>
 
-            <div id ="aspect-div-height"> 
+            <div id="debug">Debug</div>
 
-            </div>
--->
-
-            <!-- width="100%" height="100%" -->
-            <video id="fun-video" autoplay muted loop>
+            <video id="vid" autoplay muted loop>
                 <source src="/media/Laptop-1920-AVC.mp4" type="video/mp4">
                 <source src="/media/Laptop-1920-HEVC.mp4" type="video/mp4">
                 <source src="/media/Laptop-1920-V8.webm" type="video/webm">
@@ -51,13 +47,40 @@
 
     </main>
 
-    <footer>
-
-        <!-- <p>Footer</p> -->
-
-    </footer>
-
     <script>
+
+        var book = document.getElementById("book");
+        var pen = document.getElementById("pen");
+        var smartphone = document.getElementById("smartphone");
+        var laptop = document.getElementById("laptop");
+        var coffee = document.getElementById("coffee");
+        var paper = document.getElementById("paper");
+
+        var debug = document.getElementById("debug");
+
+        book.addEventListener('click', function() {
+            debug.textContent = "Book clicked!";
+        }, false);
+
+        pen.addEventListener('click', function() {
+            debug.textContent = "Pen clicked!";
+        }, false);
+
+        smartphone.addEventListener('click', function() {
+            debug.textContent = "Smartphone clicked!";
+        }, false);
+
+        laptop.addEventListener('click', function() {
+            debug.textContent = "Laptop clicked!";
+        }, false);
+
+        coffee.addEventListener('click', function() {
+            debug.textContent = "Coffee clicked!";
+        }, false);
+
+        paper.addEventListener('click', function() {
+            debug.textContent = "Paper clicked!";
+        }, false);
 
     </script>
 
