@@ -24,6 +24,15 @@
             <h1>Fun</h1>
         </div>
 
+        <div id="popup-box">
+
+            Textbox Test
+            
+        </div>
+        <div id="popup-background">
+
+        </div>
+
         <div id="div-16-9">
 
             <div id="book"></div>
@@ -56,31 +65,66 @@
         var coffee = document.getElementById("coffee");
         var paper = document.getElementById("paper");
 
+        var background = document.getElementById("popup-background");
+        var popup = document.getElementById("popup-box");
+
         var debug = document.getElementById("debug");
 
         book.addEventListener('click', function() {
             debug.textContent = "Book clicked!";
+
+            showPopup();
         }, false);
 
         pen.addEventListener('click', function() {
             debug.textContent = "Pen clicked!";
+
+            showPopup();
         }, false);
 
         smartphone.addEventListener('click', function() {
             debug.textContent = "Smartphone clicked!";
+
+            showPopup();
         }, false);
 
         laptop.addEventListener('click', function() {
             debug.textContent = "Laptop clicked!";
+
+            showPopup();
         }, false);
 
         coffee.addEventListener('click', function() {
             debug.textContent = "Coffee clicked!";
+
+            showPopup();
         }, false);
 
         paper.addEventListener('click', function() {
             debug.textContent = "Paper clicked!";
+
+            showPopup();
         }, false);
+
+        background.addEventListener('click', function() {
+            debug.textContent = "Background clicked!";
+
+            hidePopup();
+        }, false);
+
+        popup.addEventListener('click', function() {
+            debug.textContent = "Popup clicked!";
+        }, false);
+
+        function showPopup() {
+            background.style.display = "block";
+            popup.style.display = "block";
+        }
+
+        function hidePopup() {
+            background.style.display = "None";
+            popup.style.display = "None";
+        }
 
     </script>
 
