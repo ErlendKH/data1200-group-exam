@@ -111,6 +111,12 @@ section:nth-of-type(1) {
     padding-top: 0rem;
 }
 
+header button {
+    /* padding: 1.5rem; */
+    color: darkblue;
+    font-weight: bold;
+}
+
 
 .content {
 
@@ -191,6 +197,58 @@ header p {
 .secondary-nav-container p {
     padding-bottom: 1.75rem;
 }
+
+/* Menu Button: Start */
+
+#mobile-menubutton{
+
+    padding: 0.33rem;
+    
+    /* display: block; */
+    /* position: absolute; */
+/*     width: 80px;
+    height: 30px;
+    right: 5px;
+    top: 10px; */
+    /* cursor: pointer; */
+    /* border: 2px solid rgb(255, 255, 255); */
+    /* border-radius: 10px; */
+    /* background: transparent; */
+    /* color: white; */
+}
+
+  #mobile-header{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mobile-nav-on {
+    display: block;
+    position: absolute;
+    width: 100%;
+    animation: fadeIn 1s;
+}
+
+.mobile-nav-off {
+    display: block;
+    position: absolute;
+    width: 100%;
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+/* Menu Button: End */
 
 article p {
     margin: 0.5rem 0;

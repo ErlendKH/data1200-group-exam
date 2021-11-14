@@ -1,22 +1,16 @@
 
-var returnHome = document.getElementById("return-home");
-var videoContainer = document.getElementById("video-container");
-var funVideo = document.getElementById("fun-video");
+function showMenu() {
+    var navBar = document.getElementsByClassName("nav-only");
 
-funVideo.onmouseover = function(){mouseOver()};
+    if(navBar[0].classList.contains("mobile-nav-on")){
 
-function mouseOver() {
-    returnHome.focus();
+        navBar[0].classList.toggle("mobile-nav-off");
+
+    } else 
+    {    
+        navBar[0].classList.toggle("mobile-nav-on");
+    }
+
+
+
 }
-
-funVideo.onmouseover = function(){
-    returnHome.focus();
-}
-
-/* videoContainer.addEventListener("mouseover", function( event ) {
-
-
-
-    returnHome.focus();
-}); */
-
