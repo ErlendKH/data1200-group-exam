@@ -121,18 +121,6 @@ header button {
     font-weight: bold;
 }
 
-/* .white-background li a button {
-    color: darkblue;
-    font-weight: bold;
-    background-color: white;
-    border: none;
-
-    cursor: pointer;
-    padding: 1rem;
-    width: 100%;
-    height: 100%;
-} */
-
 .content {
     background-image: url("/media/priscilla-du-preez-XkKCui44iM0-unsplash-1920.jpg");
     background-repeat: no-repeat;
@@ -215,49 +203,6 @@ header p {
     padding-bottom: 0.5rem;
 } */
 
-/* Menu Button: Start */
-
-#mobile-menubutton{
-
-    display: none;
-
-    padding: 0.33rem;
-
-}
-
-  #mobile-header{
-    display: block;
-    height: 50px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.mobile-nav-on {
-    display: block;
-    position: absolute;
-    width: 100%;
-    animation: fadeIn 1s;
-}
-
-.mobile-nav-off {
-    display: block;
-    position: absolute;
-    width: 100%;
-    animation: fadeOut 1s forwards;
-}
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@keyframes fadeOut {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-/* Menu Button: End */
-
 article p {
     margin: 0.5rem 0;
     line-height: 1.5;
@@ -304,7 +249,7 @@ article figcaption {
 }
 
 .link-button:hover {
-    background-color:azure;
+    /* background-color:azure; */
 }
 
 .link-button {
@@ -315,7 +260,8 @@ article figcaption {
 
 .link-button::after{
     content: '';
-    background:cornflowerblue;
+    /* background:cornflowerblue; */
+    background: #ff3d00;
     width: 0;
     height: 2px;
     position: absolute;
@@ -383,7 +329,13 @@ article figcaption {
     z-index: 100;
   }
 
-/* ONLY FOR THE FUN PAGE: START */
+  #mobile-menubutton {
+      display: none;
+  }
+
+/* 
+ONLY FOR THE FUN PAGE: START
+*/
 
 video p {
     color: white;
@@ -565,7 +517,13 @@ video p {
 
 }
 
-/* ONLY FOR THE FUN PAGE: END */
+/*
+ONLY FOR THE FUN PAGE: END
+*/
+
+/* 
+Standard Media Queries: Start
+*/
 
 /* Extra small phones  */
 @media only screen and (max-width : 400px) {
@@ -592,14 +550,6 @@ video p {
         padding: 0.5rem 0;
     }
 
-/*     .secondary-nav ul li {
-        width: 100%;
-    } */
-
-/*     .white-background li {
-        width: 40%;
-    } */
-
     h1 {
         font-size: 3rem;
         padding-left: 1rem;
@@ -610,14 +560,10 @@ video p {
 /* Phones */ 
 @media only screen and (min-width: 400px)
 and (max-width : 600px) {
-    
+
     * {
         font-size: 1rem;
     }
-
-/*     nav {
-        padding: 1rem 0.5rem;
-    } */
 
     header {
         justify-content: center;
@@ -632,14 +578,6 @@ and (max-width : 600px) {
     .nav-only li {
         padding: 0.5rem 0;
     }
-
-/*     .secondary-nav ul li {
-        width: 100%;
-    } */
-
-/*     .white-background li {
-        width: 40%;
-    } */
 
     h1 {
         font-size: 3rem;
@@ -662,14 +600,6 @@ and (max-width: 960px) {
         padding: 0.5rem 0;
     }
 
-/*     .secondary-nav ul li {
-        width: 100%;
-    } */
-
-/*     .white-background li {
-        width: 40%;
-    } */
-
     header p {
         display: none;
     }
@@ -677,17 +607,125 @@ and (max-width: 960px) {
 }
 
 /* Desktop */
-@media only screen and (min-width : 1420px) {
-
-    body {
-
-
-    }
+@media only screen and (min-width : 960px)
+and (max-width: 1420px) {
 
     .content {
-
-        margin: 0 15vh;
-   
+        /* margin: 0 15vh; */
     }
 
 }
+
+/* Desktop Fullscreen */
+@media only screen and (min-width: 1420px) {
+
+    .content {
+        margin: 0 15vh;
+    }
+
+}
+
+/*
+Standard Media Queries: End 
+*/
+
+/* 
+SPECIAL - Mobile Menu: Start 
+*/
+
+/* For Phones and Tablets */
+
+/* @media only screen and (max-width : 960px) {
+
+    #mobile-menubutton{
+        display: block;
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+        cursor: pointer;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        background: transparent;
+        color: white;
+        font-size: 1.5rem;
+
+        padding: 0.5rem;
+
+        z-index: 1;
+    }
+
+    #mobile-header{
+        display: block;
+        position: absolute;
+        height: 4rem;
+        width: 100%;
+
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .nav-only{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .nav-only li {
+        padding: 0;
+        margin: 0;
+        border: 2px solid black;
+        border-radius: 0.25rem;
+
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .nav-only li a {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-only li a::after {
+        background:#ff3d00;
+        transition: width 0s;
+        height: 1px;
+    }
+
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @keyframes fadeOut {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .primary-nav {
+        width: 100%;
+    }
+
+    h1 {
+        margin-top: 2rem;
+    }
+
+    #temp-debug {
+        color: white;
+        text-align: center;
+    }
+
+} */
+
+/* 
+SPECIAL - Mobile Menu: End 
+*/
