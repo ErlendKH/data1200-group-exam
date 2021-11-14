@@ -647,6 +647,7 @@ video p {
         width: 90%;
         top: 60px;
         left: 5%;
+        z-index: 100;
     }
     .nav-only li a {
         font-size: 2.5rem;
