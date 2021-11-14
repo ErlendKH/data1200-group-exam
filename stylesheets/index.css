@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+}
+
+.content {
+/*     background-image: url("/media/priscilla-du-preez-XkKCui44iM0-unsplash-1920.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed; */
+
+    background-image: url("/media/priscilla-du-preez-XkKCui44iM0-unsplash-1920.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+    height: 100vh;
+
+/*     width: 100vw;
+    height: 100vh; */
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 24px;
+
+    font-weight: bold;
+}
+
+nav > p {
+    /* margin: 0; */
+    /* padding-left: 24px; */
+}
+
+.nav-links{
+    /* padding-right: 8px; */
+}
+
+.nav-links li {
+    display: inline-block;
+    /* margin: 0 16px; */
+    margin-left: 24px;
+
+    color: darkblue;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    padding: 8px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-links li a::after{
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+a {
+    color: darkblue;
+}
+
+
+/* Extra small phones  */
+@media only screen and (max-width : 400px) {
+
+}
+
+/* Phones */ 
+@media only screen and (min-width: 400px)
+and (max-width : 600px) {
+
+}
+
+/* Tablets */
+@media only screen and (min-width : 600px) 
+and (max-width: 960px) {
+
+}
+
+/* Desktop */
+@media only screen and (min-width : 1920px) {
+
+    body {
+
+/*         background-size: contain;
+        background-position: center;
+        display: flex;
+        justify-content: center; */
+
+        /* background-color: blue; */
+
+/*         display: flex;
+        justify-content: center; */
+
+    }
+
+    .content {
+
+        margin: 0 15vh;
+
+        /* min-width: 100vh; */
+
+        /* min-width: 1920px; */
+
+        /* width: 100%; */
+
+        /* background-color: red; */
+
+        /* max-width: 920px; */
+   
+    }
+
+}
