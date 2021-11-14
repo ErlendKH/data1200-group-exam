@@ -18,6 +18,10 @@ p a {
     color: aqua;
 }
 
+#readMore a{
+    color: aqua;
+}
+
 p span {
     color: rgb(201, 142, 109);
 }
