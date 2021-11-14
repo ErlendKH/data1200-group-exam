@@ -202,19 +202,10 @@ header p {
 
 #mobile-menubutton{
 
+    display: none;
+
     padding: 0.33rem;
-    
-    /* display: block; */
-    /* position: absolute; */
-/*     width: 80px;
-    height: 30px;
-    right: 5px;
-    top: 10px; */
-    /* cursor: pointer; */
-    /* border: 2px solid rgb(255, 255, 255); */
-    /* border-radius: 10px; */
-    /* background: transparent; */
-    /* color: white; */
+
 }
 
   #mobile-header{
@@ -518,16 +509,18 @@ video p {
     }
 
     header {
-        justify-content: end;
+        justify-content: center;
+
+        padding: 0.5rem 0.5rem;
     }
 
     header p {
         display: none;
     }
 
-/*     nav p {
-        display: none;
-    } */
+    .nav-only li {
+        padding: 0.5rem 0;
+    }
 
     h1 {
         font-size: 3rem;
@@ -544,21 +537,23 @@ and (max-width : 600px) {
         font-size: 1rem;
     }
 
-    nav {
+/*     nav {
         padding: 1rem 0.5rem;
-    }
+    } */
 
     header {
-        justify-content: end;
+        justify-content: center;
+
+        padding: 0.5rem 0.5rem;
     }
 
     header p {
         display: none;
     }
 
-/*     nav p {
-        display: none;
-    } */
+    .nav-only li {
+        padding: 0.5rem 0;
+    }
 
     h1 {
         font-size: 3rem;
@@ -572,16 +567,18 @@ and (max-width : 600px) {
 and (max-width: 960px) {
 
     header {
-        justify-content: end;
+        justify-content: center;
+
+        padding: 0.5rem 0.5rem;
     }
 
+    .nav-only li {
+        padding: 0.5rem 0;
+    }
+    
     header p {
         display: none;
     }
-
-/*     nav p {
-        display: none;
-    } */
 
 }
 
