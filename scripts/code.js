@@ -1,4 +1,7 @@
 
+var root = document.documentElement;
+root.classList.add('has-js');
+
 function showMenu() {
     var navBar = document.getElementsByClassName("nav-only");
 
@@ -10,7 +13,5 @@ function showMenu() {
     {    
         navBar[0].classList.toggle("mobile-nav-on");
     }
-
-
 
 }

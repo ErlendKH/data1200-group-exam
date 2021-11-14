@@ -117,16 +117,25 @@ header button {
     font-weight: bold;
 }
 
+/* .white-background li a button {
+    color: darkblue;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+} */
 
 .content {
-
     background-image: url("/media/priscilla-du-preez-XkKCui44iM0-unsplash-1920.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed; 
 
     height: 100%;
-
 }
 
 main {
@@ -198,6 +207,18 @@ header p {
     padding-bottom: 1.75rem;
 }
 
+/* .secondary-nav ul li {
+    padding: 1rem;
+} */
+
+/* .secondary-nav ul li a div {
+    padding: 1rem;
+}
+
+.secondary-nav ul li a div:focus {
+    background-color: burlywood;
+} */
+
 /* Menu Button: Start */
 
 #mobile-menubutton{
@@ -256,7 +277,6 @@ article:first-child h2:first-child {
     padding-top: 0.5rem;
 }
 
-
 article figcaption {
     padding-bottom: 1rem;
 }
@@ -275,14 +295,25 @@ article figcaption {
 
 .white-background li {
     background-color: rgba(255, 255, 255, 1);
-    padding: 1rem;
     /* margin: 1rem; */
     margin-right: 16px;
     margin-bottom: 1rem;
     font-weight: bold;
 
+    width: 40%;
+    text-align: center;
+
     /* background-color: green; */
 
+}
+
+.white-background li a {
+    /* padding: 1rem; */
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .skip-link {
@@ -522,6 +553,14 @@ video p {
         padding: 0.5rem 0;
     }
 
+/*     .secondary-nav ul li {
+        width: 100%;
+    } */
+
+/*     .white-background li {
+        width: 40%;
+    } */
+
     h1 {
         font-size: 3rem;
         padding-left: 1rem;
@@ -555,6 +594,14 @@ and (max-width : 600px) {
         padding: 0.5rem 0;
     }
 
+/*     .secondary-nav ul li {
+        width: 100%;
+    } */
+
+/*     .white-background li {
+        width: 40%;
+    } */
+
     h1 {
         font-size: 3rem;
         padding-left: 2rem;
@@ -575,7 +622,15 @@ and (max-width: 960px) {
     .nav-only li {
         padding: 0.5rem 0;
     }
-    
+
+/*     .secondary-nav ul li {
+        width: 100%;
+    } */
+
+/*     .white-background li {
+        width: 40%;
+    } */
+
     header p {
         display: none;
     }
