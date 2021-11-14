@@ -14,11 +14,10 @@
 
 <body class="fun">
 
-    <header>
+    <a id="return-home" class="always-show-link" href="/index.html">Return Home</a>
 
-        <a id="return-home" class="always-show-link" href="/index.html">Return Home</a>
-
-    </header>
+    <!-- <header>
+    </header> -->
 
     <main id="main">
 
@@ -27,13 +26,10 @@
         </div>
 
         <div id="popup-box">
-
             Textbox Test
-            
         </div>
-        <div id="popup-background">
-
-        </div>
+        
+        <div id="popup-background"></div>
 
         <div id="div-16-9">
 
@@ -46,10 +42,13 @@
 
             <div id="debug">Debug</div>
 
-            <video id="vid" autoplay muted loop>
+            <video id="vid" preload="metadata" autoplay muted loop playsinline>
                 <source src="/media/Laptop-1920-AVC.mp4" type="video/mp4">
                 <source src="/media/Laptop-1920-HEVC.mp4" type="video/mp4">
                 <source src="/media/Laptop-1920-V8.webm" type="video/webm">
+                <source src="/media/Laptop-1920-AVC.mov" type="video/mov">
+                <source src="/media/Laptop-1920-Apple.mp4" type="video/mp4">
+                <!-- <source src="/media/Laptop-1920-MPEG.mov" type="video/mov"> -->
 
                 <p>Sorry, your browser doesn't support embedded/HTML videos.</p>
             </video>
