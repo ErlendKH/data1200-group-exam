@@ -267,11 +267,16 @@ article p {
     line-height: 1.5;
 }
 
-article button {
-    padding: 1.5rem;
+/* article button {
+    padding: 1rem;
     color: darkblue;
     font-weight: bold;
-}
+
+    cursor: pointer;
+    width: 100%;
+
+    margin-bottom: 2rem;
+} */
 
 article:first-child h2:first-child {
     padding-top: 0.5rem;
@@ -287,6 +292,44 @@ article figcaption {
     max-width: 70ch;
 
     align-self: center; /* Worked... */
+}
+
+.link-button {
+    background-color: white;
+    color: darkblue;
+    font-weight: bold;
+
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+
+    margin-bottom: 2rem;
+}
+
+.link-button:hover {
+    background-color:azure;
+}
+
+.link-button {
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.link-button::after{
+    content: '';
+    background:cornflowerblue;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0s;
+}
+
+.link-button:hover::after{
+    width: 100%;
 }
 
 .white-background {
