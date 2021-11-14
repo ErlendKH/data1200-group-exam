@@ -48,6 +48,8 @@ $(window).on("load", function(){
 
     debug.textContent = "Document ready!";
 
+    // For playing video when done loading.
+/* 
     var video_jq = $('#vid')
     var video_node = video_jq.get(0);
 
@@ -60,6 +62,7 @@ $(window).on("load", function(){
 
     // All resources are ready, trigger video downloading
     video_node.load();
+    */ 
 
 });
 
