@@ -1,7 +1,20 @@
 
-var video = document.getElementsByName("vid");
-
 var debug = document.getElementById("debug");
+
+/* var my_vid = $('#vid');
+var fallback_img = $('#fallback-img'); */
+
+var vid = document.getElementById("vid");
+var img = document.getElementById("fallback-img");
+
+function showImage(){
+    vid.style.display = "none";
+    img.style.display = "block";
+}
+
+/* vid.onerror = function(){
+
+} */
 
 /* $(document).ready(function() {
     console.log("Ready!");
@@ -49,8 +62,8 @@ $(window).on("load", function(){
     debug.textContent = "Document ready!";
 
     // For playing video when done loading.
-/* 
-    var video_jq = $('#vid')
+
+    var video_jq = $('#vid');
     var video_node = video_jq.get(0);
 
     video_jq.on("canplaythrough", function(e){
@@ -62,7 +75,7 @@ $(window).on("load", function(){
 
     // All resources are ready, trigger video downloading
     video_node.load();
-    */ 
+    
 
 });
 
