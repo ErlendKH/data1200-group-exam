@@ -429,7 +429,7 @@ video p {
     height: 100%;
     max-height: 100vh;
 
-    background-color: rgba(38, 0, 255, 0.5);
+    /* background-color: rgba(38, 0, 255, 0.5); */
 
     z-index: 1;
 
