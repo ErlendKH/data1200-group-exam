@@ -134,7 +134,7 @@ main {
     height: 100%;
 }
 
-nav {
+header {
     background-color: white;
     display: flex;
     align-items: center;
@@ -145,7 +145,7 @@ nav {
     font-weight: bold;
 }
 
-nav > p {
+header p {
     color: black;
 }
 
@@ -182,6 +182,14 @@ nav > p {
 
 .nav-links li a:hover::after{
     width: 100%;
+}
+
+.secondary-nav-container {
+    margin-top: 3.5rem;
+}
+
+.secondary-nav-container p {
+    padding-bottom: 1.75rem;
 }
 
 article p {
@@ -451,9 +459,17 @@ video p {
         padding: 1rem 0.5rem;
     }
 
-    nav p {
+    header {
+        justify-content: end;
+    }
+
+    header p {
         display: none;
     }
+
+/*     nav p {
+        display: none;
+    } */
 
     h1 {
         font-size: 3rem;
@@ -474,9 +490,17 @@ and (max-width : 600px) {
         padding: 1rem 0.5rem;
     }
 
-    nav p {
+    header {
+        justify-content: end;
+    }
+
+    header p {
         display: none;
     }
+
+/*     nav p {
+        display: none;
+    } */
 
     h1 {
         font-size: 3rem;
@@ -489,9 +513,17 @@ and (max-width : 600px) {
 @media only screen and (min-width : 600px) 
 and (max-width: 960px) {
 
-    nav p {
+    header {
+        justify-content: end;
+    }
+
+    header p {
         display: none;
     }
+
+/*     nav p {
+        display: none;
+    } */
 
 }
 
