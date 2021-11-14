@@ -225,7 +225,6 @@ header p {
 
     display: none;
 
-    padding: 0.33rem;
 
 }
 
@@ -619,6 +618,8 @@ video p {
 
 }
 
+/* NY KODE START ! ! ! ! ! ! ! ! ! ! ! ! */
+
 /* Phones */ 
 @media only screen and (max-width : 600px) {
 
@@ -658,6 +659,11 @@ video p {
         background-color: rgb(223, 223, 223);
         border-radius: 10px;
     }
+
+    .link-button{
+        background-color: rgb(223, 223, 223);
+        border-radius: 5px;
+    }
     
     .nav-only li {
         margin-left: 0;
@@ -696,6 +702,15 @@ video p {
     h2{
         font-size: 1.5rem;
     }
+
+    header{
+        display: block;
+        padding: 0;
+    }
+    
+    header > p {
+        display: none;
+    }
 }
 
 
@@ -729,6 +744,7 @@ and (max-width: 1280px) {
         width: 90%;
         top: 60px;
         left: 5%;
+        z-index: 100;
     }
     .nav-only li a {
         font-size: 2.5rem;
@@ -740,6 +756,11 @@ and (max-width: 1280px) {
         width: 100%;
         background-color: rgb(223, 223, 223);
         border-radius: 10px;
+    }
+
+    .link-button{
+        background-color: rgb(223, 223, 223);
+        border-radius: 5px;
     }
     
     .nav-only li {
@@ -778,9 +799,18 @@ and (max-width: 1280px) {
     h2{
         font-size: 2rem;
     }
+
+    header{
+        display: block;
+        padding: 0;
+    }
+    
+    header > p {
+        display: none;
+    }
 }
 
-}
+/* NY KODE SLUTT ! ! ! ! ! ! ! ! ! ! ! ! */
 
 /* Desktop */
 @media only screen and (min-width : 1420px) {
