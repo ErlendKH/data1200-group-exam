@@ -69,6 +69,7 @@ $(window).on("load", function(){
     
     if(isSafari){
         showImage();
+        debug.textContent = "You are browsing with Safari.";
     }
 
 
