@@ -11,7 +11,7 @@ var debug = document.getElementById("debug");
     
 }); */
 
-var tempDebug = document.getElementById("temp-debug");
+/* var tempDebug = document.getElementById("temp-debug");
 var menuButton = document.getElementById("mobile-menubutton");
 
 var navOnly = document.getElementsByClassName("nav-only");
@@ -21,13 +21,8 @@ menuButton.addEventListener('click', function() {
 
     if(navOnly[0].style.display == "" || navOnly[0].style.display == "none"){
         navOnly[0].style.display = "block";
-
-        /* navOnly[0].style.animation = "fadeIn 0.5s forwards"; */
     } else {
         navOnly[0].style.display = "none";
-
-        /* navOnly[0].style.animation = "fadeOut 0.5s forwards"; */
-        /* navOnly[0].addEventListener("animationend", displayOff); */
     }
 
 }, false);
@@ -35,7 +30,7 @@ menuButton.addEventListener('click', function() {
 function displayOff(){
     navOnly[0].style.display = "none";
     navOnly[0].removeEventListener("animationend", displayOff); 
-}
+} */
 
 /* $(window).resize(function () {
 
