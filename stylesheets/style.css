@@ -641,7 +641,7 @@ SPECIAL - Mobile Menu: Start
 
 /* For Phones and Tablets */
 
-/* @media only screen and (max-width : 960px) {
+ @media only screen and (max-width : 960px) {
 
     #mobile-menubutton{
         display: block;
@@ -725,12 +725,7 @@ SPECIAL - Mobile Menu: Start
         margin-top: 2rem;
     }
 
-    #temp-debug {
-        color: white;
-        text-align: center;
-    }
-
-} */
+} 
 
 /* 
 SPECIAL - Mobile Menu: End 
