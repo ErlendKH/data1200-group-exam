@@ -8,7 +8,8 @@
     <title>Being A First-Year Student At OsloMet</title>
 
     <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
-    <!-- <link rel="stylesheet" href="/stylesheets/index.css" type="text/css"> -->
+
+    <script src="/scripts/code.js"></script>
 </head>
 
 <body>
@@ -16,14 +17,14 @@
         <div class="content">
         
             <div class="alpha">
+
+                <a class="skip-link" href='#main'>Skip to content</a>
         
                 <header>
 
-                    <a class="skip-link" href='#main'>Skip to content</a>
-        
-                    <nav>
-        
-                        <p>Student Group 20</p>
+                    <p>Student Group 20</p>
+
+                    <nav class="primary-nav" role="navigation" aria-label="Primary Menu">
         
                         <ul class="nav-links nav-only">
                             <li><a href="index.html">Home</a></li>
@@ -34,11 +35,15 @@
                         </ul>
         
                     </nav>
+
+                    <!-- <button id="mobile-menubutton" onclick="showMenu()">Menu</button> -->
+                    <!-- <a id="mobile-header"></a> -->
         
                 </header>
+
         <main id="main">
         
-            <h1>Being A First-Year Student At OsloMet</h1>
+            <h1 role="heading">Being A First-Year Student At OsloMet</h1>
         
                 <div class="textbox">
                 
@@ -57,18 +62,22 @@
                 
                     </article>
                 
-                    <aside>
+                    <div class="secondary-nav-container">
 
                         <p>Continue to the other pages to learn more about our experience.</p>
                 
-                        <ul class="nav-links white-background">
-                            <li><a href="/pages/reflection.html">Reflection</a></li>
-                            <li><a href="/pages/accessibility.html">Accessibility</a></li>
-                            <li><a href="/pages/information.html">Information</a></li>
-                            <li><a href="/pages/fun.html">Fun</a></li>
-                        </ul>
-        
-                    </aside>
+                        <nav class="secondary-nav" role="navigation" aria-label="Secondary Menu">
+
+                            <ul class="nav-links white-background">
+                                <li><a href="/pages/reflection.html">Reflection</a></li>
+                                <li><a href="/pages/accessibility.html">Accessibility</a></li>
+                                <li><a href="/pages/information.html">Information</a></li>
+                                <li><a href="/pages/fun.html">Fun</a></li>
+                            </ul>
+
+                        </nav>
+
+                    </div>
         
                 </div>
         
