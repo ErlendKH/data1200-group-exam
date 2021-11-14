@@ -569,6 +569,14 @@ video p {
 
 }
 
+#mobile-menubutton {
+    display: none;
+}
+
+#mobile-header {
+    display: none;
+}
+
 /* ONLY FOR THE FUN PAGE: END */
 
 /* Extra small phones  */
