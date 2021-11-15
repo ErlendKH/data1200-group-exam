@@ -8,9 +8,51 @@ var vid = document.getElementById("vid");
 var img = document.getElementById("fallback-img");
 
 function showImage(){
-    vid.style.display = "none";
+    debug.textContent += " showImage() triggered!";
+
+    /* vid.style.display = "none"; */
     img.style.display = "block";
+
+    /* vid.style.display = "none"; */
+
+/*     document.getElementById("fallback-img").style.display = "block";
+    document.getElementById("vid").style.display = "none"; */
+
+    // Check if image it exists: On a second note, surely the img works, right...
+    // if (typeof(img) != 'undefined' && element != null)
+    // {
+    //     img.style.display = "block";
+    // }
 }
+
+/* In separate functions as the vid may not even appear on Safari, causing error? */
+function hideVid(){
+    debug.textContent += " hideVid() triggered!";
+
+    vid.style.display = "none";
+
+    // Check if vid element exists: DOESN'T WORK?
+/*     if (typeof(vid) != 'undefined' && element != null)
+    {
+        vid.style.display = "none";
+    } */
+}
+
+/* Sigh... */
+function handleVidError(){
+    debug.textContent += " handleVidError() triggered!";
+
+    //  Hopefully, it'll work?
+    img.style.display = "block";
+
+    vid.style.display = "none";
+
+/*     if (typeof(vid) != 'undefined' && element != null)
+    {
+        vid.style.display = "none";
+    } */
+}
+
 
 /* vid.onerror = function(){
 
@@ -63,6 +105,35 @@ $(window).on("load", function(){
 
     debug.textContent = "Document ready!";
 
+    // test
+/*     showImage();
+    hideVid(); */
+
+    // Test for Mac:
+    var isMac = false;
+    isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0; // Obsolete!
+
+    var os = "";
+    if (navigator.appVersion.indexOf("Mac") != -1) os = "MacOS"; // Obsolete!
+
+    if(isMac || os == "MacOS"){
+        debug.textContent += " On a Mac?";
+        handleVidError();
+    }
+
+    // Tests for Safari browser are found on: 
+    // https://stackoverflow.com/questions/7944460/detect-safari-browser
+
+    // Initial test that is supposed to work only for Safari on macOS:
+    var isItSafari = window.safari !== undefined;
+    if (isItSafari){
+        /* console.log("Safari, yeah!"); */
+        debug.textContent = "Initially, it is Safari.";
+        /* showImage();
+        hideVid(); */
+        handleVidError();
+    }
+
     // Check browser...
     var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
                navigator.userAgent &&
@@ -70,12 +141,13 @@ $(window).on("load", function(){
                navigator.userAgent.indexOf('FxiOS') == -1;
     
     if(isSafari){
-        showImage();
         debug.textContent = "You are browsing with Safari.";
+        /* showImage();
+        hideVid(); */
+        handleVidError();
     } else {
         debug.textContent = "You are not using Safari.";
     }
-
 
     // For playing video when done loading.
 
@@ -84,9 +156,12 @@ $(window).on("load", function(){
 
     video_jq.on("canplaythrough", function(e){
 
-        // Video is downloaded, trigger playing
-        video_node.play();
+    // var video_jq = $('#vid');
+    // var video_node = video_jq.get(0);
+    var video_node = vid.get(0);
 
+    vid.on("canplaythrough", function(e){
+        video_node.play(); // Video is downloaded, trigger playing
     });
 
     // All resources are ready, trigger video downloading
