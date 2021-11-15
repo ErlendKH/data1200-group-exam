@@ -13,6 +13,11 @@ function showImage(){
     /* vid.style.display = "none"; */
     img.style.display = "block";
 
+    /* vid.style.display = "none"; */
+
+/*     document.getElementById("fallback-img").style.display = "block";
+    document.getElementById("vid").style.display = "none"; */
+
     // Check if image it exists: On a second note, surely the img works, right...
     // if (typeof(img) != 'undefined' && element != null)
     // {
@@ -24,11 +29,13 @@ function showImage(){
 function hideVid(){
     debug.textContent += " hideVid() triggered!";
 
-    // Check if vid element exists:
-    if (typeof(vid) != 'undefined' && element != null)
+    vid.style.display = "none";
+
+    // Check if vid element exists: DOESN'T WORK?
+/*     if (typeof(vid) != 'undefined' && element != null)
     {
         vid.style.display = "none";
-    }
+    } */
 }
 
 /* Sigh... */
@@ -38,10 +45,12 @@ function handleVidError(){
     //  Hopefully, it'll work?
     img.style.display = "block";
 
-    if (typeof(vid) != 'undefined' && element != null)
+    vid.style.display = "none";
+
+/*     if (typeof(vid) != 'undefined' && element != null)
     {
         vid.style.display = "none";
-    }
+    } */
 }
 
 
@@ -94,6 +103,10 @@ $(window).on("load", function(){
 
     debug.textContent = "Document ready!";
 
+    // test
+/*     showImage();
+    hideVid(); */
+
     // Test for Mac:
     var isMac = false;
     isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0; // Obsolete!
@@ -114,8 +127,9 @@ $(window).on("load", function(){
     if (isItSafari){
         /* console.log("Safari, yeah!"); */
         debug.textContent = "Initially, it is Safari.";
-        showImage();
-        hideVid();
+        /* showImage();
+        hideVid(); */
+        handleVidError();
     }
 
     // Check browser...
@@ -126,8 +140,9 @@ $(window).on("load", function(){
     
     if(isSafari){
         debug.textContent = "You are browsing with Safari.";
-        showImage();
-        hideVid();
+        /* showImage();
+        hideVid(); */
+        handleVidError();
     } else {
         debug.textContent = "You are not using Safari.";
     }
