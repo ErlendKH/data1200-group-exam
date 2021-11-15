@@ -80,7 +80,7 @@ $(window).on("load", function(){
 
     if(isMac || os == "MacOS"){
         debug.textContent += " On a Mac?";
-        handleVidError();
+        /* handleVidError(); */
     }
 
     // Tests for Safari browser are found on: 
@@ -91,7 +91,7 @@ $(window).on("load", function(){
     if (isItSafari){
         /* console.log("Safari, yeah!"); */
         debug.textContent = "Initially, it is Safari.";
-        handleVidError();
+        /* handleVidError(); */
     }
 
     // Check browser...
@@ -102,7 +102,7 @@ $(window).on("load", function(){
     
     if(isSafari){
         debug.textContent = "You are browsing with Safari.";
-        handleVidError();
+        /* handleVidError(); */
     } else {
         debug.textContent = "You are not using Safari.";
     }
@@ -171,17 +171,20 @@ $(window).on("load", function(){
 
     }
 
+/*     
     // For playing video when done loading.
     // Found on Stack Overflow:
     // https://stackoverflow.com/questions/54539689/load-video-only-when-document-is-ready-play-it-when-loaded
 
-    var video_node = vid.get(0);
+    var video_jq = $('#vid');
+    var video_node = video_jq.get(0);
 
-    vid.on("canplaythrough", function(e){
+    video_jq.on("canplaythrough", function(e){
         video_node.play(); // Video is downloaded, trigger playing
     });
 
     video_node.load(); // All resources are ready, trigger video downloading
+ */
 
     /* TEST */
 /*     let container = document.querySelector(".sparticles-container");
