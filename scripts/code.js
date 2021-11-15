@@ -102,8 +102,10 @@ $(window).on("load", function(){
 
     if (ratio_rounded < 1.78) {
 
-        var ratio_diff = 1.6 / 1.78;
-        var ratio_diff_percent = 1 - ratio_diff;
+        // var ratio_diff = 1.6 / 1.78;
+        // var ratio_diff_percent = 1 - ratio_diff;
+        var ratio_diff_percent = (1.78 / ratio_rounded) - 1;
+
         // In the case of 1.6 / 1.78, ratio_diff_percent will be around 0,1012 / 10%.
         // debug.textContent += ", ratio_diff_percent: " + ratio_diff_percent;
 
@@ -154,6 +156,14 @@ $(window).on("load", function(){
     video_node.load(); // All resources are ready, trigger video downloading
 
 });
+
+/* 
+// ... HTMLElement element, string property, float ratio as percentage.
+function increaseStylePropertyByRatio(element, property, ratio){
+    var get_element_property = parseFloat(window.getComputedStyle(element).property);
+    var element_property_to_add = get_element_property * ratio;
+    element.style.property = get_book_height + book_height_to_add + "px";
+} */
 
 /* Fun - Clicks: Start */
 
