@@ -8,6 +8,8 @@ var vid = document.getElementById("vid");
 var img = document.getElementById("fallback-img");
 
 function showImage(){
+    debug.textContent += " showImage() triggered!";
+
     /* vid.style.display = "none"; */
     img.style.display = "block";
 
@@ -20,6 +22,8 @@ function showImage(){
 
 /* In separate functions as the vid may not even appear on Safari, causing error? */
 function hideVid(){
+    debug.textContent += " hideVid() triggered!";
+
     // Check if vid element exists:
     if (typeof(vid) != 'undefined' && element != null)
     {
@@ -29,6 +33,8 @@ function hideVid(){
 
 /* Sigh... */
 function handleVidError(){
+    debug.textContent += " handleVidError() triggered!";
+
     //  Hopefully, it'll work?
     img.style.display = "block";
 
