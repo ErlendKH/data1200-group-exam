@@ -21,6 +21,13 @@ var sparticles_laptop = document.querySelector(".sparticles-laptop");
 var sparticles_coffee = document.querySelector(".sparticles-coffee"); 
 var sparticles_paper = document.querySelector(".sparticles-paper"); 
 
+var dismiss_button = document.getElementById("dismiss-button");
+var dynamic_h2 = document.getElementById("dynamic-h2");
+var dynamic_p = document.getElementById("dynamic-p");
+var dynamic_img = document.getElementById("dynamic-img");
+var dynamic_quote1 = document.getElementById("dynamic-quote1");
+var dynamic_quote2 = document.getElementById("dynamic-quote2");
+
 /* Elements: End */
 
 function showImage(){
@@ -44,13 +51,6 @@ function handleVidError(){
 $(document).ready(function() {
 /*     console.log("Ready!");
     debug.textContent = "Document ready!"; */
-
-/*     let myElement = document.getElementById("book");
-    let mySparticles = new Sparticles(myElement, { count: 100 }, 400); */
-
-    /* let container = document.querySelector(".sparticles-container"); */
-    /* let mySparticles = new Sparticles( container, { count: 25 }); */
-    /* let mySparticles = new Sparticles( container, { count: 100 }, 400); */
 
     // Particle effects from simeydotme at: https://github.com/simeydotme/sparticles
 
@@ -163,6 +163,10 @@ $(document).ready(function() {
         }, 50);
     });
 
+    dismiss_button.addEventListener('click', function() {
+        hidePopup();
+    }, false);
+
 });
 
 // We use window.onload instead of document.ready because the latter is triggered before all images are downloaded
@@ -170,11 +174,11 @@ $(window).on("load", function(){
 
     debug.textContent = "Ready!";
 
-    // Detect Firefox
+/*     // Detect Firefox
     if (navigator.userAgent.indexOf("Firefox") > 0) {
         // Not optimal, but at least keeps the click boxes for the items in check.
         div_16_9.style.maxHeight = 100 + "%";
-    }
+    } */
 
     // Test for Mac:
     var isMac = false;
@@ -206,10 +210,10 @@ $(window).on("load", function(){
                navigator.userAgent.indexOf('FxiOS') == -1;
     
     if(isSafari){
-        debug.textContent = "You are browsing with Safari.";
+        // debug.textContent = "You are browsing with Safari.";
         /* handleVidError(); */
     } else {
-        debug.textContent = "You are not using Safari.";
+        // debug.textContent = "You are not using Safari.";
     }
 
     /* Checking device/screen resolution (another thing to fix): */
@@ -219,7 +223,7 @@ $(window).on("load", function(){
     var ratio_rounded = Math.round((ratio + Number.EPSILON) * 100) / 100;
     /* var ratio = Math.round((width / height) * 100) / 100; */
 
-    debug.textContent += " w: " + width + ", h: " + height + ", ratio: " + ratio_rounded;
+    // debug.textContent += " w: " + width + ", h: " + height + ", ratio: " + ratio_rounded;
     // w: 1536, h: 864, ratio: 1.78 (this is 16:9, 1920x1080)
 
     // Ex. how to handle 1440x900 with ratio 1.6?

@@ -529,9 +529,80 @@ video p {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-color: rgba(255, 255, 255, 1);
+    color: white;
+
+    background-color: rgb(0, 0, 0);
     z-index: 4;
 
+    border: 2px solid gold;
+    border-radius: 4px;
+
+}
+
+.popup-container {
+    display: grid;
+    grid-template-areas:
+    "a b";
+}
+
+.popup-container div {
+    margin: 2rem 0;
+}
+
+.popup-container div:first-child {
+    grid-area: a;
+    /* background-color: blue; */
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.popup-container div:nth-child(2) {
+    grid-area: b;
+    /* background-color: green; */
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.popup-container div h2 {
+    margin: 0 0 1rem 0;
+    padding: 0;
+
+    color:gold;
+}
+
+.popup-container div figure {
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+}
+
+.popup-container div figure img {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-container div blockquote {
+    margin-bottom: 1.5rem;
+    color:palegoldenrod;
+}
+
+.popup-container div p {
+    color:white;
+}
+
+.popup-container button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.popup-container img {
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 1.5rem; */
 }
 
 /*  */
