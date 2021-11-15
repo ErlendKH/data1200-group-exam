@@ -565,10 +565,10 @@ video p {
 /*     margin-left: 2rem;
     margin-right: 1rem; */
 
-    margin-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
 
 }
 
@@ -581,10 +581,10 @@ video p {
 /*     margin-left: 1rem;
     margin-right: 2rem; */
 
-    margin-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 3rem;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
 
 }
 
@@ -593,10 +593,10 @@ video p {
 
     grid-area: c;
 
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 1rem;
-    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .popup-container div:nth-child(4) {
@@ -604,10 +604,10 @@ video p {
 
     grid-area: d;
 
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 1rem;
-    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 /* #dynamic-quote0 {
@@ -649,6 +649,8 @@ video p {
 }
 
 .popup-container div h3 {
+/*     margin-top: 0;
+    padding-top: 0; */
     margin-bottom: 0.5rem;
 }
 
@@ -736,6 +738,14 @@ Standard Media Queries: Start
         padding-left: 1rem;
     }
 
+    #dynamic-h2 {
+        display: none;
+    }
+
+    #dynamic-h3 {
+        padding-top: 0;
+    }
+
 }
 
 /* Phones */ 
@@ -763,6 +773,14 @@ and (max-width : 600px) {
     h1 {
         font-size: 3rem;
         padding-left: 2rem;
+    }
+
+    #dynamic-h2 {
+        display: none;
+    }
+
+    #dynamic-h3 {
+        padding-top: 0;
     }
 
 }
