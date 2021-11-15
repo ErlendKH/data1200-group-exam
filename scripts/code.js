@@ -8,9 +8,36 @@ var vid = document.getElementById("vid");
 var img = document.getElementById("fallback-img");
 
 function showImage(){
-    vid.style.display = "none";
+    /* vid.style.display = "none"; */
     img.style.display = "block";
+
+    // Check if image it exists: On a second note, surely the img works, right...
+    // if (typeof(img) != 'undefined' && element != null)
+    // {
+    //     img.style.display = "block";
+    // }
 }
+
+/* In separate functions as the vid may not even appear on Safari, causing error? */
+function hideVid(){
+    // Check if vid element exists:
+    if (typeof(vid) != 'undefined' && element != null)
+    {
+        vid.style.display = "none";
+    }
+}
+
+/* Sigh... */
+function handleVidError(){
+    //  Hopefully, it'll work?
+    img.style.display = "block";
+
+    if (typeof(vid) != 'undefined' && element != null)
+    {
+        vid.style.display = "none";
+    }
+}
+
 
 /* vid.onerror = function(){
 
@@ -61,14 +88,17 @@ $(window).on("load", function(){
 
     debug.textContent = "Document ready!";
 
-    // Initial test that is supposed to only for for Safari on macOS:
+    // Tests for Safari browser are found on: 
+    // https://stackoverflow.com/questions/7944460/detect-safari-browser
+
+    // Initial test that is supposed to work only for Safari on macOS:
     var isItSafari = window.safari !== undefined;
     if (isItSafari){
-        console.log("Safari, yeah!");
-        showImage();
+        /* console.log("Safari, yeah!"); */
         debug.textContent = "Initially, it is Safari.";
+        showImage();
+        hideVid();
     }
-     
 
     // Check browser...
     var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
@@ -77,28 +107,26 @@ $(window).on("load", function(){
                navigator.userAgent.indexOf('FxiOS') == -1;
     
     if(isSafari){
-        showImage();
         debug.textContent = "You are browsing with Safari.";
+        showImage();
+        hideVid();
     } else {
         debug.textContent = "You are not using Safari.";
     }
 
-
     // For playing video when done loading.
-/* 
-    var video_jq = $('#vid');
-    var video_node = video_jq.get(0);
+    // Found on Stack Overflow:
+    // https://stackoverflow.com/questions/54539689/load-video-only-when-document-is-ready-play-it-when-loaded
+
+    // var video_jq = $('#vid');
+    // var video_node = video_jq.get(0);
+    var video_node = vid.get(0);
 
     video_jq.on("canplaythrough", function(e){
-
-        // Video is downloaded, trigger playing
-        video_node.play();
-
+        video_node.play(); // Video is downloaded, trigger playing
     });
 
-    // All resources are ready, trigger video downloading
-    video_node.load();
-     */
+    video_node.load(); // All resources are ready, trigger video downloading
 
 });
 
