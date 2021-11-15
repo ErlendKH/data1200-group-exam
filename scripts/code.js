@@ -6,12 +6,20 @@ var debug = document.getElementById("debug");
 var vid = document.getElementById("vid");
 var img = document.getElementById("fallback-img");
 
+var div_16_9 = document.getElementById("div-16-9");
 var book = document.getElementById("book");
 var pen = document.getElementById("pen");
 var smartphone = document.getElementById("smartphone");
 var laptop = document.getElementById("laptop");
 var coffee = document.getElementById("coffee");
 var paper = document.getElementById("paper");
+
+var sparticles_book = document.querySelector(".sparticles-book"); 
+var sparticles_pen = document.querySelector(".sparticles-pen"); 
+var sparticles_smartphone = document.querySelector(".sparticles-smartphone"); 
+var sparticles_laptop = document.querySelector(".sparticles-laptop"); 
+var sparticles_coffee = document.querySelector(".sparticles-coffee"); 
+var sparticles_paper = document.querySelector(".sparticles-paper"); 
 
 /* Elements: End */
 
@@ -46,23 +54,114 @@ $(document).ready(function() {
 
     // Particle effects from simeydotme at: https://github.com/simeydotme/sparticles
 
-    let container = document.querySelector(".sparticles-book"); 
-    let sparticlesBook = new Sparticles( container, {count: 25, speed: 5, shape: "random"});
+    /* BOOK */
 
-    container = document.querySelector(".sparticles-pen");
-    let sparticlesPen = new Sparticles( container, {count: 25, speed: 5, shape: "triangle"});
+    let sparticlesBook = new Sparticles( sparticles_book, {count: 25, speed: 5, shape: "random"});
 
-    container = document.querySelector(".sparticles-smartphone");
-    let sparticlesSmartphone = new Sparticles( container, {count: 25, speed: 5, shape: "circle"});
+    // Hover events?
+    sparticles_book.addEventListener('mouseenter', e => {
+        sparticlesBook.destroy();
+        setTimeout(function() {
+            sparticlesBook = new Sparticles( sparticles_book, {count: 200, speed: 10, shape: "random"});
+        }, 50);
+      });
+      
+      sparticles_book.addEventListener('mouseleave', e => {
+        sparticlesBook.destroy();
+        setTimeout(function() {
+            sparticlesBook = new Sparticles( sparticles_book, {count: 25, speed: 5, shape: "random"});
+        }, 50);
+    });
 
-    container = document.querySelector(".sparticles-laptop");
-    let sparticlesLaptop = new Sparticles( container, {count: 100, speed: 5, shape: "diamond", color: "gold"});
+    /* PEN */
 
-    container = document.querySelector(".sparticles-coffee");
-    let sparticlesCoffee = new Sparticles( container, {count: 25, speed: 5, shape: "random"});
+    let sparticlesPen = new Sparticles( sparticles_pen, {count: 25, speed: 5, shape: "triangle"});
 
-    container = document.querySelector(".sparticles-paper");
-    let sparticlesPaper = new Sparticles( container, {count: 25, speed: 5, shape: "triangle"});
+    sparticles_pen.addEventListener('mouseenter', e => {
+        sparticlesPen.destroy();
+        setTimeout(function() {
+            sparticlesPen = new Sparticles( sparticles_pen, {count: 200, speed: 10, shape: "triangle"});
+        }, 50);
+      });
+      
+      sparticles_pen.addEventListener('mouseleave', e => {
+        sparticlesPen.destroy();
+        setTimeout(function() {
+            sparticlesPen = new Sparticles( sparticles_pen, {count: 25, speed: 5, shape: "triangle"});
+        }, 50);
+    });
+
+    /* SMARTPHONE */
+
+    let sparticlesSmartphone = new Sparticles( sparticles_smartphone, {count: 25, speed: 5, shape: "circle"});
+
+    sparticles_smartphone.addEventListener('mouseenter', e => {
+        sparticlesSmartphone.destroy();
+        setTimeout(function() {
+            sparticlesSmartphone = new Sparticles( sparticles_smartphone, {count: 200, speed: 10, shape: "circle"});
+        }, 50);
+      });
+      
+      sparticles_smartphone.addEventListener('mouseleave', e => {
+        sparticlesSmartphone.destroy();
+        setTimeout(function() {
+            sparticlesSmartphone = new Sparticles( sparticles_smartphone, {count: 25, speed: 5, shape: "circle"});
+        }, 50);
+    });
+
+    /* LAPTOP */
+
+    let sparticlesLaptop = new Sparticles( sparticles_laptop, {count: 100, speed: 5, shape: "diamond", color: "gold"});
+
+    sparticles_laptop.addEventListener('mouseenter', e => {
+        sparticlesLaptop.destroy();
+        setTimeout(function() {
+            sparticlesLaptop = new Sparticles( sparticles_laptop, {count: 500, speed: 10, shape: "diamond", color: "gold"});
+        }, 50);
+      });
+      
+      sparticles_laptop.addEventListener('mouseleave', e => {
+        sparticlesLaptop.destroy();
+        setTimeout(function() {
+            sparticlesLaptop = new Sparticles( sparticles_laptop, {count: 100, speed: 5, shape: "diamond", color: "gold"});
+        }, 50);
+    });
+
+    /* COFFEE */
+
+    let sparticlesCoffee = new Sparticles( sparticles_coffee, {count: 25, speed: 5, shape: "random"});
+
+    sparticles_coffee.addEventListener('mouseenter', e => {
+        sparticlesCoffee.destroy();
+        setTimeout(function() {
+            sparticlesCoffee = new Sparticles( sparticles_coffee, {count: 200, speed: 10, shape: "random"});
+        }, 50);
+      });
+      
+      sparticles_coffee.addEventListener('mouseleave', e => {
+        sparticlesCoffee.destroy();
+        setTimeout(function() {
+            sparticlesCoffee = new Sparticles( sparticles_coffee, {count: 25, speed: 5, shape: "random"});
+        }, 50);
+    });
+
+    /* PAPER */
+
+    let sparticlesPaper = new Sparticles( sparticles_paper, {count: 25, speed: 5, shape: "triangle"});
+
+    sparticles_paper.addEventListener('mouseenter', e => {
+        sparticlesPaper.destroy();
+        setTimeout(function() {
+            sparticlesPaper = new Sparticles( sparticles_paper, {count: 200, speed: 10, shape: "triangle"});
+        }, 50);
+      });
+      
+      sparticles_paper.addEventListener('mouseleave', e => {
+        sparticlesPaper.destroy();
+        setTimeout(function() {
+            sparticlesPaper = new Sparticles( sparticles_paper, {count: 25, speed: 5, shape: "triangle"});
+        }, 50);
+    });
 
 });
 
@@ -70,6 +169,12 @@ $(document).ready(function() {
 $(window).on("load", function(){
 
     debug.textContent = "Ready!";
+
+    // Detect Firefox
+    if (navigator.userAgent.indexOf("Firefox") > 0) {
+        // Not optimal, but at least keeps the click boxes for the items in check.
+        div_16_9.style.maxHeight = 100 + "%";
+    }
 
     // Test for Mac:
     var isMac = false;
