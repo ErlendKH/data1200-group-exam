@@ -33,10 +33,38 @@ function handleVidError(){
     vid.style.display = "none";
 }
 
-/* $(document).ready(function() {
-    console.log("Ready!");
-    debug.textContent = "Document ready!";
-}); */
+$(document).ready(function() {
+/*     console.log("Ready!");
+    debug.textContent = "Document ready!"; */
+
+/*     let myElement = document.getElementById("book");
+    let mySparticles = new Sparticles(myElement, { count: 100 }, 400); */
+
+    /* let container = document.querySelector(".sparticles-container"); */
+    /* let mySparticles = new Sparticles( container, { count: 25 }); */
+    /* let mySparticles = new Sparticles( container, { count: 100 }, 400); */
+
+    // Particle effects from simeydotme at: https://github.com/simeydotme/sparticles
+
+    let container = document.querySelector(".sparticles-book"); 
+    let sparticlesBook = new Sparticles( container, {count: 25, speed: 5, shape: "random"});
+
+    container = document.querySelector(".sparticles-pen");
+    let sparticlesPen = new Sparticles( container, {count: 25, speed: 5, shape: "triangle"});
+
+    container = document.querySelector(".sparticles-smartphone");
+    let sparticlesSmartphone = new Sparticles( container, {count: 25, speed: 5, shape: "circle"});
+
+    container = document.querySelector(".sparticles-laptop");
+    let sparticlesLaptop = new Sparticles( container, {count: 100, speed: 5, shape: "diamond", color: "gold"});
+
+    container = document.querySelector(".sparticles-coffee");
+    let sparticlesCoffee = new Sparticles( container, {count: 25, speed: 5, shape: "random"});
+
+    container = document.querySelector(".sparticles-paper");
+    let sparticlesPaper = new Sparticles( container, {count: 25, speed: 5, shape: "triangle"});
+
+});
 
 // We use window.onload instead of document.ready because the latter is triggered before all images are downloaded
 $(window).on("load", function(){
@@ -154,6 +182,13 @@ $(window).on("load", function(){
     });
 
     video_node.load(); // All resources are ready, trigger video downloading
+
+    /* TEST */
+/*     let container = document.querySelector(".sparticles-container");
+    let mySparticles = new Sparticles( container, { count: 100 }, 400); */
+
+/*     let myElement = document.getElementById("book");
+    let mySparticles = new Sparticles(myElement, { count: 100 }, 400); */
 
 });
 

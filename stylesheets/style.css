@@ -416,7 +416,7 @@ video p {
     height: 44%;
 
     cursor: pointer;
-    background-color:rgba(255, 0, 0, 0.25);
+    /* background-color:rgba(255, 0, 0, 0.25); */
     z-index: 2;
 }
 
@@ -429,7 +429,7 @@ video p {
     height: 33%;
 
     cursor: pointer;
-    background-color:rgba(200, 255, 0, 0.25);
+    /* background-color:rgba(200, 255, 0, 0.25); */
     z-index: 2;
 }
 
@@ -442,7 +442,7 @@ video p {
     height: 35%;
 
     cursor: pointer;
-    background-color:rgba(0, 255, 42, 0.25);
+    /* background-color:rgba(0, 255, 42, 0.25); */
     z-index: 2;
 }
 
@@ -455,7 +455,7 @@ video p {
     height: 85%;
 
     cursor: pointer;
-    background-color:rgba(0, 247, 255, 0.25);
+    /* background-color:rgba(0, 247, 255, 0.25); */
     z-index: 2;
 }
 
@@ -468,7 +468,7 @@ video p {
     height: 30%;
 
     cursor: pointer;
-    background-color:rgba(255, 0, 0, 0.25);
+    /* background-color:rgba(255, 0, 0, 0.25); */
     z-index: 2;
 }
 
@@ -481,7 +481,7 @@ video p {
     height: 47%;
 
     cursor: pointer;
-    background-color:rgba(255, 0, 0, 0.25);
+    /* background-color:rgba(255, 0, 0, 0.25); */
     z-index: 2;
 }
 
@@ -533,6 +533,31 @@ video p {
     z-index: 4;
 
 }
+
+/*  */
+.sparticles-container, .sparticles-book, .sparticles-pen, .sparticles-smartphone,
+.sparticles-laptop, .sparticles-coffee, .sparticles-paper {
+    width: 100%;
+    height: 100%;
+}
+
+.sparticles-book {}
+.sparticles-pen {}
+.sparticles-smartphone {}
+.sparticles-laptop {}
+.sparticles-coffee {}
+.sparticles-paper {}
+
+/**
+* we could a;so use "pointer-events: none;" in
+* modern browsers to put the particles on top of all our content
+*/
+/* @supports ( pointer-events: none ) {
+    .sparticles-container {
+      z-index: 2;
+      pointer-events: none;
+    }
+} */
 
 /*
 ONLY FOR THE FUN PAGE: END

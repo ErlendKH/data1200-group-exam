@@ -12,7 +12,8 @@
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <!-- <script src="/scripts/code.js"></script> -->
+    <!-- SPECIAL SCRIPT -->
+    <script src="/scripts/sparticles.min.js"></script>
 </head>
 
 <body class="fun">
@@ -36,12 +37,24 @@
 
         <div id="div-16-9">
 
-            <div id="book"></div>
-            <div id="pen"></div>
-            <div id="smartphone"></div>
-            <div id="laptop"></div>
-            <div id="coffee"></div>
-            <div id="paper"></div>
+            <div id="book">
+                <div class="sparticles-book"></div>
+            </div>
+            <div id="pen">
+                <div class="sparticles-pen"></div>
+            </div>
+            <div id="smartphone">
+                <div class="sparticles-smartphone"></div>
+            </div>
+            <div id="laptop">
+                <div class="sparticles-laptop"></div>
+            </div>
+            <div id="coffee">
+                <div class="sparticles-coffee"></div>
+            </div>
+            <div id="paper">
+                <div class="sparticles-paper"></div>
+            </div>
 
             <div id="debug">Debug</div>
 
@@ -66,80 +79,7 @@
 
     </main>
 
-<!--     <script>
-
-        var book = document.getElementById("book");
-        var pen = document.getElementById("pen");
-        var smartphone = document.getElementById("smartphone");
-        var laptop = document.getElementById("laptop");
-        var coffee = document.getElementById("coffee");
-        var paper = document.getElementById("paper");
-
-        var background = document.getElementById("popup-background");
-        var popup = document.getElementById("popup-box");
-
-        var debug = document.getElementById("debug");
-
-        book.addEventListener('click', function() {
-            debug.textContent = "Book clicked!";
-
-            showPopup();
-        }, false);
-
-        pen.addEventListener('click', function() {
-            debug.textContent = "Pen clicked!";
-
-            showPopup();
-        }, false);
-
-        smartphone.addEventListener('click', function() {
-            debug.textContent = "Smartphone clicked!";
-
-            showPopup();
-        }, false);
-
-        laptop.addEventListener('click', function() {
-            debug.textContent = "Laptop clicked!";
-
-            showPopup();
-        }, false);
-
-        coffee.addEventListener('click', function() {
-            debug.textContent = "Coffee clicked!";
-
-            showPopup();
-        }, false);
-
-        paper.addEventListener('click', function() {
-            debug.textContent = "Paper clicked!";
-
-            showPopup();
-        }, false);
-
-        background.addEventListener('click', function() {
-            debug.textContent = "Background clicked!";
-
-            hidePopup();
-        }, false);
-
-        popup.addEventListener('click', function() {
-            debug.textContent = "Popup clicked!";
-        }, false);
-
-        function showPopup() {
-            background.style.display = "block";
-            popup.style.display = "block";
-        }
-
-        function hidePopup() {
-            background.style.display = "None";
-            popup.style.display = "None";
-        }
-
-    </script> -->
-
     <script src="/scripts/code.js"></script>
-
 </body>
 
 </html>
