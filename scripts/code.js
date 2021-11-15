@@ -94,6 +94,17 @@ $(window).on("load", function(){
 
     debug.textContent = "Document ready!";
 
+    // Test for Mac:
+    var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0; // Obsolete!
+
+    var os = "";
+    if (navigator.appVersion.indexOf("Mac") != -1) os = "MacOS"; // Obsolete!
+
+    if(isMac || os == "MacOS"){
+        debug.textContent += " On a Mac?";
+        handleVidError();
+    }
+
     // Tests for Safari browser are found on: 
     // https://stackoverflow.com/questions/7944460/detect-safari-browser
 
