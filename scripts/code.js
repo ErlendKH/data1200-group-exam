@@ -23,10 +23,14 @@ var sparticles_paper = document.querySelector(".sparticles-paper");
 
 var dismiss_button = document.getElementById("dismiss-button");
 var dynamic_h2 = document.getElementById("dynamic-h2");
-var dynamic_p = document.getElementById("dynamic-p");
+var dynamic_h3 = document.getElementById("dynamic-h3");
+/* var dynamic_p1 = document.getElementById("dynamic-p1");
+var dynamic_p2 = document.getElementById("dynamic-p2"); */
 var dynamic_img = document.getElementById("dynamic-img");
+var dynamic_quote0 = document.getElementById("dynamic-quote0");
 var dynamic_quote1 = document.getElementById("dynamic-quote1");
 var dynamic_quote2 = document.getElementById("dynamic-quote2");
+/* var dynamic_quote3 = document.getElementById("dynamic-quote3"); */
 
 /* Elements: End */
 
@@ -311,38 +315,122 @@ var popup = document.getElementById("popup-box");
 
 var debug = document.getElementById("debug");
 
+/* BOOK */
+
 book.addEventListener('click', function() {
     debug.textContent = "Book clicked!";
 
+    dynamic_img.src = "/media/book-surreal.jpg";
+
+    dynamic_h2.textContent = "A Journey Into A Strange World";
+
+    dynamic_h3.style.display = "block";
+    dynamic_h3.textContent = "Erlend";
+    dynamic_quote0.textContent = "";
+    
+    dynamic_quote1.textContent = 'The only impossible journey is the one you never begin. - Tony Robbins';
+    dynamic_quote2.textContent = "";
+    /* dynamic_quote3.textContent = ""; */
+
     showPopup();
 }, false);
+
+/* PEN */
 
 pen.addEventListener('click', function() {
     debug.textContent = "Pen clicked!";
 
+    dynamic_img.src = "/media/pen.jpg";
+
+    dynamic_h2.textContent = "The Lead Character";
+
+    dynamic_h3.style.display = "block";
+    dynamic_h3.textContent = "Patrick";
+    dynamic_quote0.textContent = "";
+
+    dynamic_quote1.textContent = "Many of life's failures are people who did not realize how close they were to success when they gave up. - Thomas A. Edison";
+    dynamic_quote2.textContent = "The way to get started is to quit talking and begin doing. - Walt Disney";
+    /* dynamic_quote3.textContent = ""; */
+
     showPopup();
 }, false);
+
+/* SMARTPHONE */
 
 smartphone.addEventListener('click', function() {
     debug.textContent = "Smartphone clicked!";
 
+    dynamic_img.src = "/media/mobile-fall.jpg";
+
+    dynamic_h2.textContent = "The Fall";
+
+    dynamic_h3.style.display = "block";
+    dynamic_h3.textContent = "A";
+    dynamic_quote0.textContent = "Marcin";
+
+    dynamic_quote1.textContent = 'The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela';
+    dynamic_quote2.textContent = '""';
+    /* dynamic_quote3.textContent = ""; */
+
     showPopup();
 }, false);
+
+/* LAPTOP */
 
 laptop.addEventListener('click', function() {
     debug.textContent = "Laptop clicked!";
 
+    dynamic_img.src = "/media/cookie-the-pom-laptop-unsplash.jpg";
+
+    dynamic_h2.textContent = "That's Cute";
+
+    dynamic_h3.style.display = "none";
+    /* dynamic_h3.textContent = "A"; */
+    dynamic_quote0.textContent = "";
+
+    dynamic_quote1.textContent = "You know you are on the road to success if you would do your job and not be paid for it. -Oprah Winfrey";
+    dynamic_quote2.textContent = "TTTTTTTT";
+    /* dynamic_quote3.textContent = ""; */
+
     showPopup();
 }, false);
+
+/* COFFEE */
 
 coffee.addEventListener('click', function() {
     debug.textContent = "Coffee clicked!";
 
+    dynamic_img.src = "/media/woman-coffee.jpg";
+
+    dynamic_h2.textContent = "A Great Day";
+
+    dynamic_h3.style.display = "block";
+    dynamic_h3.textContent = "Majureka";
+    dynamic_quote0.textContent = "";
+
+    dynamic_quote1.textContent = "I failed my way to success. -Thomas Edison";
+    dynamic_quote2.textContent = '""';
+    /* dynamic_quote3.textContent = ""; */
+
     showPopup();
 }, false);
 
+/* PAPER */
+
 paper.addEventListener('click', function() {
     debug.textContent = "Paper clicked!";
+
+    dynamic_img.src = "/media/carolina-garcia-paper.jpg";
+
+    dynamic_h2.textContent = "Beauty";
+
+    dynamic_h3.style.display = "block";
+    dynamic_h3.textContent = "Gulluzar";
+    dynamic_quote0.textContent = "";
+
+    dynamic_quote1.textContent = "There are no secrets to success. It is the result of preparation, hard work, and learning from failure. - Colin Powell";
+    dynamic_quote2.textContent = "Successful people do what unsuccessful people are not willing to do. Don't wish it were easier; wish you were better. -Jim Rohn";
+    /* dynamic_quote3.textContent = ""; */
 
     showPopup();
 }, false);

@@ -522,8 +522,8 @@ video p {
 
     position: absolute;
 
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
 
     top: 50%;
     left: 50%;
@@ -542,36 +542,98 @@ video p {
 .popup-container {
     display: grid;
     grid-template-areas:
-    "a b";
+    /* "a b"; */
+/*     "a b"
+    "c b"; */
+    "a b"
+    "c d";
 }
 
 .popup-container div {
-    margin: 2rem 0;
+    width: 100%;
+    height: 100%;
+    
+    /* margin: 2rem 0; */
 }
 
 .popup-container div:first-child {
     grid-area: a;
     /* background-color: blue; */
-    margin-left: 2rem;
-    margin-right: 1rem;
+/*     margin-top: 2rem;
+    margin-bottom: 2rem; */
+
+/*     margin-left: 2rem;
+    margin-right: 1rem; */
+
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+
 }
 
 .popup-container div:nth-child(2) {
     grid-area: b;
     /* background-color: green; */
-    margin-left: 1rem;
-    margin-right: 2rem;
+/*     margin-top: 2rem;
+    margin-bottom: 2rem; */
+
+/*     margin-left: 1rem;
+    margin-right: 2rem; */
+
+    margin-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+
 }
 
+.popup-container div:nth-child(3) {
+    /* background-color:mediumvioletred; */
+
+    grid-area: c;
+
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.popup-container div:nth-child(4) {
+    /* background-color:salmon; */
+
+    grid-area: d;
+
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* #dynamic-quote0 {
+    margin-bottom: 3rem;
+} */
+
+/* .popup-container div:nth-child(3) {
+    grid-area: c;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    background-color: violet;
+} */
+
 .popup-container div h2 {
-    margin: 0 0 1rem 0;
+    /* margin: 0 0 1rem 0; */
+    margin: 0;
     padding: 0;
 
     color:gold;
 }
 
 .popup-container div figure {
-    margin: 0 0 1.5rem 0;
+    /* margin: 0 0 1.5rem 0; */
+    margin: 0;
     padding: 0;
 }
 
@@ -581,13 +643,19 @@ video p {
 }
 
 .popup-container div blockquote {
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 3rem; */
+    margin: 0;
     color:palegoldenrod;
 }
 
-.popup-container div p {
-    color:white;
+.popup-container div h3 {
+    margin-bottom: 0.5rem;
 }
+
+/* .popup-container div p {
+    color:white;
+    margin-bottom: 1rem;
+} */
 
 .popup-container button {
     position: absolute;
