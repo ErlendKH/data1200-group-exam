@@ -61,6 +61,15 @@ $(window).on("load", function(){
 
     debug.textContent = "Document ready!";
 
+    // Initial test that is supposed to only for for Safari on macOS:
+    var isItSafari = window.safari !== undefined;
+    if (isItSafari){
+        console.log("Safari, yeah!");
+        showImage();
+        debug.textContent = "Initially, it is Safari.";
+    }
+     
+
     // Check browser...
     var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
                navigator.userAgent &&
