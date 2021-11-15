@@ -95,7 +95,8 @@ $(window).on("load", function(){
     debug.textContent = "Document ready!";
 
     // Test for Mac:
-    var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0; // Obsolete!
+    var isMac = false;
+    isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0; // Obsolete!
 
     var os = "";
     if (navigator.appVersion.indexOf("Mac") != -1) os = "MacOS"; // Obsolete!
@@ -139,7 +140,7 @@ $(window).on("load", function(){
     // var video_node = video_jq.get(0);
     var video_node = vid.get(0);
 
-    video_jq.on("canplaythrough", function(e){
+    vid.on("canplaythrough", function(e){
         video_node.play(); // Video is downloaded, trigger playing
     });
 
