@@ -377,6 +377,8 @@ video p {
     height: 100%;
     max-height: 100vh;
 
+    max-height: calc(var(--vh, 1vh) * 100); /* vh for Safari? */
+
     /* background-color: rgb(255, 0, 0); */
 
     z-index: 1;
