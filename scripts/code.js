@@ -239,6 +239,16 @@ $(window).on("load", function(){
     }
  */
 
+    // For playing video when done loading. Possibly needed for mobile?
+    // Found on Stack Overflow:
+    // https://stackoverflow.com/questions/54539689/load-video-only-when-document-is-ready-play-it-when-loaded
+
+    var video_jq = $('#vid'); var video_node = video_jq.get(0);
+    video_jq.on("canplaythrough", function(e){
+        video_node.play(); // Video is downloaded, trigger playing
+    });
+    video_node.load(); // All resources are ready, trigger video downloading
+
 });
 
 /* Fun - Clicks: Start */
