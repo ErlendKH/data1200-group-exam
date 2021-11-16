@@ -377,7 +377,6 @@ video p {
     height: 100%;
     max-height: 100vh;
 
-    max-height: -webkit-calc(100% - 0px);
     /* max-height: calc(var(--vh, 1vh) * 100); */
 
     /* background-color: rgb(255, 0, 0); */
@@ -386,6 +385,10 @@ video p {
 
     position: relative;
      
+}
+
+.for-safari {
+    max-height: -webkit-calc(100% - 0px);
 }
 
 /* #div-16-9 video {

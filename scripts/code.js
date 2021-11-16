@@ -177,6 +177,24 @@ $(document).ready(function() {
 // We use window.onload instead of document.ready because the latter is triggered before all images are downloaded
 $(window).on("load", function(){
 
+    // Various Safari browser checks from: https://stackoverflow.com/questions/7944460/detect-safari-browser
+
+    // Safari check: 1
+    var isItSafari = window.safari !== undefined;
+    if (isItSafari){
+        div_16_9.classList.add("for-safari");
+    }
+
+    // Safari check: 2
+    var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+               navigator.userAgent &&
+               navigator.userAgent.indexOf('CriOS') == -1 &&
+               navigator.userAgent.indexOf('FxiOS') == -1;
+    
+    if(isSafari){
+        div_16_9.classList.add("for-safari");
+    }
+
     // For playing video when done loading. Possibly needed for mobile?
     // Found on Stack Overflow:
     // https://stackoverflow.com/questions/54539689/load-video-only-when-document-is-ready-play-it-when-loaded
