@@ -653,6 +653,7 @@ video p {
 * we could also use "pointer-events: none;" in
 * modern browsers to put the particles on top of all our content
 */
+
 @supports ( pointer-events: none ) {
     .sparticles-container {
       z-index: 2;

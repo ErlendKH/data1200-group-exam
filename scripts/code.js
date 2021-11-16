@@ -1,7 +1,7 @@
 
 /* Elements: Start */
 
-var debug = document.getElementById("debug");
+/* var debug = document.getElementById("debug"); */
 
 var vid = document.getElementById("vid");
 var img = document.getElementById("fallback-img");
@@ -249,7 +249,7 @@ var debug = document.getElementById("debug");
 /* BOOK */
 
 book.addEventListener('click', function() {
-    debug.textContent = "Book clicked!";
+    /* debug.textContent = "Book clicked!"; */
 
     dynamic_img.src = "/media/book-surreal.jpg";
 
@@ -269,7 +269,7 @@ book.addEventListener('click', function() {
 /* PEN */
 
 pen.addEventListener('click', function() {
-    debug.textContent = "Pen clicked!";
+    /* debug.textContent = "Pen clicked!"; */
 
     dynamic_img.src = "/media/pen.jpg";
 
@@ -289,7 +289,7 @@ pen.addEventListener('click', function() {
 /* SMARTPHONE */
 
 smartphone.addEventListener('click', function() {
-    debug.textContent = "Smartphone clicked!";
+    /* debug.textContent = "Smartphone clicked!"; */
 
     dynamic_img.src = "/media/mobile-fall.jpg";
 
@@ -309,7 +309,7 @@ smartphone.addEventListener('click', function() {
 /* LAPTOP */
 
 laptop.addEventListener('click', function() {
-    debug.textContent = "Laptop clicked!";
+    /* debug.textContent = "Laptop clicked!"; */
 
     dynamic_img.src = "/media/cookie-the-pom-laptop-unsplash.jpg";
 
@@ -329,7 +329,7 @@ laptop.addEventListener('click', function() {
 /* COFFEE */
 
 coffee.addEventListener('click', function() {
-    debug.textContent = "Coffee clicked!";
+    /* debug.textContent = "Coffee clicked!"; */
 
     dynamic_img.src = "/media/woman-coffee.jpg";
 
@@ -349,7 +349,7 @@ coffee.addEventListener('click', function() {
 /* PAPER */
 
 paper.addEventListener('click', function() {
-    debug.textContent = "Paper clicked!";
+    /* debug.textContent = "Paper clicked!"; */
 
     dynamic_img.src = "/media/carolina-garcia-paper.jpg";
 
@@ -367,13 +367,13 @@ paper.addEventListener('click', function() {
 }, false);
 
 background.addEventListener('click', function() {
-    debug.textContent = "Background clicked!";
+    /* debug.textContent = "Background clicked!"; */
 
     hidePopup();
 }, false);
 
 popup.addEventListener('click', function() {
-    debug.textContent = "Popup clicked!";
+    /* debug.textContent = "Popup clicked!"; */
 }, false);
 
 function showPopup() {
