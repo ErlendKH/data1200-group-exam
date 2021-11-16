@@ -377,7 +377,7 @@ video p {
     height: 100%;
     max-height: 100vh;
 
-    max-height: calc(100vh - var(--vh-offset, 0px));
+    max-height: calc(var(--vh, 1vh) * 100);
 
     /* max-height: -webkit-calc(100% - 0px); */ /* Fix for Safari? Affects Chrome and Opera too. */
 
