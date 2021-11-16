@@ -377,15 +377,10 @@ video p {
     height: 100%;
     max-height: 100vh;
 
-    /* max-height: calc(var(--vh, 1vh) * 100); */
-
-    /* min-height: -webkit-fill-available; */
-
     max-height: -webkit-calc(100% - 0px); /* Fix for Safari? Affects Chrome and Opera too. */
 
-    /* max-height: calc(var(--vh, 1vh) * 100); */
-
-    /* background-color: rgb(255, 0, 0); */
+    /* Another issue with Firefox, but no idea how to solve it... It's living it's own life.
+    It's an untamed fox. */
 
     z-index: 1;
 
