@@ -1,7 +1,7 @@
 
 /* Elements: Start */
 
-/* var debug = document.getElementById("debug"); */
+var debug = document.getElementById("debug");
 
 var vid = document.getElementById("vid");
 var img = document.getElementById("fallback-img");
@@ -180,7 +180,7 @@ $(window).on("load", function(){
     var ratio_rounded = Math.round((ratio + Number.EPSILON) * 100) / 100;
     /* var ratio = Math.round((width / height) * 100) / 100; */
 
-    // debug.textContent += " w: " + width + ", h: " + height + ", ratio: " + ratio_rounded;
+    debug.textContent += " w: " + width + ", h: " + height + ", ratio: " + ratio_rounded;
     // w: 1536, h: 864, ratio: 1.78 (this is 16:9, 1920x1080)
 
     // Ex. how to handle 1440x900 with ratio 1.6?
