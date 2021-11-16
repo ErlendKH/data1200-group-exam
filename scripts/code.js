@@ -216,7 +216,7 @@ book.addEventListener('click', function() {
 
     /* dynamic_h3.style.display = "block"; */
     dynamic_h3.textContent = "Erlend";
-    dynamic_quote0.textContent = "Do at least one useful thing a day. Keep trying. Have a dream.";
+    dynamic_quote0.textContent = "Do something useful each day. Keep trying. Have a dream.";
 
     dynamic_quote1.textContent = 'The only impossible journey is the one you never begin. — Tony Robbins';
     dynamic_quote2.textContent = "When you cease to dream you cease to live. —Malcolm Forbes";
