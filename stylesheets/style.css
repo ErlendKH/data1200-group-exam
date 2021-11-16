@@ -650,15 +650,15 @@ video p {
 .sparticles-paper {}
 
 /**
-* we could a;so use "pointer-events: none;" in
+* we could also use "pointer-events: none;" in
 * modern browsers to put the particles on top of all our content
 */
-/* @supports ( pointer-events: none ) {
+@supports ( pointer-events: none ) {
     .sparticles-container {
       z-index: 2;
       pointer-events: none;
     }
-} */
+}
 
 /*
 ONLY FOR THE FUN PAGE: END
