@@ -24,13 +24,10 @@ var sparticles_paper = document.querySelector(".sparticles-paper");
 var dismiss_button = document.getElementById("dismiss-button");
 var dynamic_h2 = document.getElementById("dynamic-h2");
 var dynamic_h3 = document.getElementById("dynamic-h3");
-/* var dynamic_p1 = document.getElementById("dynamic-p1");
-var dynamic_p2 = document.getElementById("dynamic-p2"); */
 var dynamic_img = document.getElementById("dynamic-img");
 var dynamic_quote0 = document.getElementById("dynamic-quote0");
 var dynamic_quote1 = document.getElementById("dynamic-quote1");
 var dynamic_quote2 = document.getElementById("dynamic-quote2");
-/* var dynamic_quote3 = document.getElementById("dynamic-quote3"); */
 
 /* Elements: End */
 
@@ -176,50 +173,6 @@ $(document).ready(function() {
 // We use window.onload instead of document.ready because the latter is triggered before all images are downloaded
 $(window).on("load", function(){
 
-    debug.textContent = "Ready!";
-
-/*     // Detect Firefox
-    if (navigator.userAgent.indexOf("Firefox") > 0) {
-        // Not optimal, but at least keeps the click boxes for the items in check.
-        div_16_9.style.maxHeight = 100 + "%";
-    } */
-
-    // Test for Mac:
-    var isMac = false;
-    isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0; // Obsolete!
-
-    var os = "";
-    if (navigator.appVersion.indexOf("Mac") != -1) os = "MacOS"; // Obsolete!
-
-    if(isMac || os == "MacOS"){
-        debug.textContent += " On a Mac?";
-        /* handleVidError(); */
-    }
-
-    // Tests for Safari browser are found on: 
-    // https://stackoverflow.com/questions/7944460/detect-safari-browser
-
-    // Initial test that is supposed to work only for Safari on macOS:
-    var isItSafari = window.safari !== undefined;
-    if (isItSafari){
-        /* console.log("Safari, yeah!"); */
-        debug.textContent = "Initially, it is Safari.";
-        /* handleVidError(); */
-    }
-
-    // Check browser...
-    var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
-               navigator.userAgent &&
-               navigator.userAgent.indexOf('CriOS') == -1 &&
-               navigator.userAgent.indexOf('FxiOS') == -1;
-    
-    if(isSafari){
-        // debug.textContent = "You are browsing with Safari.";
-        /* handleVidError(); */
-    } else {
-        // debug.textContent = "You are not using Safari.";
-    }
-
     /* Checking device/screen resolution (another thing to fix): */
     var width = screen.width;
     var height = screen.height;
@@ -283,28 +236,6 @@ $(window).on("load", function(){
         paper.style.top = get_paper_top + paper_top_to_add + "px"
 
     }
-
-/*     
-    // For playing video when done loading.
-    // Found on Stack Overflow:
-    // https://stackoverflow.com/questions/54539689/load-video-only-when-document-is-ready-play-it-when-loaded
-
-    var video_jq = $('#vid');
-    var video_node = video_jq.get(0);
-
-    video_jq.on("canplaythrough", function(e){
-        video_node.play(); // Video is downloaded, trigger playing
-    });
-
-    video_node.load(); // All resources are ready, trigger video downloading
- */
-
-    /* TEST */
-/*     let container = document.querySelector(".sparticles-container");
-    let mySparticles = new Sparticles( container, { count: 100 }, 400); */
-
-/*     let myElement = document.getElementById("book");
-    let mySparticles = new Sparticles(myElement, { count: 100 }, 400); */
 
 });
 

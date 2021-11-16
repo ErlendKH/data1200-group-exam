@@ -542,9 +542,6 @@ video p {
 .popup-container {
     display: grid;
     grid-template-areas:
-    /* "a b"; */
-/*     "a b"
-    "c b"; */
     "a b"
     "c d";
 }
@@ -552,18 +549,10 @@ video p {
 .popup-container div {
     width: 100%;
     height: 100%;
-    
-    /* margin: 2rem 0; */
 }
 
 .popup-container div:first-child {
     grid-area: a;
-    /* background-color: blue; */
-/*     margin-top: 2rem;
-    margin-bottom: 2rem; */
-
-/*     margin-left: 2rem;
-    margin-right: 1rem; */
 
     margin-top: 3rem;
     padding-left: 3rem;
@@ -574,12 +563,6 @@ video p {
 
 .popup-container div:nth-child(2) {
     grid-area: b;
-    /* background-color: green; */
-/*     margin-top: 2rem;
-    margin-bottom: 2rem; */
-
-/*     margin-left: 1rem;
-    margin-right: 2rem; */
 
     margin-top: 3rem;
     padding-right: 3rem;
@@ -610,21 +593,7 @@ video p {
     margin-bottom: 3rem;
 }
 
-/* #dynamic-quote0 {
-    margin-bottom: 3rem;
-} */
-
-/* .popup-container div:nth-child(3) {
-    grid-area: c;
-    margin-top: 0;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 2rem;
-    background-color: violet;
-} */
-
 .popup-container div h2 {
-    /* margin: 0 0 1rem 0; */
     margin: 0;
     padding: 0;
 
@@ -632,7 +601,6 @@ video p {
 }
 
 .popup-container div figure {
-    /* margin: 0 0 1.5rem 0; */
     margin: 0;
     padding: 0;
 }
@@ -643,21 +611,14 @@ video p {
 }
 
 .popup-container div blockquote {
-    /* margin-bottom: 3rem; */
     margin: 0;
     color:palegoldenrod;
 }
 
 .popup-container div h3 {
-/*     margin-top: 0;
-    padding-top: 0; */
     margin-bottom: 0.5rem;
 }
 
-/* .popup-container div p {
-    color:white;
-    margin-bottom: 1rem;
-} */
 
 .popup-container button {
     position: absolute;
@@ -672,7 +633,6 @@ video p {
 .popup-container img {
     width: 100%;
     height: auto;
-    /* margin-bottom: 1.5rem; */
 }
 
 /*  */
