@@ -296,7 +296,7 @@ coffee.addEventListener('click', function() {
 
     /* dynamic_h3.style.display = "block"; */
     dynamic_h3.textContent = "Majureka";
-    dynamic_quote0.textContent = "Opportunities don't happen. You create them. - Chris Grosser";
+    dynamic_quote0.textContent = "Opportunities don't happen. You create them. — Chris Grosser";
 
     dynamic_quote1.textContent = "I failed my way to success. — Thomas Edison";
     dynamic_quote2.textContent = "The whole secret of a successful life is to find out what is one’s destiny to do, and then do it. — Henry Ford";
