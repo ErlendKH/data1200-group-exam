@@ -178,7 +178,7 @@ $(window).on("load", function(){
     var height = screen.height;
     var ratio = width / height;
     var ratio_rounded = Math.round((ratio + Number.EPSILON) * 100) / 100;
-    /* var ratio = Math.round((width / height) * 100) / 100; */
+    // var ratio = Math.round((width / height) * 100) / 100;
 
     debug.textContent += " w: " + width + ", h: " + height + ", ratio: " + ratio_rounded;
     // w: 1536, h: 864, ratio: 1.78 (this is 16:9, 1920x1080)
@@ -194,6 +194,7 @@ $(window).on("load", function(){
     // If ratio is 1.78, no need to do anything.
     // However, if it is less:
 
+    /* 
     if (ratio_rounded < 1.78) {
 
         var ratio_diff = 1.6 / 1.78;
@@ -236,6 +237,7 @@ $(window).on("load", function(){
         paper.style.top = get_paper_top + paper_top_to_add + "px"
 
     }
+ */
 
 });
 
