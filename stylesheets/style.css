@@ -1,3 +1,7 @@
+/* 
+GENERAL STYLES: START
+ */
+
 * {
     box-sizing: border-box;
     font-family: "Arial", sans-serif;
@@ -42,7 +46,6 @@ article {
 
 h1 {
     text-align: center;
-    /* background-color: green; */
     color: rgb(255, 255, 255);
     font-size: 4rem;
 
@@ -95,8 +98,6 @@ img {
 
 aside {
     margin-top: 3.5rem;
-
-    /* background-color: green; */
 }
 
 aside p {
@@ -116,7 +117,6 @@ section:nth-of-type(1) {
 }
 
 header button {
-    /* padding: 1.5rem; */
     color: darkblue;
     font-weight: bold;
 }
@@ -165,7 +165,6 @@ header p {
 }
 
 .nav-only li {
-    /* margin-left: 24px; */
     margin-left: 1.5rem;
 }
 
@@ -199,25 +198,10 @@ header p {
     padding-bottom: 1.75rem;
 }
 
-/* .page-intro {
-    padding-bottom: 0.5rem;
-} */
-
 article p {
     margin: 0.5rem 0;
     line-height: 1.5;
 }
-
-/* article button {
-    padding: 1rem;
-    color: darkblue;
-    font-weight: bold;
-
-    cursor: pointer;
-    width: 100%;
-
-    margin-bottom: 2rem;
-} */
 
 article:first-child h2:first-child {
     padding-top: 0.5rem;
@@ -249,7 +233,6 @@ article figcaption {
 }
 
 .link-button:hover {
-    /* background-color:azure; */
 }
 
 .link-button {
@@ -260,7 +243,6 @@ article figcaption {
 
 .link-button::after{
     content: '';
-    /* background:cornflowerblue; */
     background: #ff3d00;
     width: 0;
     height: 2px;
@@ -280,20 +262,15 @@ article figcaption {
 
 .white-background li {
     background-color: rgba(255, 255, 255, 1);
-    /* margin: 1rem; */
     margin-right: 16px;
     margin-bottom: 1rem;
     font-weight: bold;
 
     width: 40%;
     text-align: center;
-
-    /* background-color: green; */
-
 }
 
 .white-background li a {
-    /* padding: 1rem; */
     display: block;
     padding: 1rem;
     width: 100%;
@@ -334,355 +311,98 @@ article figcaption {
   }
 
 /* 
-ONLY FOR THE FUN PAGE: START
-*/
+GENERAL STYLES: END
+ */
 
-video p {
+  /*
+  MOBILE: START
+  */
+
+  #mobile-menubutton{
+    display: none;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background: transparent;
     color: white;
+    font-size: 1.5rem;
+
+    padding: 0.5rem;
+
+    z-index: 3;
 }
 
-.fun {
-    background-color: black;
+#mobile-menubutton:hover{
+    font-size: 1.6rem;
 }
 
-.fun-return {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-}
-
-.overlay-title {
-    position: fixed;
-    top: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
+#mobile-header{
+    display: none;
+    position: absolute;
+    height: 4rem;
     width: 100%;
-    padding: 20px;
+    left: 0;
 
     z-index: 0;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-.overlay-title h1 {
-    color: black;
-}
-
-#container {
-
-}
-
-#div-16-9 {
-
-    aspect-ratio: 16/9;
-
-    height: 100%;
-    max-height: 100vh;
-
-    max-height: -webkit-calc(100% - 0px); /* Fix for Safari? Affects Chrome and Opera too. */
-
-    /* Another issue with Firefox, but no idea how to solve it... It's living it's own life.
-    It's an untamed fox. */
-
-    z-index: 1;
-
-    position: relative;
-     
-}
-
-/* #div-16-9 video {
-    width: 100%;
-    height: 100%;
-} */
-
-/* #div-16-9 img {
+#mobile-nav {
+    position: absolute;
     display: none;
     width: 100%;
-    height: 100%;
-} */
-
-#vid {
-    width: 100%;
-    height: 100%;
-}
-
-#fallback-img {
-    display: none;
-    width: 100%;
-    height: 100%;
-}
-
-#book {
-    position: absolute;
-
-    left: 5%;
-    top: 7%;
-    width: 20%;
-    height: 44%;
-
-    cursor: pointer;
-    /* background-color:rgba(255, 0, 0, 0.25); */
-    z-index: 2;
-}
-
-#pen {
-    position: absolute;
-
-    left: 7%;
-    top: 59%;
-    width: 4%;
-    height: 33%;
-
-    cursor: pointer;
-    /* background-color:rgba(200, 255, 0, 0.25); */
-    z-index: 2;
-}
-
-#smartphone {
-    position: absolute;
-
-    left: 14%;
-    top: 57%;
-    width: 11%;
-    height: 35%;
-
-    cursor: pointer;
-    /* background-color:rgba(0, 255, 42, 0.25); */
-    z-index: 2;
-}
-
-#laptop {
-    position: absolute;
-
-    left: 29%;
-    top: 7%;
-    width: 42%;
-    height: 85%;
-
-    cursor: pointer;
-    /* background-color:rgba(0, 247, 255, 0.25); */
-    z-index: 2;
-}
-
-#coffee {
-    position: absolute;
-
-    left: 78%;
-    top: 16%;
-    width: 15%;
-    height: 30%;
-
-    cursor: pointer;
-    /* background-color:rgba(255, 0, 0, 0.25); */
-    z-index: 2;
-}
-
-#paper {
-    position: absolute;
-
-    left: 75%;
-    top: 53%;
-    width: 21%;
-    height: 47%;
-
-    cursor: pointer;
-    /* background-color:rgba(255, 0, 0, 0.25); */
-    z-index: 2;
-}
-
-#debug {
-    position: absolute;
-
     left: 0;
-    top: 0;
-    width: 100%;
-    height: 5%;
-
-    text-align: center;
-    color: white;
-
-    background-color:rgba(0, 0, 0, 0.25);
-    z-index: 2;
+    top: 60px;
+    padding: 0.5rem 0.5rem;
 }
 
-#popup-background {
+#mobile-nav li {
+    padding: 0;
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 0.25rem;
 
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#mobile-nav li a {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+#mobile-nav li a::after {
+    background:#ff3d00;
+    transition: width 0s;
+    height: 1px;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+} 
+
+#temp-debug {
     display: none;
-
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-/*     max-height: 100vh;
-    max-height: -webkit-calc(100% - 0px); */
-
-    cursor: pointer;
-
-    background-color:rgba(0, 0, 0, 0.5);
-    z-index: 3;
-
-}
-
-#popup-box {
-
-    Display: none;
-
-/*     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
-
-    position: fixed;
-
-    width: 90%;
-    height: 90%;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     color: white;
-
-    background-color: rgb(0, 0, 0);
-    z-index: 10;
-
-    border: 2px solid gold;
-    border-radius: 4px;
-
-    overflow: hidden;
-
-}
-
-.popup-container {
-    display: grid;
-    grid-template-areas:
-    "a b"
-    "c d";
-    /* grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 5%; */
-
-}
-
-.popup-container * {
-
-}
-
-.popup-container div {
-    /* width: 100%;
-    height: auto; */
-}
-
-.popup-container div:first-child {
-    grid-area: a;
-
-    margin-top: 3rem;
-    padding-left: 3rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
-
-}
-
-.popup-container div:nth-child(2) {
-    grid-area: b;
-
-    margin-top: 3rem;
-    padding-right: 3rem;
-    padding-left: 1.5rem;
-    padding-bottom: 1.5rem;
-
-}
-
-.popup-container div:nth-child(3) {
-    /* background-color:mediumvioletred; */
-
-    grid-area: c;
-
-    padding-top: 1.5rem;
-    padding-left: 3rem;
-    padding-right: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.popup-container div:nth-child(4) {
-    /* background-color:salmon; */
-
-    grid-area: d;
-
-    padding-top: 1.5rem;
-    padding-right: 3rem;
-    padding-left: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.popup-container div h2 {
-    margin: 0;
-    padding: 0;
-
-    color:gold;
-}
-
-.popup-container div figure {
-    margin: 0;
-    padding: 0;
-}
-
-.popup-container div figure img {
-    margin: 0;
-    padding: 0;
-}
-
-.popup-container div blockquote {
-    margin: 0;
-    color:palegoldenrod;
-}
-
-.popup-container div h3 {
-    margin-bottom: 0.5rem;
-}
-
-
-.popup-container button {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    cursor: pointer;
-    color: white;
-    background: transparent;
-    border: none;
-}
-
-.popup-container img {
-    width: 100%;
-    height: auto;
-}
-
-/*  */
-.sparticles-container, .sparticles-book, .sparticles-pen, .sparticles-smartphone,
-.sparticles-laptop, .sparticles-coffee, .sparticles-paper {
-    width: 100%;
-    height: 100%;
-}
-
-.sparticles-book {}
-.sparticles-pen {}
-.sparticles-smartphone {}
-.sparticles-laptop {}
-.sparticles-coffee {}
-.sparticles-paper {}
-
-/**
-* we could also use "pointer-events: none;" in
-* modern browsers to put the particles on top of all our content
-*/
-
-@supports ( pointer-events: none ) {
-    .sparticles-container {
-      z-index: 2;
-      pointer-events: none;
-    }
+    text-align: center;
 }
 
 /*
-ONLY FOR THE FUN PAGE: END
+MOBILE: END
 */
 
 /* 
@@ -791,7 +511,6 @@ and (max-width: 960px) {
 and (max-width: 1420px) {
 
     .content {
-        /* margin: 0 15vh; */
     }
 
 }
@@ -822,102 +541,359 @@ Standard Media Queries: End
 */
 
 /* 
-SPECIAL - Mobile Menu: Start 
+SPECIAL QUERY - Mobile Menu: Start 
 */
 
 /* For Phones and Tablets */
-
-/* @media only screen and (max-width : 960px) {
+@media only screen and (max-width: 960px) {
 
     #mobile-menubutton{
         display: block;
-        position: absolute;
-        right: 0.5rem;
-        top: 0.5rem;
-        cursor: pointer;
-        border: 2px solid rgb(255, 255, 255);
-        border-radius: 10px;
-        background: transparent;
-        color: white;
-        font-size: 1.5rem;
+    }
 
-        padding: 0.5rem;
-
-        z-index: 1;
+    #desktop-nav{
+        display: none;
     }
 
     #mobile-header{
         display: block;
-        position: absolute;
-        height: 4rem;
-        width: 100%;
-
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-    
-    .nav-only{
-        display: none;
-        position: absolute;
-        width: 100%;
-        top: 60px;
-        padding: 0.5rem 0.5rem;
-    }
-
-    .nav-only li {
-        padding: 0;
-        margin: 0;
-        border: 2px solid black;
-        border-radius: 0.25rem;
-
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-    }
-
-    .nav-only li a {
-        font-size: 1.5rem;
-        padding: 0.5rem;
-
-        display: block;
-
-        width: 100%;
-        height: 100%;
-    }
-
-    .nav-only li a::after {
-        background:#ff3d00;
-        transition: width 0s;
-        height: 1px;
-    }
-
-    @keyframes fadeIn {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
-    }
-
-    @keyframes fadeOut {
-        0% {opacity: 1;}
-        100% {opacity: 0;}
     }
 
     header {
         padding: 0;
     }
 
-    .primary-nav {
-        width: 100%;
-    }
-
     h1 {
         margin-top: 2rem;
     }
 
-    #temp-debug {
-        color: white;
-        text-align: center;
+    #temp-debug{
+        display: block;
     }
 
-} */
+}
 
 /* 
-SPECIAL - Mobile Menu: End 
+SPECIAL QUERY - Mobile Menu: End
+*/
+
+/* 
+ONLY FOR THE FUN PAGE: START
+*/
+
+video p {
+    color: white;
+}
+
+.fun {
+    background-color: black;
+}
+
+.fun-return {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.overlay-title {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+
+    z-index: 0;
+}
+
+.overlay-title h1 {
+    color: black;
+}
+
+#container {
+
+}
+
+#div-16-9 {
+
+    aspect-ratio: 16/9;
+
+    height: 100%;
+    max-height: 100vh;
+
+    max-height: -webkit-calc(100% - 0px); /* Fix for Safari? Affects Chrome and Opera too. */
+
+    /* Another issue with Firefox, but no idea how to solve it... It's living it's own life.
+    It's an untamed fox. */
+
+    z-index: 1;
+
+    position: relative;
+     
+}
+
+#vid {
+    width: 100%;
+    height: 100%;
+}
+
+#fallback-img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#book {
+    position: absolute;
+
+    left: 5%;
+    top: 7%;
+    width: 20%;
+    height: 44%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#pen {
+    position: absolute;
+
+    left: 7%;
+    top: 59%;
+    width: 4%;
+    height: 33%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#smartphone {
+    position: absolute;
+
+    left: 14%;
+    top: 57%;
+    width: 11%;
+    height: 35%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#laptop {
+    position: absolute;
+
+    left: 29%;
+    top: 7%;
+    width: 42%;
+    height: 85%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#coffee {
+    position: absolute;
+
+    left: 78%;
+    top: 16%;
+    width: 15%;
+    height: 30%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#paper {
+    position: absolute;
+
+    left: 75%;
+    top: 53%;
+    width: 21%;
+    height: 47%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#debug {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5%;
+
+    text-align: center;
+    color: white;
+
+    background-color:rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+#popup-background {
+
+    display: none;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+/*     max-height: 100vh;
+    max-height: -webkit-calc(100% - 0px); */
+
+    cursor: pointer;
+
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 3;
+
+}
+
+#popup-box {
+
+    Display: none;
+
+    position: fixed;
+
+    width: 90%;
+    height: 90%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+
+    border: 2px solid gold;
+    border-radius: 4px;
+
+    overflow: hidden;
+
+}
+
+.popup-container {
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "c d";
+}
+
+.popup-container * {
+
+}
+
+.popup-container div {
+}
+
+.popup-container div:first-child {
+    grid-area: a;
+
+    margin-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.popup-container div:nth-child(2) {
+    grid-area: b;
+
+    margin-top: 3rem;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.popup-container div:nth-child(3) {
+    grid-area: c;
+
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.popup-container div:nth-child(4) {
+    grid-area: d;
+
+    padding-top: 1.5rem;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.popup-container div h2 {
+    margin: 0;
+    padding: 0;
+
+    color:gold;
+}
+
+.popup-container div figure {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-container div figure img {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-container div blockquote {
+    margin: 0;
+    color:palegoldenrod;
+}
+
+.popup-container div h3 {
+    margin-bottom: 0.5rem;
+}
+
+
+.popup-container button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.popup-container img {
+    width: 100%;
+    height: auto;
+}
+
+/*  */
+.sparticles-container, .sparticles-book, .sparticles-pen, .sparticles-smartphone,
+.sparticles-laptop, .sparticles-coffee, .sparticles-paper {
+    width: 100%;
+    height: 100%;
+}
+
+.sparticles-book {}
+.sparticles-pen {}
+.sparticles-smartphone {}
+.sparticles-laptop {}
+.sparticles-coffee {}
+.sparticles-paper {}
+
+/**
+* we could also use "pointer-events: none;" in
+* modern browsers to put the particles on top of all our content
+*/
+
+@supports ( pointer-events: none ) {
+    .sparticles-container {
+      z-index: 2;
+      pointer-events: none;
+    }
+}
+
+/*
+ONLY FOR THE FUN PAGE: END
 */
