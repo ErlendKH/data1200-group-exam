@@ -230,9 +230,8 @@ article figcaption {
     text-decoration: none;
 
     margin-bottom: 2rem;
-}
 
-.link-button:hover {
+    border-radius: 5px;
 }
 
 .link-button {
@@ -243,9 +242,10 @@ article figcaption {
 
 .link-button::after{
     content: '';
-    background: #ff3d00;
+    background: rgba(0, 0, 0, 0.05);
     width: 0;
-    height: 2px;
+    /* height: 2px; */
+    height: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
