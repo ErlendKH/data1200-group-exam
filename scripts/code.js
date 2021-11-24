@@ -20,21 +20,20 @@ $(document).ready(function() {
     https://stackoverflow.com/questions/56466261/matchmedia-addlistener-marked-as-deprecated-addeventlistener-equivalent */
 
     /* Triggers everytime the screenwidth reaches 961px. */
-    const desktopQuery = window.matchMedia('(min-width : 961px)');
+/*     const desktopQuery = window.matchMedia('(min-width : 961px)');
 
     desktopQuery.addEventListener('change', (e) => {
         mobileNav.style.display = "none";
-    });
+    }); */
 
 });
 
 window.onresize = function(){
-    if(window.innerWidth > 960){
-        navOnly[0].style.display = "block";
-    } else {
+    if(window.innerWidth > 961){
+        mobileNav.style.display = "none";
+    } 
+/*     else {
         navOnly[0].style.display = "none";
         Main[0].style.opacity = "1";
-
-    }
-      
-  }
+    } */
+}
