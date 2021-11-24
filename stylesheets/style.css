@@ -518,9 +518,9 @@ and (max-width: 1420px) {
 /* Desktop Fullscreen */
 @media only screen and (min-width: 1420px) {
 
-    .content {
+/*     .content {
         margin: 0 15vh;
-    }
+    } */
 
     .popup-container {
         display: grid;
