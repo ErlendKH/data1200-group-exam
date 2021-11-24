@@ -1,3 +1,7 @@
+/* 
+GENERAL STYLES: START
+ */
+
 * {
     box-sizing: border-box;
     font-family: "Arial", sans-serif;
@@ -42,7 +46,6 @@ article {
 
 h1 {
     text-align: center;
-    /* background-color: green; */
     color: rgb(255, 255, 255);
     font-size: 4rem;
 
@@ -95,8 +98,6 @@ img {
 
 aside {
     margin-top: 3.5rem;
-
-    /* background-color: green; */
 }
 
 aside p {
@@ -116,7 +117,6 @@ section:nth-of-type(1) {
 }
 
 header button {
-    /* padding: 1.5rem; */
     color: darkblue;
     font-weight: bold;
 }
@@ -165,7 +165,6 @@ header p {
 }
 
 .nav-only li {
-    /* margin-left: 24px; */
     margin-left: 1.5rem;
 }
 
@@ -199,25 +198,10 @@ header p {
     padding-bottom: 1.75rem;
 }
 
-/* .page-intro {
-    padding-bottom: 0.5rem;
-} */
-
 article p {
     margin: 0.5rem 0;
     line-height: 1.5;
 }
-
-/* article button {
-    padding: 1rem;
-    color: darkblue;
-    font-weight: bold;
-
-    cursor: pointer;
-    width: 100%;
-
-    margin-bottom: 2rem;
-} */
 
 article:first-child h2:first-child {
     padding-top: 0.5rem;
@@ -249,7 +233,6 @@ article figcaption {
 }
 
 .link-button:hover {
-    /* background-color:azure; */
 }
 
 .link-button {
@@ -260,7 +243,6 @@ article figcaption {
 
 .link-button::after{
     content: '';
-    /* background:cornflowerblue; */
     background: #ff3d00;
     width: 0;
     height: 2px;
@@ -280,20 +262,15 @@ article figcaption {
 
 .white-background li {
     background-color: rgba(255, 255, 255, 1);
-    /* margin: 1rem; */
     margin-right: 16px;
     margin-bottom: 1rem;
     font-weight: bold;
 
     width: 40%;
     text-align: center;
-
-    /* background-color: green; */
-
 }
 
 .white-background li a {
-    /* padding: 1rem; */
     display: block;
     padding: 1rem;
     width: 100%;
@@ -321,17 +298,284 @@ article figcaption {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
     /* left: 50%; */
-    padding: 0.75rem;
-    position: absolute;
+    padding: 0.5rem;
+    position: fixed;
     transform: translateY(0%);
-    z-index: 100;
+    z-index: 5;
   }
 
   #mobile-menubutton {
       display: none;
   }
+
+/* 
+GENERAL STYLES: END
+ */
+
+  /*
+  MOBILE: START
+  */
+
+  #mobile-menubutton{
+    display: none;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+
+    padding: 0.5rem;
+
+    z-index: 3;
+}
+
+#mobile-menubutton:hover{
+    font-size: 1.6rem;
+}
+
+#mobile-header{
+    display: none;
+    position: absolute;
+    height: 4rem;
+    width: 100%;
+    left: 0;
+
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#mobile-nav {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    padding: 0.5rem 0.5rem;
+}
+
+#mobile-nav li {
+    padding: 0;
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 0.25rem;
+
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#mobile-nav li a {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+#mobile-nav li a::after {
+    background:#ff3d00;
+    transition: width 0s;
+    height: 1px;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+} 
+
+#temp-debug {
+    display: none;
+    color: white;
+    text-align: center;
+}
+
+/*
+MOBILE: END
+*/
+
+/* 
+Standard Media Queries: Start
+*/
+
+/* Extra small phones  */
+@media only screen and (max-width : 400px) {
+
+    * {
+        font-size: 1rem;
+    }
+
+    nav {
+        padding: 1rem 0.5rem;
+    }
+
+    header {
+        justify-content: center;
+
+        padding: 0.5rem 0.5rem;
+    }
+
+    header p {
+        display: none;
+    }
+
+    .nav-only li {
+        padding: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+        padding-left: 1rem;
+    }
+
+    #dynamic-h2 {
+        display: none;
+    }
+
+    #dynamic-h3 {
+        padding-top: 0;
+    }
+
+}
+
+/* Phones */ 
+@media only screen and (min-width: 400px)
+and (max-width : 600px) {
+
+    * {
+        font-size: 1rem;
+    }
+
+    header {
+        justify-content: center;
+
+        padding: 0.5rem 0.5rem;
+    }
+
+    header p {
+        display: none;
+    }
+
+    .nav-only li {
+        padding: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+        padding-left: 2rem;
+    }
+
+    #dynamic-h2 {
+        display: none;
+    }
+
+    #dynamic-h3 {
+        padding-top: 0;
+    }
+
+}
+
+/* Tablets */
+@media only screen and (min-width : 600px) 
+and (max-width: 960px) {
+
+    header {
+        justify-content: center;
+
+        padding: 0.5rem 0.5rem;
+    }
+
+    .nav-only li {
+        padding: 0.5rem 0;
+    }
+
+    header p {
+        display: none;
+    }
+
+}
+
+/* Desktop */
+@media only screen and (min-width : 960px)
+and (max-width: 1420px) {
+
+    .content {
+    }
+
+}
+
+/* Desktop Fullscreen */
+@media only screen and (min-width: 1420px) {
+
+    .content {
+        margin: 0 15vh;
+    }
+
+    .popup-container {
+        display: grid;
+        grid-template-areas:
+        "a b"
+        "c b"
+        "d b";
+    }
+
+    .popup-container div:nth-child(4) {
+        padding-left: 3rem; padding-top: 0;
+    }
+
+}
+
+/*
+Standard Media Queries: End 
+*/
+
+/* 
+SPECIAL QUERY - Mobile Menu: Start 
+*/
+
+/* For Phones and Tablets */
+@media only screen and (max-width: 960px) {
+
+    #mobile-menubutton{
+        display: block;
+    }
+
+    #desktop-nav{
+        display: none;
+    }
+
+    #mobile-header{
+        display: block;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    h1 {
+        margin-top: 2rem;
+    }
+
+    #temp-debug{
+        display: block;
+    }
+
+}
+
+/* 
+SPECIAL QUERY - Mobile Menu: End
+*/
 
 /* 
 ONLY FOR THE FUN PAGE: START
@@ -377,24 +621,16 @@ video p {
     height: 100%;
     max-height: 100vh;
 
-    /* background-color: rgb(0, 0, 0); */
+    max-height: -webkit-calc(100% - 0px); /* Fix for Safari? Affects Chrome and Opera too. */
+
+    /* Another issue with Firefox, but no idea how to solve it... It's living it's own life.
+    It's an untamed fox. */
 
     z-index: 1;
 
     position: relative;
-    
+     
 }
-
-/* #div-16-9 video {
-    width: 100%;
-    height: 100%;
-} */
-
-/* #div-16-9 img {
-    display: none;
-    width: 100%;
-    height: 100%;
-} */
 
 #vid {
     width: 100%;
@@ -416,7 +652,6 @@ video p {
     height: 44%;
 
     cursor: pointer;
-    background-color:rgba(255, 0, 0, 0.25);
     z-index: 2;
 }
 
@@ -429,7 +664,6 @@ video p {
     height: 33%;
 
     cursor: pointer;
-    background-color:rgba(200, 255, 0, 0.25);
     z-index: 2;
 }
 
@@ -442,7 +676,6 @@ video p {
     height: 35%;
 
     cursor: pointer;
-    background-color:rgba(0, 255, 42, 0.25);
     z-index: 2;
 }
 
@@ -455,7 +688,6 @@ video p {
     height: 85%;
 
     cursor: pointer;
-    background-color:rgba(0, 247, 255, 0.25);
     z-index: 2;
 }
 
@@ -468,7 +700,6 @@ video p {
     height: 30%;
 
     cursor: pointer;
-    background-color:rgba(255, 0, 0, 0.25);
     z-index: 2;
 }
 
@@ -481,7 +712,6 @@ video p {
     height: 47%;
 
     cursor: pointer;
-    background-color:rgba(255, 0, 0, 0.25);
     z-index: 2;
 }
 
@@ -502,12 +732,15 @@ video p {
 
 #popup-background {
 
-    display: None;
+    display: none;
 
     position: absolute;
 
     width: 100%;
     height: 100%;
+
+/*     max-height: 100vh;
+    max-height: -webkit-calc(100% - 0px); */
 
     cursor: pointer;
 
@@ -518,226 +751,149 @@ video p {
 
 #popup-box {
 
-    Display: None;
+    Display: none;
 
-    position: absolute;
+    position: fixed;
 
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-color: rgba(255, 255, 255, 1);
-    z-index: 4;
+    color: white;
 
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+
+    border: 2px solid gold;
+    border-radius: 4px;
+
+    overflow: hidden;
+
+}
+
+.popup-container {
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "c d";
+}
+
+.popup-container * {
+
+}
+
+.popup-container div {
+}
+
+.popup-container div:first-child {
+    grid-area: a;
+
+    margin-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.popup-container div:nth-child(2) {
+    grid-area: b;
+
+    margin-top: 3rem;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.popup-container div:nth-child(3) {
+    grid-area: c;
+
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.popup-container div:nth-child(4) {
+    grid-area: d;
+
+    padding-top: 1.5rem;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.popup-container div h2 {
+    margin: 0;
+    padding: 0;
+
+    color:gold;
+}
+
+.popup-container div figure {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-container div figure img {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-container div blockquote {
+    margin: 0;
+    color:palegoldenrod;
+}
+
+.popup-container div h3 {
+    margin-bottom: 0.5rem;
+}
+
+
+.popup-container button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.popup-container img {
+    width: 100%;
+    height: auto;
+}
+
+/*  */
+.sparticles-container, .sparticles-book, .sparticles-pen, .sparticles-smartphone,
+.sparticles-laptop, .sparticles-coffee, .sparticles-paper {
+    width: 100%;
+    height: 100%;
+}
+
+.sparticles-book {}
+.sparticles-pen {}
+.sparticles-smartphone {}
+.sparticles-laptop {}
+.sparticles-coffee {}
+.sparticles-paper {}
+
+/**
+* we could also use "pointer-events: none;" in
+* modern browsers to put the particles on top of all our content
+*/
+
+@supports ( pointer-events: none ) {
+    .sparticles-container {
+      z-index: 2;
+      pointer-events: none;
+    }
 }
 
 /*
 ONLY FOR THE FUN PAGE: END
-*/
-
-/* 
-Standard Media Queries: Start
-*/
-
-/* Extra small phones  */
-@media only screen and (max-width : 400px) {
-
-    * {
-        font-size: 1rem;
-    }
-
-    nav {
-        padding: 1rem 0.5rem;
-    }
-
-    header {
-        justify-content: center;
-
-        padding: 0.5rem 0.5rem;
-    }
-
-    header p {
-        display: none;
-    }
-
-    .nav-only li {
-        padding: 0.5rem 0;
-    }
-
-    h1 {
-        font-size: 3rem;
-        padding-left: 1rem;
-    }
-
-}
-
-/* Phones */ 
-@media only screen and (min-width: 400px)
-and (max-width : 600px) {
-
-    * {
-        font-size: 1rem;
-    }
-
-    header {
-        justify-content: center;
-
-        padding: 0.5rem 0.5rem;
-    }
-
-    header p {
-        display: none;
-    }
-
-    .nav-only li {
-        padding: 0.5rem 0;
-    }
-
-    h1 {
-        font-size: 3rem;
-        padding-left: 2rem;
-    }
-
-}
-
-/* Tablets */
-@media only screen and (min-width : 600px) 
-and (max-width: 960px) {
-
-    header {
-        justify-content: center;
-
-        padding: 0.5rem 0.5rem;
-    }
-
-    .nav-only li {
-        padding: 0.5rem 0;
-    }
-
-    header p {
-        display: none;
-    }
-
-}
-
-/* Desktop */
-@media only screen and (min-width : 960px)
-and (max-width: 1420px) {
-
-    .content {
-        /* margin: 0 15vh; */
-    }
-
-}
-
-/* Desktop Fullscreen */
-@media only screen and (min-width: 1420px) {
-
-    .content {
-        margin: 0 15vh;
-    }
-
-}
-
-/*
-Standard Media Queries: End 
-*/
-
-/* 
-SPECIAL - Mobile Menu: Start 
-*/
-
-/* For Phones and Tablets */
-
- @media only screen and (max-width : 960px) {
-
-    #mobile-menubutton{
-        display: block;
-        position: absolute;
-        right: 0.5rem;
-        top: 0.5rem;
-        cursor: pointer;
-        border: 2px solid rgb(255, 255, 255);
-        border-radius: 10px;
-        background: transparent;
-        color: white;
-        font-size: 1.5rem;
-
-        padding: 0.5rem;
-
-        z-index: 1;
-    }
-
-    #mobile-header{
-        display: block;
-        position: absolute;
-        height: 4rem;
-        width: 100%;
-
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-    
-    .nav-only{
-        display: none;
-        position: absolute;
-        width: 100%;
-        top: 60px;
-        padding: 0.5rem 0.5rem;
-    }
-
-    .nav-only li {
-        padding: 0;
-        margin: 0;
-        border: 2px solid black;
-        border-radius: 0.25rem;
-
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-    }
-
-    .nav-only li a {
-        font-size: 1.5rem;
-        padding: 0.5rem;
-
-        display: block;
-
-        width: 100%;
-        height: 100%;
-    }
-
-    .nav-only li a::after {
-        background:#ff3d00;
-        transition: width 0s;
-        height: 1px;
-    }
-
-    @keyframes fadeIn {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
-    }
-
-    @keyframes fadeOut {
-        0% {opacity: 1;}
-        100% {opacity: 0;}
-    }
-
-    header {
-        padding: 0;
-    }
-
-    .primary-nav {
-        width: 100%;
-    }
-
-    h1 {
-        margin-top: 2rem;
-    }
-
-} 
-
-/* 
-SPECIAL - Mobile Menu: End 
 */
