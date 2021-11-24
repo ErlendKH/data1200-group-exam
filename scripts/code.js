@@ -27,3 +27,14 @@ $(document).ready(function() {
     });
 
 });
+
+window.onresize = function(){
+    if(window.innerWidth > 960){
+        navOnly[0].style.display = "block";
+    } else {
+        navOnly[0].style.display = "none";
+        Main[0].style.opacity = "1";
+
+    }
+      
+  }
