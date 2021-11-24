@@ -242,7 +242,7 @@ article figcaption {
 
 .link-button::after{
     content: '';
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 140, 255, 0.1);
     width: 0;
     /* height: 2px; */
     height: 100%;
