@@ -867,7 +867,7 @@ video p {
     height: auto;
 }
 
-#show-instructions {
+#instuctions-button {
     position: fixed;
     right: 0;
     top: 0;
@@ -880,10 +880,11 @@ video p {
 
     cursor: pointer;
 
-    z-index: 3;
+    z-index: 5;
 }
 
-.interact-container {
+#interact-container {
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -892,11 +893,11 @@ video p {
     background-color:rgba(0, 0, 0, 0.5);
 }
 
-.interact {
+#interact-container div {
     text-align: center;
     color: white;
     padding: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1.5rem;    
 }
 
 /* 
