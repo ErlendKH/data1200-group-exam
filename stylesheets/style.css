@@ -294,18 +294,6 @@ article figcaption {
     transition: transform 0.3s;
   }
 
-  .always-show-link {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    /* left: 50%; */
-    padding: 0.5rem;
-    position: fixed;
-    transform: translateY(0%);
-    z-index: 5;
-  }
-
   #mobile-menubutton {
       display: none;
   }
@@ -580,6 +568,18 @@ SPECIAL QUERY - Mobile Menu: End
 /* 
 ONLY FOR THE FUN PAGE: START
 */
+
+.always-show-link {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    /* left: 50%; */
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    position: fixed;
+    transform: translateY(0%);
+    z-index: 5;
+  }
 
 video p {
     color: white;
@@ -867,6 +867,22 @@ video p {
     height: auto;
 }
 
+#show-instructions {
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    color: white;
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 3;
+}
+
 .interact-container {
     position: fixed;
     bottom: 0;
@@ -879,7 +895,7 @@ video p {
 .interact {
     text-align: center;
     color: white;
-    padding: 1rem;
+    padding: 1rem 0;
     font-size: 1.5rem;
 }
 
