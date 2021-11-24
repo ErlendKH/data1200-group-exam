@@ -47,12 +47,12 @@ function handleVidError(){
     vid.style.display = "none";
 }
 
+/* 
 $(document).ready(function() {
-/*     console.log("Ready!"); */
 
     // Particle effects from simeydotme at: https://github.com/simeydotme/sparticles
 
-    /* BOOK */
+    // BOOK
 
     let sparticlesBook = new Sparticles( sparticles_book, {count: 25, speed: 5, shape: "random"});
 
@@ -71,7 +71,7 @@ $(document).ready(function() {
         }, 50);
     });
 
-    /* PEN */
+    // PEN
 
     let sparticlesPen = new Sparticles( sparticles_pen, {count: 25, speed: 5, shape: "triangle"});
 
@@ -89,7 +89,7 @@ $(document).ready(function() {
         }, 50);
     });
 
-    /* SMARTPHONE */
+    // SMARTPHONE
 
     let sparticlesSmartphone = new Sparticles( sparticles_smartphone, {count: 25, speed: 5, shape: "circle"});
 
@@ -107,7 +107,7 @@ $(document).ready(function() {
         }, 50);
     });
 
-    /* LAPTOP */
+    // LAPTOP
 
     let sparticlesLaptop = new Sparticles( sparticles_laptop, {count: 100, speed: 5, shape: "diamond", color: "gold"});
 
@@ -125,7 +125,7 @@ $(document).ready(function() {
         }, 50);
     });
 
-    /* COFFEE */
+    // COFFEE
 
     let sparticlesCoffee = new Sparticles( sparticles_coffee, {count: 25, speed: 5, shape: "random"});
 
@@ -143,7 +143,7 @@ $(document).ready(function() {
         }, 50);
     });
 
-    /* PAPER */
+    // PAPER
 
     let sparticlesPaper = new Sparticles( sparticles_paper, {count: 25, speed: 5, shape: "triangle"});
 
@@ -161,12 +161,10 @@ $(document).ready(function() {
         }, 50);
     });
 
-    dismiss_button.addEventListener('click', function() {
-        hidePopup();
-    }, false);
-
 });
+ */
 
+/* 
 // We use window.onload instead of document.ready because the latter is triggered before all images are downloaded
 $(window).on("load", function(){
 
@@ -181,6 +179,7 @@ $(window).on("load", function(){
     video_node.load(); // All resources are ready, trigger video downloading
 
 });
+ */
 
 /* Fun - Clicks: Start */
 
@@ -188,6 +187,10 @@ var background = document.getElementById("popup-background");
 var popup = document.getElementById("popup-box");
 
 var debug = document.getElementById("debug");
+
+dismiss_button.addEventListener('click', function() {
+    hidePopup();
+}, false);
 
 /* BOOK */
 

@@ -852,7 +852,6 @@ video p {
     margin-bottom: 0.5rem;
 }
 
-
 .popup-container button {
     position: absolute;
     top: 0.5rem;
@@ -868,7 +867,23 @@ video p {
     height: auto;
 }
 
-/*  */
+.interact-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;  
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.interact {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+/* 
 .sparticles-container, .sparticles-book, .sparticles-pen, .sparticles-smartphone,
 .sparticles-laptop, .sparticles-coffee, .sparticles-paper {
     width: 100%;
@@ -882,17 +897,12 @@ video p {
 .sparticles-coffee {}
 .sparticles-paper {}
 
-/**
-* we could also use "pointer-events: none;" in
-* modern browsers to put the particles on top of all our content
-*/
-
 @supports ( pointer-events: none ) {
     .sparticles-container {
       z-index: 2;
       pointer-events: none;
     }
-}
+} */
 
 /*
 ONLY FOR THE FUN PAGE: END
