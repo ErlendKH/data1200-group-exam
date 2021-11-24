@@ -289,7 +289,8 @@ paper.addEventListener('click', function() {
     dynamic_h2.textContent = "Beauty";
 
     dynamic_h3.textContent = "Gulluzar";
-    dynamic_quote0.textContent = "Leave a little sparkle everywhere you go.";
+    dynamic_quote0.textContent = "Beauty is power; a smile is its sword. - John Ray";
+
 
     dynamic_quote1.textContent = "There are no secrets to success. It is the result of preparation, hard work, and learning from failure. — Colin Powell";
     dynamic_quote2.textContent = "Successful people do what unsuccessful people are not willing to do. Don't wish it were easier; wish you were better. — Jim Rohn";
