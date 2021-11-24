@@ -3,6 +3,9 @@
 
 /* var debug = document.getElementById("debug"); */
 
+var instructions = document.getElementById("instuctions-button");
+var interact = document.getElementById("interact-container");
+
 var vid = document.getElementById("vid");
 var img = document.getElementById("fallback-img");
 
@@ -14,12 +17,14 @@ var laptop = document.getElementById("laptop");
 var coffee = document.getElementById("coffee");
 var paper = document.getElementById("paper");
 
+/* 
 var sparticles_book = document.querySelector(".sparticles-book"); 
 var sparticles_pen = document.querySelector(".sparticles-pen"); 
 var sparticles_smartphone = document.querySelector(".sparticles-smartphone"); 
 var sparticles_laptop = document.querySelector(".sparticles-laptop"); 
 var sparticles_coffee = document.querySelector(".sparticles-coffee"); 
 var sparticles_paper = document.querySelector(".sparticles-paper"); 
+ */
 
 var dismiss_button = document.getElementById("dismiss-button");
 var dynamic_h2 = document.getElementById("dynamic-h2");
@@ -39,7 +44,6 @@ function hideVid(){
     vid.style.display = "none";
 }
 
-/* Sigh... */
 function handleVidError(){
     debug.textContent += " handleVidError() triggered!";
 
@@ -320,3 +324,13 @@ function hidePopup() {
     background.style.display = "none";
     popup.style.display = "none";
 }
+
+instructions.addEventListener('click', function() {
+
+    if(interact.style.display == "" || interact.style.display == "none"){
+        interact.style.display = "block";
+    } else {
+        interact.style.display = "none";
+    }
+
+}, false);
