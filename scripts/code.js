@@ -15,16 +15,16 @@ menuButton.addEventListener('click', function() {
 }, false);
 
 */
-
-window.onresize = function(){
-    if(window.innerWidth < 601){
-        mobileNav.style.display = "none";
-    }
-}
-
- var navOnly = document.getElementById("mobile-nav");
+var navOnly = document.getElementById("mobile-nav");
 var navMenu = document.getElementById("mobile-menubutton");
 var Main = document.getElementById("main");
+
+window.onresize = function(){
+    if(window.innerWidth > 960){
+        navOnly.style.display = "none"
+        Main.style.animation = "fadeIn 0.5s forwards"
+    }
+}
 
 navMenu.addEventListener("click", function(){
 
