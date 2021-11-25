@@ -180,7 +180,11 @@ window.onload = function(){
     if(window.innerWidth <= 601){
         horizontal.style.display = "block";
     }
-    
+
     vid.play();
+
+    /* Fix for playing the video on iPhone. */
+    var vids = document.getElementsByTagName('video');
+    vids.item(0).play();
 
 };
