@@ -62,7 +62,7 @@ h2 {
 h3 {
     color: white;
     font-size: 1.3rem;
-    font-style:italic;
+    /* font-style:italic; */
     padding: 1.5rem 0 0 0;
 }
 
