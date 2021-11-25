@@ -261,7 +261,7 @@ laptop.addEventListener('click', function() {
     dynamic_h2.textContent = "That's Cute";
 
     dynamic_h3.textContent = "Pom";
-    dynamic_quote0.textContent = "Cookies!";
+    dynamic_quote0.textContent = "Woof!";
 
     dynamic_quote1.textContent = "You know you are on the road to success if you would do your job and not be paid for it. — Oprah Winfrey";
     dynamic_quote2.textContent = "Life is like a coin. You can spend it any way you wish, but you only spend it once. — Lillian Dickson";
