@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+}
+
 .always-show-link {
     background: rgba(0, 0, 0, 0.5);
     color: white;
