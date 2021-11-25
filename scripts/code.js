@@ -17,32 +17,31 @@ menuButton.addEventListener('click', function() {
 */
 var navOnly = document.getElementById("mobile-nav");
 var navMenu = document.getElementById("mobile-menubutton");
-var Main = document.getElementsByClassName("textbox");
 
 window.onresize = function(){
     if(window.innerWidth > 960){
         navOnly.style.display = "none"
-        Main[0].style.animation = "fadeIn 0.5s forwards"
     }
 }
 
 navMenu.addEventListener("click", function(){
 
     if(navOnly.style.display == "" || navOnly.style.display == "none"){
+
         navOnly.style.display = "block"
         navOnly.style.animation = "fadeIn 0.5s forwards"
-        Main[0].style.animation = "fadeOut 0.5s forwards"
-       
 
     } else {
+
         navOnly.style.animation = "fadeOut 0.5s forwards"
         navOnly.addEventListener("animationend", displayOff);
-        Main[0].style.animation = "fadeIn 0.5s forwards"
 
     }
 });
 
   function displayOff(){
+      
     navOnly.style.display = "none";
     navOnly.removeEventListener("animationend", displayOff); 
+
 }
