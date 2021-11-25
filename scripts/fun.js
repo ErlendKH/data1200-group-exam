@@ -46,8 +46,8 @@ book.addEventListener('click', function() {
 
     dynamic_h2.textContent = "A Journey Into A Strange World";
 
-    dynamic_h3.textContent = "Erlend";
-    dynamic_quote0.textContent = "Do something useful each day. Keep trying. Have a dream.";
+    dynamic_h3.textContent = "The Book";
+    dynamic_quote0.textContent = "Our lives in print. Thoughts, feelings, plans, regrets, dreams. The canvas of our souls.";
 
     dynamic_quote1.textContent = 'The only impossible journey is the one you never begin. — Tony Robbins';
     dynamic_quote2.textContent = "When you cease to dream you cease to live. —Malcolm Forbes";
@@ -63,8 +63,8 @@ pen.addEventListener('click', function() {
 
     dynamic_h2.textContent = "The Lead Character";
 
-    dynamic_h3.textContent = "The pen";
-    dynamic_quote0.textContent = "The pen is the most important thing in the world. Whithout the pen, we wouldn't excist. -A wise man";
+    dynamic_h3.textContent = "The Pen";
+    dynamic_quote0.textContent = "The pen is the most important thing in the world. Without the pen, we wouldn't exist. — A wise man";
 
     dynamic_quote1.textContent = "Many of life's failures are people who did not realize how close they were to success when they gave up. — Thomas A. Edison";
     dynamic_quote2.textContent = "The way to get started is to quit talking and begin doing. — Walt Disney";
