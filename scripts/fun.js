@@ -63,8 +63,8 @@ pen.addEventListener('click', function() {
 
     dynamic_h2.textContent = "The Lead Character";
 
-    dynamic_h3.textContent = "Patrick";
-    dynamic_quote0.textContent = "Quote...";
+    dynamic_h3.textContent = "The pen";
+    dynamic_quote0.textContent = "The pen is the most important thing in the world. Whithout the pen, we wouldn't excist. -A wise man";
 
     dynamic_quote1.textContent = "Many of life's failures are people who did not realize how close they were to success when they gave up. — Thomas A. Edison";
     dynamic_quote2.textContent = "The way to get started is to quit talking and begin doing. — Walt Disney";
