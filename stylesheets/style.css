@@ -526,12 +526,15 @@ SPECIAL QUERY - Mobile Menu: End
 /* 
 ONLY FOR THE FUN PAGE: START
 */
+body{
+    overflow: hidden;
+}
 
 .always-show-link {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 2.5vw;
     /* left: 50%; */
     padding: 0.5rem 1rem 0.5rem 1rem;
     position: fixed;
@@ -833,7 +836,7 @@ video p {
     color: white;
     background-color:rgba(0, 0, 0, 0.5);
     padding: 0.5rem 1rem 0.5rem 1rem;
-    font-size: 1.5rem;
+    font-size: 3vw;
     font-weight: bold;
 
     cursor: pointer;
