@@ -348,13 +348,14 @@ GENERAL STYLES: END
 }
 
 #mobile-nav li {
-    padding: 0;
+    padding: 10px;
     margin: 0;
     border: 2px solid black;
-    border-radius: 0.25rem;
+    border-bottom: 4px solid black;
+    border-radius: 10px;
 
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(233, 233, 233);
 }
 
 #mobile-nav li a {
