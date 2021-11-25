@@ -526,9 +526,6 @@ SPECIAL QUERY - Mobile Menu: End
 /* 
 ONLY FOR THE FUN PAGE: START
 */
-body{
-    overflow: hidden;
-}
 
 .always-show-link {
     background: rgba(0, 0, 0, 0.5);
