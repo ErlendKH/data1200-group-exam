@@ -770,7 +770,7 @@ video p {
     border: 2px solid gold;
     border-radius: 4px;
 
-    overflow: hidden;
+    overflow-y:auto;
 
 }
 
@@ -913,7 +913,7 @@ video p {
 #horizontal-prompt-container div{
     text-align: center;
     color: white;
-    padding: 1rem 0;
+    padding: 1rem;
     font-size: 1.5rem;
 }
 
