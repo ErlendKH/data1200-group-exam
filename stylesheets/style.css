@@ -917,27 +917,6 @@ video p {
     font-size: 1.5rem;
 }
 
-/* 
-.sparticles-container, .sparticles-book, .sparticles-pen, .sparticles-smartphone,
-.sparticles-laptop, .sparticles-coffee, .sparticles-paper {
-    width: 100%;
-    height: 100%;
-}
-
-.sparticles-book {}
-.sparticles-pen {}
-.sparticles-smartphone {}
-.sparticles-laptop {}
-.sparticles-coffee {}
-.sparticles-paper {}
-
-@supports ( pointer-events: none ) {
-    .sparticles-container {
-      z-index: 2;
-      pointer-events: none;
-    }
-} */
-
 /*
 ONLY FOR THE FUN PAGE: END
 */
