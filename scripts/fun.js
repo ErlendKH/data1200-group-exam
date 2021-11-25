@@ -47,7 +47,7 @@ book.addEventListener('click', function() {
     dynamic_h2.textContent = "A Journey Into A Strange World";
 
     dynamic_h3.textContent = "The Book";
-    dynamic_quote0.textContent = "Our lives in print. Thoughts, feelings, plans, regrets, dreams. The canvas of our souls.";
+    dynamic_quote0.textContent = "It unveils our lives in print. Thoughts, feelings, plans, regrets, dreams. It lets the stranger in to a different world.";
 
     dynamic_quote1.textContent = 'The only impossible journey is the one you never begin. — Tony Robbins';
     dynamic_quote2.textContent = "When you cease to dream you cease to live. —Malcolm Forbes";
