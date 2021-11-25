@@ -115,7 +115,7 @@ coffee.addEventListener('click', function() {
     dynamic_h2.textContent = "A Great Day";
 
     dynamic_h3.textContent = "Cup of Coffee";
-    dynamic_quote0.textContent = "Life is like a cup of coffee. It`s all about how you make it. - Melli O'Brien";
+    dynamic_quote0.textContent = "Life is like a cup of coffee. It`s all about how you make it. — Melli O'Brien";
 
     dynamic_quote1.textContent = "I failed my way to success. — Thomas Edison";
     dynamic_quote2.textContent = "Opportunities don't happen. You create them. — Chris Grosser";
