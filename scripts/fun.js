@@ -78,7 +78,7 @@ smartphone.addEventListener('click', function() {
 
     dynamic_img.src = "/media/mobile-fall.jpg";
 
-    dynamic_h2.textContent = "The Fall";
+    dynamic_h2.textContent = "The Smartphone";
 
     dynamic_h3.textContent = "Marcin";
     dynamic_quote0.textContent = "Quote...";
@@ -131,7 +131,7 @@ paper.addEventListener('click', function() {
 
     dynamic_h2.textContent = "Beauty";
 
-    dynamic_h3.textContent = "Gulluzar";
+    dynamic_h3.textContent = "The Note";
     dynamic_quote0.textContent = "Beauty is power; a smile is its sword. — John Ray";
 
 
