@@ -323,6 +323,10 @@ GENERAL STYLES: END
     z-index: 3;
 }
 
+#mobile-menubutton:hover{
+    font-size: 2.7rem;
+}
+
 #mobile-header{
     display: none;
     position: absolute;
