@@ -31,13 +31,13 @@ navMenu.addEventListener("click", function(){
     if(navOnly.style.display == "" || navOnly.style.display == "none"){
         navOnly.style.display = "block"
         navOnly.style.animation = "fadeIn 0.5s forwards"
-        Main[0].style.animation = "fadeOut 0.5s forwards"
+        // Main[0].style.animation = "fadeOut 0.5s forwards"
        
 
     } else {
         navOnly.style.animation = "fadeOut 0.5s forwards"
         navOnly.addEventListener("animationend", displayOff);
-        Main[0].style.animation = "fadeIn 0.5s forwards"
+        // Main[0].style.animation = "fadeIn 0.5s forwards"
 
     }
 });

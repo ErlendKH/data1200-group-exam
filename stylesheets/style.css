@@ -309,6 +309,7 @@ GENERAL STYLES: END
 #mobile-menubutton{
     display: none;
     position: absolute;
+    /* position: fixed; */
     right: 0.5rem;
     top: 0.5rem;
     cursor: pointer;
@@ -326,6 +327,7 @@ GENERAL STYLES: END
 #mobile-header{
     display: none;
     position: absolute;
+    /* position: fixed; */
     height: 5rem;
     width: 100%;
     left: 0;
@@ -336,6 +338,7 @@ GENERAL STYLES: END
 
 #mobile-nav {
     position: absolute;
+    /* position: fixed; */
     display: none;
     width: 100%;
     left: 0;
