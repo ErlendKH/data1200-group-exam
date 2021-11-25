@@ -343,3 +343,13 @@ window.onresize = function(){
         horizontal.style.display = "none";
     }
 }
+
+window.onload = function(){
+
+    if(window.innerWidth <= 601){
+        horizontal.style.display = "block";
+    }
+    
+    vid.play();
+
+};
