@@ -30,11 +30,20 @@ navMenu.addEventListener("click", function(){
 
         navOnly.style.display = "block"
         navOnly.style.animation = "fadeIn 0.5s forwards"
+<<<<<<< HEAD
+=======
+        // Main[0].style.animation = "fadeOut 0.5s forwards"
+       
+>>>>>>> bd80b75cedb83504606e528c21cc3c147bf937a5
 
     } else {
 
         navOnly.style.animation = "fadeOut 0.5s forwards"
         navOnly.addEventListener("animationend", displayOff);
+<<<<<<< HEAD
+=======
+        // Main[0].style.animation = "fadeIn 0.5s forwards"
+>>>>>>> bd80b75cedb83504606e528c21cc3c147bf937a5
 
     }
 });
