@@ -306,7 +306,7 @@ GENERAL STYLES: END
   MOBILE: START
   */
 
-  #mobile-menubutton{
+#mobile-menubutton{
     display: none;
     position: absolute;
     right: 0.5rem;
@@ -323,8 +323,9 @@ GENERAL STYLES: END
     z-index: 3;
 }
 
-#mobile-menubutton:hover{
+#mobile-menubutton:hover, #mobile-menubutton:active{
     font-size: 2.7rem;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 #mobile-header{
