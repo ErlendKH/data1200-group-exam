@@ -1,6 +1,6 @@
 
 /* Code for the common pages. */
-
+/*
 var menuButton = document.getElementById("mobile-menubutton");
 var mobileNav = document.getElementById("mobile-nav");
 
@@ -14,34 +14,35 @@ menuButton.addEventListener('click', function() {
 
 }, false);
 
+*/
+
 window.onresize = function(){
     if(window.innerWidth < 601){
         mobileNav.style.display = "none";
     }
 }
 
-/* var navOnly = document.getElementsByClassName("nav-only");
+ var navOnly = document.getElementById("mobile-nav");
 var navMenu = document.getElementById("mobile-menubutton");
-var Main = document.getElementsByClassName("textbox");
+var Main = document.getElementById("main");
 
 navMenu.addEventListener("click", function(){
 
-    if(navOnly[0].style.display == "" || navOnly[0].style.display == "none"){
-        navOnly[0].style.display = "block"
-        navOnly[0].style.animation = "fadeIn 0.5s forwards"
-        Main[0].style.animation = "fadeOut 0.5s forwards"
+    if(navOnly.style.display == "" || navOnly.style.display == "none"){
+        navOnly.style.display = "block"
+        navOnly.style.animation = "fadeIn 0.5s forwards"
+        Main.style.animation = "fadeOut 0.5s forwards"
        
 
     } else {
-        navOnly[0].style.animation = "fadeOut 0.5s forwards"
-        navOnly[0].addEventListener("animationend", displayOff);
-        Main[0].style.animation = "fadeIn 0.5s forwards"
+        navOnly.style.animation = "fadeOut 0.5s forwards"
+        navOnly.addEventListener("animationend", displayOff);
+        Main.style.animation = "fadeIn 0.5s forwards"
 
     }
 });
 
   function displayOff(){
-    navOnly[0].style.display = "none";
-    navOnly[0].removeEventListener("animationend", displayOff); 
+    navOnly.style.display = "none";
+    navOnly.removeEventListener("animationend", displayOff); 
 }
-*/
