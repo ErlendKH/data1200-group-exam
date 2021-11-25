@@ -183,7 +183,7 @@ window.onload = function(){
 
     vid.play();
 
-    /* Fix for playing the video on iPhone. */
+    /* Fix for playing the video on Mac. */
     var vids = document.getElementsByTagName('video');
     vids.item(0).play();
 
