@@ -15,7 +15,7 @@ menuButton.addEventListener('click', function() {
 }, false);
 
 window.onresize = function(){
-    if(window.innerWidth > 961){
+    if(window.innerWidth < 601){
         mobileNav.style.display = "none";
     }
 }

@@ -867,7 +867,7 @@ video p {
     height: auto;
 }
 
-#instuctions-button {
+#instructions-button {
     position: fixed;
     right: 0;
     top: 0;
@@ -898,6 +898,23 @@ video p {
     color: white;
     padding: 1rem 0;
     font-size: 1.5rem;    
+}
+
+#horizontal-prompt-container{
+    display: none;
+    position: fixed;
+    bottom: 25%;
+    z-index: 3;
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#horizontal-prompt-container div{
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+    font-size: 1.5rem;
 }
 
 /* 

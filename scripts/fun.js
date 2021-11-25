@@ -3,8 +3,9 @@
 
 /* var debug = document.getElementById("debug"); */
 
-var instructions = document.getElementById("instuctions-button");
+var instructions = document.getElementById("instructions-button");
 var interact = document.getElementById("interact-container");
+var horizontal = document.getElementById("horizontal-prompt-container");
 
 var vid = document.getElementById("vid");
 var img = document.getElementById("fallback-img");
@@ -334,3 +335,11 @@ instructions.addEventListener('click', function() {
     }
 
 }, false);
+
+window.onresize = function(){
+    if(window.innerWidth <= 601){
+        horizontal.style.display = "block";
+    } else {
+        horizontal.style.display = "none";
+    }
+}
