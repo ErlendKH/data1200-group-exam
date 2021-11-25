@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.always-show-link {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vw;
+    /* left: 50%; */
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    position: fixed;
+    transform: translateY(0%);
+    z-index: 5;
+  }
+
+video p {
+    color: white;
+}
+
+.fun {
+    background-color: black;
+}
+
+.fun-return {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.overlay-title {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+
+    z-index: 0;
+}
+
+.overlay-title h1 {
+    color: black;
+}
+
+#container {
+
+}
+
+#div-16-9 {
+
+    aspect-ratio: 16/9;
+
+    height: 100%;
+    max-height: 100vh;
+
+    max-height: -webkit-calc(100% - 0px); /* Fix for Safari? Affects Chrome and Opera too. */
+
+    /* Another issue with Firefox, but no idea how to solve it... It's living it's own life.
+    It's an untamed fox. */
+
+    z-index: 1;
+
+    position: relative;
+     
+}
+
+#vid {
+    width: 100%;
+    height: 100%;
+}
+
+#fallback-img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#book {
+    position: absolute;
+
+    left: 5%;
+    top: 7%;
+    width: 20%;
+    height: 44%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#pen {
+    position: absolute;
+
+    left: 7%;
+    top: 59%;
+    width: 4%;
+    height: 33%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#smartphone {
+    position: absolute;
+
+    left: 14%;
+    top: 57%;
+    width: 11%;
+    height: 35%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#laptop {
+    position: absolute;
+
+    left: 29%;
+    top: 7%;
+    width: 42%;
+    height: 85%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#coffee {
+    position: absolute;
+
+    left: 78%;
+    top: 16%;
+    width: 15%;
+    height: 30%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#paper {
+    position: absolute;
+
+    left: 75%;
+    top: 53%;
+    width: 21%;
+    height: 47%;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+#debug {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5%;
+
+    text-align: center;
+    color: white;
+
+    background-color:rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+#popup-background {
+
+    display: none;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+/*     max-height: 100vh;
+    max-height: -webkit-calc(100% - 0px); */
+
+    cursor: pointer;
+
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 3;
+
+}
+
+#popup-box {
+
+    Display: none;
+
+    position: fixed;
+
+    width: 90%;
+    height: 90%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+
+    border: 2px solid gold;
+    border-radius: 4px;
+
+    overflow-y:auto;
+
+}
+
+.popup-container {
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "c d";
+}
+
+.popup-container * {
+
+}
+
+.popup-container div {
+}
+
+.popup-container div:first-child {
+    grid-area: a;
+
+    margin-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.popup-container div:nth-child(2) {
+    grid-area: b;
+
+    margin-top: 3rem;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.popup-container div:nth-child(3) {
+    grid-area: c;
+
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.popup-container div:nth-child(4) {
+    grid-area: d;
+
+    padding-top: 1.5rem;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.popup-container div h2 {
+    margin: 0;
+    padding: 0;
+
+    color:gold;
+}
+
+.popup-container div figure {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-container div figure img {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-container div blockquote {
+    margin: 0;
+    color:palegoldenrod;
+}
+
+.popup-container div h3 {
+    margin-bottom: 0.5rem;
+}
+
+.popup-container button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.popup-container img {
+    width: 100%;
+    height: auto;
+}
+
+#instructions-button {
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    color: white;
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 3vw;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+#interact-container {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;  
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#interact-container div {
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+    font-size: 1.5rem;    
+}
+
+#horizontal-prompt-container{
+    display: none;
+    position: fixed;
+    bottom: 25%;
+    z-index: 3;
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#horizontal-prompt-container div{
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+/*
+ONLY FOR THE FUN PAGE: END
+*/
