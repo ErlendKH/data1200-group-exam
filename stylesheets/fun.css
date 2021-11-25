@@ -6,6 +6,16 @@
     padding: 0;
 }
 
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: white;
+    font-size: 1.3rem;
+    padding: 1.5rem 0 0 0;
+}
+
 .always-show-link {
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -304,6 +314,16 @@ video p {
     height: auto;
 }
 
+figcaption {
+    color: white;
+    font-size: 0.8rem;
+}
+
+figcaption a {
+    color: aqua;
+    font-size: 0.8rem;
+}
+
 #instructions-button {
     position: fixed;
     right: 0;
@@ -353,7 +373,3 @@ video p {
     padding: 1rem;
     font-size: 1.5rem;
 }
-
-/*
-ONLY FOR THE FUN PAGE: END
-*/
