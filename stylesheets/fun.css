@@ -373,3 +373,19 @@ figcaption a {
     padding: 1rem;
     font-size: 1.5rem;
 }
+
+@media only screen and (min-width: 1420px) {
+
+    .popup-container {
+        display: grid;
+        grid-template-areas:
+        "a b"
+        "c b"
+        "d b";
+    }
+
+    .popup-container div:nth-child(4) {
+        padding-left: 3rem; padding-top: 0;
+    }
+
+}
