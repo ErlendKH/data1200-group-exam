@@ -306,10 +306,20 @@ GENERAL STYLES: END
   MOBILE: START
   */
 
+/* #mobile-header{
+    display: none;
+    position: absolute;
+    height: 5rem;
+    width: 100%;
+    left: 0;
+
+    z-index: 0;
+    background-color:black;
+}
+
 #mobile-menubutton{
     display: none;
     position: absolute;
-    /* position: fixed; */
     right: 0.5rem;
     top: 0.5rem;
     cursor: pointer;
@@ -322,33 +332,51 @@ GENERAL STYLES: END
     padding: 0.5rem;
 
     z-index: 3;
-}
+} */
 
 #mobile-header{
     display: none;
-    position: absolute;
-    /* position: fixed; */
-    height: 5rem;
+    position: fixed;
+    height: 3.85rem;
     width: 100%;
     left: 0;
 
     z-index: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color:black;
+}
+
+#mobile-menubutton{
+    display: none;
+    position: fixed;
+    right: 0.5rem;
+    top: 0.5rem;
+    cursor: pointer;
+/*     border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px; */
+    /* color: white; */
+    border: 2px solid black;
+    border-radius: 8px;
+    background: white;
+    font-size: 1.5rem;
+
+    padding: 0.5rem 1.25rem;
+
+    z-index: 3;
 }
 
 #mobile-nav {
-    position: absolute;
+    position: fixed;
     /* position: fixed; */
     display: none;
     width: 100%;
     left: 0;
-    top: 6rem;
+    top: 3.5rem;
     padding: 0.5rem 0.5rem;
     z-index: 3;
 }
 
 #mobile-nav li {
-    padding: 10px;
+    padding: 0.24rem;
     margin: 0;
     border: 2px solid black;
     border-bottom: 4px solid black;
@@ -360,7 +388,7 @@ GENERAL STYLES: END
 
 #mobile-nav li a {
     font-size: 1.5rem;
-    padding: 0.5rem;
+    padding: 0.25rem;
 
     display: block;
 
@@ -371,7 +399,7 @@ GENERAL STYLES: END
 #mobile-nav li a::after {
     background:#ff3d00;
     transition: width 0s;
-    height: 1px;
+    height:2px;
 }
 
 @keyframes fadeIn {
@@ -471,18 +499,6 @@ and (max-width: 1420px) {
         margin: 0 15vh;
     } */
 
-    .popup-container {
-        display: grid;
-        grid-template-areas:
-        "a b"
-        "c b"
-        "d b";
-    }
-
-    .popup-container div:nth-child(4) {
-        padding-left: 3rem; padding-top: 0;
-    }
-
 }
 
 /*
@@ -505,7 +521,7 @@ SPECIAL QUERY - Mobile Menu: Start
     }
 
     #mobile-header{
-        display: block;
+        display: block;  
     }
 
     header {
@@ -514,10 +530,6 @@ SPECIAL QUERY - Mobile Menu: Start
 
     h1 {
         margin-top: 4rem;
-    }
-
-    #temp-debug{
-        display: block;
     }
 
 }
