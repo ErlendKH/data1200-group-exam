@@ -308,27 +308,29 @@ GENERAL STYLES: END
 
 #mobile-menubutton{
     display: none;
-    position: absolute;
-    /* position: fixed; */
+    /* position: absolute; */
+    position: fixed;
     right: 0.5rem;
     top: 0.5rem;
     cursor: pointer;
-    border: 2px solid rgb(255, 255, 255);
+    /* border: 2px solid rgb(255, 255, 255); */
     border-radius: 10px;
-    background: transparent;
-    color: white;
-    font-size: 2.5rem;
+    /* background: transparent; */
+    /* background-color: black; */
+    background-color:rgb(233, 233, 233);
+    /* color: white; */
+    font-size: 1.75rem;
 
-    padding: 0.5rem;
+    padding: 0.75rem 1rem;
 
     z-index: 3;
 }
 
 #mobile-header{
     display: none;
-    position: absolute;
-    /* position: fixed; */
-    height: 5rem;
+    /* position: absolute; */
+    position: fixed;
+    height: 4.25rem;
     width: 100%;
     left: 0;
 
@@ -342,7 +344,7 @@ GENERAL STYLES: END
     display: none;
     width: 100%;
     left: 0;
-    top: 6rem;
+    top: 4.25rem;
     padding: 0.5rem 0.5rem;
     z-index: 3;
 }
@@ -498,7 +500,6 @@ SPECIAL QUERY - Mobile Menu: Start
 
     #mobile-menubutton{
         display: block;
-        position: fixed;
     }
 
     #desktop-nav{
@@ -506,9 +507,7 @@ SPECIAL QUERY - Mobile Menu: Start
     }
 
     #mobile-header{
-        display: block;
-        position: fixed;
-        
+        /* display: block;  */    
     }
 
     header {
@@ -880,7 +879,3 @@ video p {
     padding: 1rem;
     font-size: 1.5rem;
 }
-
-
-ONLY FOR THE FUN PAGE: END
-*/
