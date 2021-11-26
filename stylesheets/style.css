@@ -10,9 +10,7 @@ GENERAL STYLES: START
     padding: 0;
 }
 
-body {
-
-}
+body {}
 
 p {
     color: white;
@@ -62,7 +60,6 @@ h2 {
 h3 {
     color: white;
     font-size: 1.3rem;
-    /* font-style:italic; */
     padding: 1.5rem 0 0 0;
 }
 
@@ -80,10 +77,6 @@ figcaption {
 figcaption a {
     color: aqua;
     font-size: 0.8rem;
-}
-
-figure {
-
 }
 
 figure img {
@@ -107,14 +100,6 @@ aside p {
 footer {
     padding-top: 2rem;
 }
-
-/* section {
-    padding-top: 2rem;
-}
-
-section:nth-of-type(2) {
-    padding-top: 0rem;
-} */
 
 header button {
     color: darkblue;
@@ -216,7 +201,7 @@ article figcaption {
     padding: 2rem 2rem 1rem 2rem;
     max-width: 70ch;
 
-    align-self: center; /* Worked... */
+    align-self: center;
 }
 
 .link-button {
@@ -256,9 +241,7 @@ article figcaption {
     width: 100%;
 }
 
-.white-background {
-
-}
+.white-background {}
 
 .white-background li {
     background-color: rgba(255, 255, 255, 1);
@@ -306,34 +289,6 @@ GENERAL STYLES: END
   MOBILE: START
   */
 
-/* #mobile-header{
-    display: none;
-    position: absolute;
-    height: 5rem;
-    width: 100%;
-    left: 0;
-
-    z-index: 0;
-    background-color:black;
-}
-
-#mobile-menubutton{
-    display: none;
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-    cursor: pointer;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    background: transparent;
-    color: white;
-    font-size: 2.5rem;
-
-    padding: 0.5rem;
-
-    z-index: 3;
-} */
-
 #mobile-header{
     display: none;
     position: fixed;
@@ -351,9 +306,6 @@ GENERAL STYLES: END
     right: 0.5rem;
     top: 0.5rem;
     cursor: pointer;
-/*     border: 2px solid rgb(255, 255, 255);
-    border-radius: 10px; */
-    /* color: white; */
     border: 2px solid black;
     border-radius: 8px;
     background: white;
@@ -366,7 +318,6 @@ GENERAL STYLES: END
 
 #mobile-nav {
     position: fixed;
-    /* position: fixed; */
     display: none;
     width: 100%;
     left: 0;
@@ -412,12 +363,6 @@ GENERAL STYLES: END
     100% {opacity: 0;}
 } 
 
-#temp-debug {
-    display: none;
-    color: white;
-    text-align: center;
-}
-
 /*
 MOBILE: END
 */
@@ -425,7 +370,6 @@ MOBILE: END
 /* 
 Standard Media Queries: Start
 */
-
 
 /* Phones */ 
 @media only screen and (max-width : 600px) {
@@ -486,10 +430,6 @@ and (max-width: 1420px) {
 
 /* Desktop Fullscreen */
 @media only screen and (min-width: 1420px) {
-
-/*     .content {
-        margin: 0 15vh;
-    } */
 
 }
 
