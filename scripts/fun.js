@@ -32,8 +32,6 @@ function handleVidError(){
 var background = document.getElementById("popup-background");
 var popup = document.getElementById("popup-box");
 
-var debug = document.getElementById("debug");
-
 dismiss_button.addEventListener('click', function() {
     hidePopup();
 }, false);
