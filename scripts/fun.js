@@ -79,9 +79,9 @@ smartphone.addEventListener('click', function() {
     dynamic_h2.textContent = "Imagine";
 
     dynamic_h3.textContent = "The Smartphone";
-    dynamic_quote0.textContent = "Quote...";
+    dynamic_quote0.textContent = "Let`s go invent tomorrow instead of worrying about what happend yesterday. — Steve Jobs";
 
-    dynamic_quote1.textContent = 'The greatest glory in living lies not in never falling, but in rising every time we fall. — Nelson Mandela';
+    dynamic_quote1.textContent = "The greatest glory in living lies not in never falling, but in rising every time we fall. — Nelson Mandela";
     dynamic_quote2.textContent = "Keep calm and carry on. — Winston Churchill";
 
     showPopup();
