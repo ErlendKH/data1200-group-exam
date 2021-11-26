@@ -333,11 +333,11 @@ GENERAL STYLES: END
     left: 0;
 
     z-index: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color:black;
 }
 
 #mobile-nav {
-    position: absolute;
+    position: fixed;
     /* position: fixed; */
     display: none;
     width: 100%;
@@ -498,6 +498,7 @@ SPECIAL QUERY - Mobile Menu: Start
 
     #mobile-menubutton{
         display: block;
+        position: fixed;
     }
 
     #desktop-nav{
@@ -506,6 +507,8 @@ SPECIAL QUERY - Mobile Menu: Start
 
     #mobile-header{
         display: block;
+        position: fixed;
+        
     }
 
     header {
