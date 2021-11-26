@@ -349,7 +349,7 @@ GENERAL STYLES: END
     display: none;
     position: fixed;
     right: 0.5rem;
-    top: 2px;
+    top: 0.4rem;
     cursor: pointer;
 /*     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px; */
@@ -359,7 +359,7 @@ GENERAL STYLES: END
     background: white;
     font-size: 1.5rem;
 
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 1rem;
 
     z-index: 3;
 }
