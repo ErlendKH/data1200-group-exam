@@ -24,10 +24,6 @@ var dynamic_quote0 = document.getElementById("dynamic-quote0");
 var dynamic_quote1 = document.getElementById("dynamic-quote1");
 var dynamic_quote2 = document.getElementById("dynamic-quote2");
 
-function handleVidError(){
-    img.style.display = "block";
-    vid.style.display = "none";
-}
 
 var background = document.getElementById("popup-background");
 var popup = document.getElementById("popup-box");
