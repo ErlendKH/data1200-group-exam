@@ -374,6 +374,20 @@ figcaption a {
     font-size: 1.5rem;
 }
 
+/* MEDIA QUERIES: START */
+
+/* Phones */ 
+@media only screen and (max-width : 600px) {
+
+    #dynamic-h2 {
+        display: none;
+    }
+
+    #dynamic-h3 {
+        padding-top: 0;
+    }    
+}
+
 @media only screen and (min-width: 1420px) {
 
     .popup-container {
@@ -389,3 +403,5 @@ figcaption a {
     }
 
 }
+
+/* MEDIA QUERIES: END */
