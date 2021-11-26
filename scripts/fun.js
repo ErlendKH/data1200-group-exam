@@ -1,5 +1,5 @@
 
-/* Code exclusively for the FUN page. */
+// Code exclusively for the FUN page.
 
 var instructions = document.getElementById("instructions-button");
 var interact = document.getElementById("interact-container");
@@ -36,7 +36,7 @@ dismiss_button.addEventListener('click', function() {
     hidePopup();
 }, false);
 
-/* BOOK */
+// BOOK 
 
 book.addEventListener('click', function() {
 
@@ -53,7 +53,7 @@ book.addEventListener('click', function() {
     showPopup();
 }, false);
 
-/* PEN */
+// PEN 
 
 pen.addEventListener('click', function() {
 
@@ -70,7 +70,7 @@ pen.addEventListener('click', function() {
     showPopup();
 }, false);
 
-/* SMARTPHONE */
+// SMARTPHONE 
 
 smartphone.addEventListener('click', function() {
 
@@ -87,7 +87,7 @@ smartphone.addEventListener('click', function() {
     showPopup();
 }, false);
 
-/* LAPTOP */
+// LAPTOP 
 
 laptop.addEventListener('click', function() {
 
@@ -104,7 +104,7 @@ laptop.addEventListener('click', function() {
     showPopup();
 }, false);
 
-/* COFFEE */
+// COFFEE 
 
 coffee.addEventListener('click', function() {
 
@@ -121,7 +121,7 @@ coffee.addEventListener('click', function() {
     showPopup();
 }, false);
 
-/* PAPER */
+// PAPER 
 
 paper.addEventListener('click', function() {
 
@@ -163,7 +163,7 @@ instructions.addEventListener('click', function() {
 
 }, false);
 
-/* Text recommending the user to switch to horizontal view on small devices. */
+// Text recommending the user to switch to horizontal view on small devices. 
 window.onresize = function(){
     if(window.innerWidth <= 601){
         horizontal.style.display = "block";
@@ -172,7 +172,7 @@ window.onresize = function(){
     }
 }
 
-/* Run once on load. */
+// Run once on load. 
 window.onload = function(){
 
     if(window.innerWidth <= 601){
@@ -181,7 +181,7 @@ window.onload = function(){
 
     vid.play();
 
-    /* Fix for playing the video on Mac. */
+    // Fix for playing the video on Mac. 
     var vids = document.getElementsByTagName('video');
     vids.item(0).play();
 
