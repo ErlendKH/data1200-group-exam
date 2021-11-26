@@ -57,9 +57,7 @@ video p {
     color: black;
 }
 
-#container {
-
-}
+#container {}
 
 #div-16-9 {
 
@@ -228,10 +226,6 @@ video p {
     "c d";
 }
 
-.popup-container * {
-
-}
-
 .popup-container div {
 }
 
@@ -252,7 +246,6 @@ video p {
     padding-right: 3rem;
     padding-left: 1.5rem;
     padding-bottom: 1.5rem;
-
 }
 
 .popup-container div:nth-child(3) {
