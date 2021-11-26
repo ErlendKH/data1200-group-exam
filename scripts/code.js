@@ -27,7 +27,7 @@ navMenu.addEventListener("click", function(){
     }
 });
   
-  function displayOff(){
+function displayOff(){
 
     navOnly.style.display = "none";
     navOnly.removeEventListener("animationend", displayOff); 
