@@ -78,9 +78,9 @@ smartphone.addEventListener('click', function() {
 
     dynamic_img.src = "/media/mobile-fall.jpg";
 
-    dynamic_h2.textContent = "The Smartphone";
+    dynamic_h2.textContent = "Reflection";
 
-    dynamic_h3.textContent = "Marcin";
+    dynamic_h3.textContent = "The Smartphone";
     dynamic_quote0.textContent = "Quote...";
 
     dynamic_quote1.textContent = 'The greatest glory in living lies not in never falling, but in rising every time we fall. — Nelson Mandela';
