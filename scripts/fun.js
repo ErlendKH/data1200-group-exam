@@ -6,7 +6,7 @@ var interact = document.getElementById("interact-container");
 var horizontal = document.getElementById("horizontal-prompt-container");
 
 var vid = document.getElementById("vid");
-// var img = document.getElementById("fallback-img");
+var img = document.getElementById("fallback-img");
 
 var div_16_9 = document.getElementById("div-16-9");
 var book = document.getElementById("book");
@@ -25,8 +25,8 @@ var dynamic_quote1 = document.getElementById("dynamic-quote1");
 var dynamic_quote2 = document.getElementById("dynamic-quote2");
 
 function handleVidError(){
-    // img.style.display = "block";
-    // vid.style.display = "none";
+    img.style.display = "block";
+    vid.style.display = "none";
 }
 
 var background = document.getElementById("popup-background");
