@@ -1,15 +1,17 @@
 
-/* Code for the common pages. */
+// Code for the common pages.
 
 var navOnly = document.getElementById("mobile-nav");
 var navMenu = document.getElementById("mobile-menubutton");
 
+// Turns off mobile-nav when resized. 
 window.onresize = function(){
     if(window.innerWidth > 960){
         navOnly.style.display = "none"
     }
 }
 
+// Toggle mobile-nav fade. 
 navMenu.addEventListener("click", function(){
 
     if(navOnly.style.display == "" || navOnly.style.display == "none"){
@@ -24,7 +26,7 @@ navMenu.addEventListener("click", function(){
 
     }
 });
-
+  
   function displayOff(){
 
     navOnly.style.display = "none";
