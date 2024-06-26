@@ -36,7 +36,7 @@ dismiss_button.addEventListener('click', function() {
 
 book.addEventListener('click', function() {
 
-    dynamic_img.src = "/media/fun/book-surreal.jpg";
+    dynamic_img.src = "../media/fun/book-surreal.jpg";
 
     dynamic_h2.textContent = "A Journey Into A Strange World";
 
@@ -53,7 +53,7 @@ book.addEventListener('click', function() {
 
 pen.addEventListener('click', function() {
 
-    dynamic_img.src = "/media/fun/pen.jpg";
+    dynamic_img.src = "../media/fun/pen.jpg";
 
     dynamic_h2.textContent = "The Lead Character";
 
@@ -70,7 +70,7 @@ pen.addEventListener('click', function() {
 
 smartphone.addEventListener('click', function() {
 
-    dynamic_img.src = "/media/fun/mobile-fall.jpg";
+    dynamic_img.src = "../media/fun/mobile-fall.jpg";
 
     dynamic_h2.textContent = "Imagine";
 
@@ -87,7 +87,7 @@ smartphone.addEventListener('click', function() {
 
 laptop.addEventListener('click', function() {
 
-    dynamic_img.src = "/media/fun/cookie-the-pom-laptop-unsplash.jpg";
+    dynamic_img.src = "../media/fun/cookie-the-pom-laptop-unsplash.jpg";
 
     dynamic_h2.textContent = "That's Cute";
 
@@ -104,7 +104,7 @@ laptop.addEventListener('click', function() {
 
 coffee.addEventListener('click', function() {
 
-    dynamic_img.src = "/media/fun/woman-coffee.jpg";
+    dynamic_img.src = "../media/fun/woman-coffee.jpg";
 
     dynamic_h2.textContent = "A Great Day";
 
@@ -121,7 +121,7 @@ coffee.addEventListener('click', function() {
 
 paper.addEventListener('click', function() {
 
-    dynamic_img.src = "/media/fun/carolina-garcia-paper.jpg";
+    dynamic_img.src = "../media/fun/carolina-garcia-paper.jpg";
 
     dynamic_h2.textContent = "Beauty";
 
