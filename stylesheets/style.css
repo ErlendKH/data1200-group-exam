@@ -107,7 +107,7 @@ header button {
 }
 
 .content {
-    background-image: url("/media/background-priscilla-du-preez-unsplash-1920.jpg");
+    background-image: url("../media/background-priscilla-du-preez-unsplash-1920.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed; 
