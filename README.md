@@ -8,7 +8,7 @@
 
 ---
 
-Here is a link to the [live website](https://erlendkh.github.io/).
+Here is a link to the [live website](https://erlendkh.github.io/data1200-group-exam/).
 
 ## Structure of project
 
